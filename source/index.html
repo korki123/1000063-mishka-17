@@ -4,9 +4,157 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p> -->
+
+  <body>
+    <header class="page-header">
+      <div class="site-menu">
+        <a class="site-menu__logo" href="#">
+          <img class="site-menu__logo-image" src="source/img/mishka-logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина">
+        </a>
+        <button class="site-menu__toggle" type="button" name="button"></button>
+      </div>
+        <!-- ========================================= поп-ап навигация ========================================= -->
+      <section class="nav">
+        <nav class="main-nav">
+          <ul class="main-nav__list-navigation site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+        <!-- ========================================= поп-ап навигация финиш ========================================= -->
+    </header>
+
+    <section class="page">
+      <h1 class="visially-hidden"> Магазин Мишка</h1>
+
+      <section class="page_showcase">
+        <div class="showcase-header">
+          <h2 class="showcase-header__slogan">Милые штуки ручной  работы для дома</h2>
+        </div>
+          <ul class="showcase-list">
+            <li class="showcase-list__item showcase-list__item--interior">
+              <a class="showcase-list__item--text" href="#">Предметы  интерьера</a>
+            </li>
+            <li class="showcase-list__item showcase-list__item--toy">
+              <a class="showcase-list__item--text" href="#">Детские  игрушки</a>
+            </li>
+          </ul>
+      </section>
+
+      <section  class="page__product-week">
+        <div class="product-week week-description">
+          <h3 class="week-description__head">Вязаные корзинки</h3>
+          <p class="week-description__acsent">ТОВАР НЕДЕЛИ</p>
+          <p class="week-description__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <div class="product-week table">
+            <ul class="table__list">
+              <li class="table__list-cell-one">Цвет: </li>
+              <li class="table__list-cell-two">«Тиффани»/серый</li>
+            </ul>
+            <ul class="table__list">
+              <li class="table__list-cell-one">Диаметр: </li>
+              <li class="table__list-cell-two">25 см</li>
+            </ul>
+            <ul class="table__list">
+              <li class="table__list-cell-one">Высота: </li>
+              <li class="table__list-cell-two">15 см</li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-week__image">
+        </div>
+        <div class="product-week week-price">
+          <p class="week-price__label">Цена: 990 руб.</p>
+          <button class="week-price-button button" type="button" name="button">ЗАКАЗАТЬ</button>
+        </div>
+      </section>
+
+      <div class="page__break zigzag">
+      </div>
+
+      <section class="page__about">
+        <h3 class="about__head">Коротко о нас:</h3>
+        <ul class="about__list">
+          <li class="about__list-item about__list-item--ecology">Экологически  чистые материалы</li>
+          <li class="about__list-item about__list-item--style">Скандинавский стиль по российской цене</li>
+          <li class="about__list-item about__list-item--like">Увеличивает лайки на фотографиях</li>
+          <li class="about__list-item about__list-item--ball">Связано вручную с любовью и умилением</li>
+          <li class="about__list-item about__list-item--support">Поддержка отечественного производителя</li>
+          <li class="about__list-item about__list-item--gift">Поставляется в  подарочной упаковке</li>
+        </ul>
+      </section>
+
+      <section class="comments slider">
+        <h3 class="comments__head">Отзывы</h3>
+
+        <div class="comments__list slider__list">
+          <blockquote class="comments__item slider__item">
+            <p class="comments__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          </blockquote>
+          <p class="comments__sign">Анастасия Красильникова </p>
+          <p class="comments__mail">@misssssiskras</p>
+        </div>
+
+        <div class="comments__arrows slider__arrows">
+          <button class="slider__arrows arrows--next" type="button" name="button">Следующий отзыв</button>
+          <button class="slider__arrows arrows--back" type="button" name="button">Предыдущий отзыв</button>
+        </div>
+
+          <a class="comments__button button" href="">Написать</a>
+      </section>
+
+      <div class="page__break zigzag">
+      </div>
+
+      <section class="contact">
+        <div class="contact-block">
+          <h3 class="contact__head">Контакты</h3>
+          <ul class="contact__list">
+            <li class="contact__list--item">e-mail:</li>
+            <li class="contact__list--item">info@mimimishkashop.ru</li>
+          </ul>
+          <ul class="contact__list">
+            <li class="contact__list--item">info@mimimishkashop.ru</li>
+            <li class="contact__list--item">info@mimimishkashop.ru</li>
+          </ul>
+        </div>
+
+        <div class="contact__map">
+
+        </div>
+
+        <a class="contact__button button" href="#">Напишите нам</a>
+      </section>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <div class="footer_social footer_social--instagramm">Инстаграмм
+      </div>
+      <div class="footer_social footer_social--facebook">Фейсбук
+      </div>
+      <div class="footer_social footer_social--twitter">Твиттер
+      </div>
+    </div>
+    <div class="made">
+      <p class="class__made text">Разработано</p>
+      <div class="class__made text--image">
+      </div>
+    </div>
+  </footer>
 
   </body>
 </html>
