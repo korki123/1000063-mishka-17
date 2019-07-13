@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+
+  <body>
+
+    <header class="page-header">
+      <div class="site-menu">
+        <a class="site-menu__logo" href="#">
+          <img class="site-menu__logo-image" src="source/img/mishka-logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина">
+        </a>
+        <button class="site-menu__toggle" type="button" name="button"></button>
+      </div>
+        <!-- ========================================= поп-ап навигация ========================================= -->
+        <nav class="nav">
+          <ul class="nav__list-navigation site-list">
+            <li class="site-list__item">
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ========================================= поп-ап навигация финиш ========================================= -->
+    </header>
+
+      <main class="catalog">
+        <section class="catalog-page">
+          <h2 class="catalog__head">Каталог товаров</h3>
+          <article class="catalog__card">
+            <h3 class="card__header">Зайчик-попрыгайчик</h3>
+            <p class="card__description">Рост 30 см, вес 200 г</p>
+            <p class="card__price card__price--icon-cart">1 200 руб.</p>
+          </article>
+
+          <article class="catalog__card">
+            <h3 class="card__header">Корзинка для белья</h3>
+            <p class="card__description">Диаметр 15 см, высота 10 см</p>
+            <p class="card__price card__price--icon-cart">690 руб.</p>
+          </article>
+
+          <article class="catalog__card">
+            <h3 class="card__header">Большая корзинка для игрушек</h3>
+            <p class="card__description">Диаметр 30 см, высота 30 см</p>
+            <p class="card__price card__price--icon-cart">1 500 руб.</p>
+          </article>
+
+          <section class="manufacture">
+            <h3 class="manufacture__head manufacture__head--icon-video">Процесс производства</h3>
+            <iframe class="manufacture__video" src="" width="" height=""></iframe>
+            <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          </section>
+
+          <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
+        </section>
+        <!-- ========================================= модальное окно ========================================= -->
+        <section class="modal">
+          <p class="modal__head">Добавить  в корзину</p>
+          <p class="modal__text">Выберите размер:</p>
+          <p class="modal__size modal__size--select">s</p>
+          <p class="modal__size">m</p>
+          <p class="modal__size">l</p>
+          <button class="modal__button button" type="button" name="button">Добавить</button>
+        </section>
+        <!-- ========================================= модальное окно финиш ========================================= -->
+      </main>
+
+      <footer class="footer">
+        <section class="social">
+          <div class="social__icon social__icon--instagramm">Инстаграмм
+          </div>
+          <div class="social__icon social__icon--facebook">Фейсбук
+          </div>
+          <div class="social__icon social__icon--twitter">Твиттер
+          </div>
+        </section>
+        <div class="maker">
+          <p class="maker__made made__text">Разработано</p>
+          <div class="maker__made made__text--image">
+          </div>
+        </div>
+      </footer>
+
+  </body>
+</html>
