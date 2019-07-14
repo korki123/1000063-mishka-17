@@ -34,28 +34,44 @@
         <!-- ========================================= поп-ап навигация финиш ========================================= -->
     </header>
 
-      <main class="catalog">
-        <section class="catalog-page">
+      <main class="catalog-page">
+        <section class="catalog">
           <h2 class="catalog__head">Каталог товаров</h2>
-          <article class="catalog__card">
+
+          <article class="catalog__card card">
+            <div class="card__photo--rubbit">
+            </div>
             <h3 class="card__header">Зайчик-попрыгайчик</h3>
             <p class="card__description">Рост 30 см, вес 200 г</p>
-            <p class="card__price card__price--icon-cart">1 200 руб.</p>
+            <p class="card__price">1 200 руб.
+              <a class="card__icon-cart" href="#"><img src="" alt="">
+              </a>
+            </p>
           </article>
 
-          <article class="catalog__card">
+          <article class="catalog__card card">
+            <div class="card__photo--cart">
+            </div>
             <h3 class="card__header">Корзинка для белья</h3>
             <p class="card__description">Диаметр 15 см, высота 10 см</p>
-            <p class="card__price card__price--icon-cart">690 руб.</p>
+            <p class="card__price card__price--icon-cart">690 руб.
+              <a class="card__icon-cart" href="#"><img src="" alt="">
+              </a>
+            </p>
           </article>
 
-          <article class="catalog__card">
+          <article class="catalog__card card">
+            <div class="card__photo--big-cart">
+            </div>
             <h3 class="card__header">Большая корзинка для игрушек</h3>
             <p class="card__description">Диаметр 30 см, высота 30 см</p>
-            <p class="card__price card__price--icon-cart">1 500 руб.</p>
+            <p class="card__price card__price--icon-cart">1 500 руб.
+              <a class="card__icon-cart" href="#"><img src="" alt="">
+              </a>
+            </p>
           </article>
 
-          <section class="manufacture">
+          <section class="catalog__card manufacture">
             <h3 class="manufacture__head manufacture__head--icon-video">Процесс производства</h3>
             <iframe class="manufacture__video" src="" width="" height=""></iframe>
             <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -63,33 +79,34 @@
 
           <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
         </section>
-        <!-- ========================================= модальное окно ========================================= -->
-        <section class="modal">
-          <p class="modal__head">Добавить  в корзину</p>
-          <p class="modal__text">Выберите размер:</p>
-          <p class="modal__size modal__size--select">s</p>
-          <p class="modal__size">m</p>
-          <p class="modal__size">l</p>
-          <button class="modal__button button" type="button" name="button">Добавить</button>
-        </section>
-        <!-- ========================================= модальное окно финиш ========================================= -->
       </main>
 
       <footer class="footer">
         <section class="social">
-          <div class="social__icon social__icon--instagramm">Инстаграмм
-          </div>
-          <div class="social__icon social__icon--facebook">Фейсбук
-          </div>
-          <div class="social__icon social__icon--twitter">Твиттер
-          </div>
+          <a class="social__icon"><img src="" alt="Инстаграмм">
+          </a>
+          <a class="social__icon"><img src="" alt="Фейсбук">
+          </a>
+          <a class="social__icon"><img src="" alt="Твиттер">
+          </a>
         </section>
-        <div class="maker">
-          <p class="maker__made made__text">Разработано</p>
-          <div class="maker__made made__text--image">
-          </div>
-        </div>
+        <section class="maker">
+          <p class="maker__text">Разработано</p>
+          <a class="maker__link"> <img src="" alt="логотип академии">
+          </a>
+        </section>
       </footer>
+
+      <!-- ========================================= модальное окно ========================================= -->
+      <section class="modal">
+        <p class="modal__head">Добавить  в корзину</p>
+        <p class="modal__text">Выберите размер:</p>
+        <p class="modal__size modal__size--select">s</p>
+        <p class="modal__size">m</p>
+        <p class="modal__size">l</p>
+        <button class="modal__button button" type="button" name="button">Добавить</button>
+      </section>
+      <!-- ========================================= модальное окно финиш ========================================= -->
 
   </body>
 </html>

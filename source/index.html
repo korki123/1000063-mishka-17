@@ -5,8 +5,6 @@
     <title>HTML Academy: Мишка</title>
   </head>
 
-  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p> -->
-
   <body>
     <header class="page-header">
       <div class="site-menu">
@@ -57,24 +55,25 @@
           <h3 class="week-description__head">Вязаные корзинки</h3>
           <p class="week-description__acsent">ТОВАР НЕДЕЛИ</p>
           <p class="week-description__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <div class="product-week table">
-            <ul class="tablet">
-              <li class="table__cell-one">Цвет: </li>
-              <li class="table__cell-two">«Тиффани»/серый</li>
-            </ul>
-            <ul class="table">
-              <li class="table__cell-one">Диаметр: </li>
-              <li class="table__cell-two">25 см</li>
-            </ul>
-            <ul class="table">
-              <li class="table__cell-one">Высота: </li>
-              <li class="table__cell-two">15 см</li>
-            </ul>
-          </div>
+          <table class="product-week table">
+            <tr class="table">
+              <td class="table__cell-one">Цвет: </td>
+              <td class="table__cell-two">«Тиффани»/серый</td>
+            </tr>
+            <tr class="table">
+              <td class="table__cell-one">Диаметр: </td>
+              <td class="table__cell-two">25 см</td>
+            </tr>
+            <tr class="table">
+              <td class="table__cell-one">Высота: </td>
+              <td class="table__cell-two">15 см</td>
+            </tr>
+          </table>
         </div>
-        <div class="product-week week-price">
-          <p class="week-price__label">Цена: 990 руб.</p>
-          <button class="week-price__button button" type="button" name="button">ЗАКАЗАТЬ</button>
+
+        <div class="product-week__bay">
+          <p class="product-week__label">Цена: 990 руб.</p>
+          <button class="product-weeke__button button" type="button" name="button">ЗАКАЗАТЬ</button>
         </div>
       </section>
 
@@ -96,8 +95,8 @@
       <section class="comments slider">
         <h3 class="comments__head">Отзывы</h3>
 
-        <div class="comments__list slider__list">
-          <blockquote class="comments__item slider__item">
+        <div class="slider__list">
+          <blockquote class="slider__item">
             <p class="comments__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           </blockquote>
           <p class="comments__sign">Анастасия Красильникова </p>
@@ -137,19 +136,30 @@
 
   <footer class="footer">
     <section class="social">
-      <div class="social__icon social__icon--instagramm">Инстаграмм
-      </div>
-      <div class="social__icon social__icon--facebook">Фейсбук
-      </div>
-      <div class="social__icon social__icon--twitter">Твиттер
-      </div>
+      <a class="social__icon"><img src="" alt="Инстаграмм">
+      </a>
+      <a class="social__icon"><img src="" alt="Фейсбук">
+      </a>
+      <a class="social__icon"><img src="" alt="Твиттер">
+      </a>
     </section>
-    <div class="maker">
-      <p class="maker__made made__text">Разработано</p>
-      <div class="maker__made made__text--image">
-      </div>
-    </div>
+    <section class="maker">
+      <p class="maker__text">Разработано</p>
+      <a class="maker__link"> <img src="" alt="логотип академии">
+      </a>
+    </section>
   </footer>
+
+  <!-- ========================================= модальное окно ========================================= -->
+  <section class="modal">
+    <p class="modal__head">Добавить  в корзину</p>
+    <p class="modal__text">Выберите размер:</p>
+    <p class="modal__size modal__size--select">s</p>
+    <p class="modal__size">m</p>
+    <p class="modal__size">l</p>
+    <button class="modal__button button" type="button" name="button">Добавить</button>
+  </section>
+  <!-- ========================================= модальное окно финиш ========================================= -->
 
   </body>
 </html>
