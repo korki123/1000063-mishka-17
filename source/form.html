@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="site-menu">
+        <a class="site-menu__logo" href="#">
+          <img class="site-menu__logo-image" src="source/img/mishka-logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина">
+        </a>
+        <button class="site-menu__toggle" type="button" name="button"></button>
+      </div>
+        <!-- ========================================= выпадающее меню навигация ========================================= -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Вязание на заказ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ========================================= выпадающее меню финиш ========================================= -->
+    </header>
+
+    <main class="page">
+
+      <form class="form" action="index.html" method="post">
+
+        <section class="form-order">
+          <h2 class="form-order__head">Вязание на заказ</h2>
+          <p class="form-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </section>
+
+        <fieldset class="form-type">
+          <legend class="form-type__group-name">ТИП</legend>
+          <label class="form-type__label">
+            <input class="form-type__radio" type="radio" name="type" value="accessories" checked>
+            <span class="form-type__icon"></span>Аксессуар для  интерьера
+          </label>
+          <label class="form-type__label">
+            <input class="form-type__radio" type="radio" name="type" value="toy" checked>
+            <span class="form-type__icon"></span>Детская игрушка
+          </label>
+        </fieldset>
+
+        <fieldset class="form-type">
+          <legend class="form-type__group-name">Цвет</legend>
+
+          <label class="form-type__label">
+            <input class="form-type__checkbox" type="checkbox" name="white">
+            <span class="form-type__checkbox-icon"></span>Белый
+          </label>
+          <label class="form-type__label">
+            <input class="form-type__checkbox" type="checkbox" name="grey">
+            <span class="form-type__checkbox-icon"></span>Серый
+          </label>
+          <label class="form-type__label">
+            <input class="form-type__checkbox" type="checkbox" name="tiffany">
+            <span class="form-type__checkbox-icon"></span>«Тиффани»
+          </label>
+          <label class="form-type__label">
+            <input class="form-type__checkbox" type="checkbox" name="black">
+            <span class="form-type__checkbox-icon"></span>Черный
+          </label>
+          <label class="form-type__label">
+            <input class="form-type__checkbox" type="checkbox" name="pink">
+            <span class="form-type__checkbox-icon"></span>Розовый
+          </label>
+          <label class="form-type__label">
+            <input class="form-type__checkbox" type="checkbox" name="orange">
+            <span class="form-type__checkbox-icon"></span>Оранжевый
+          </label>
+        </fieldset>
+
+        <fieldset class="form-type">
+          <legend class="form-type__personal">ФИО</legend>
+
+          <label class="form-type__label"> Имя:
+            <input class="form-type__username" type="text" name="name" value="Введите ваше имя*" required>
+          </label>
+          <label class="form-type__label"> Фамилия:
+            <input class="form-type__username" type="text" name="surname" value="Укажите фамилию*" required>
+          </label>
+          <label class="form-type__label"> Отчество:
+            <input class="form-type__username" type="text" name="last-name" value="Отчество, если желаете">
+          </label>
+          <label class="form-type__label"> тел:
+            <input class="form-type__phone" type="tel" name="tel" value="+7 XXX XXX XX XX*" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required><span class="form-type__phone form-type__phone--icon-tel"></span>
+          </label>
+          <label class="form-type__label"> E-mail:
+            <input class="form-type__email" type="email" name="e-mail" value="Ваш Email*" required><span class="form-type__email form-type__email--icon-email"></span>
+          </label>
+          <label class="form-type__label"> Доп:
+            <textarea class="form-type__comments" name="comments" rows="8" cols="80">Опишите все ваши  пожелания к заказу</textarea>
+            <p class="form-type__footnote">*Поля обязательны для заполнения</p>
+          </label>
+        </fieldset>
+        <button class="form-type__button button" type="button" name="button">ОТПРАВИТЬ ЗАКАЗ</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <section class="social">
+        <a class="social__icon"><img src="" alt="Инстаграмм">
+        </a>
+        <a class="social__icon"><img src="" alt="Фейсбук">
+        </a>
+        <a class="social__icon"><img src="" alt="Твиттер">
+        </a>
+      </section>
+      <section class="maker">
+        <p class="maker__text">Разработано</p>
+        <a class="maker__link"> <img src="" alt="логотип академии">
+        </a>
+      </section>
+    </footer>
+
+  </body>
+</html>
