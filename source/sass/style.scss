@@ -1,9 +1,15 @@
 // body {
 //   background-color: red;
 // }
+@import "mixin.scss";
 @import "blocks/normalize.scss";
 @import "blocks/global-style.scss";
 @import "blocks/site-menu.scss";
 @import "blocks/nav.scss";
+@import "blocks/page.scss";
 @import "blocks/showcase.scss";
-@import "product-week.scss";
+@import "blocks/product-week.scss";
+@import "blocks/about.scss";
+@import "blocks/comments.scss";
+@import "blocks/slider.scss";
+@import "blocks/footer.scss";

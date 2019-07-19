@@ -1,3 +1,87 @@
 .product-week {
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 
+  font-family: "opensansbold", Arial, sans-serif;
+
+  &__wrapper {
+    padding: 0 30px;
+  }
+
+  &__head {
+    margin: 0;
+    padding: 30px 0 3px 0;
+
+    font-size: 25px;
+    line-height: 30px;
+    text-align: left;
+
+    color: #000000;
+  }
+
+  &__acsent {
+    margin: 0;
+    padding-bottom: 27px;
+
+    font-size: 17px;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+
+    color: #63d1bb;
+  }
+
+  &__description {
+    margin: 0;
+    padding-bottom: 20px;
+
+    font-family: "opensans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
+
+    color: #444444;
+  }
+
+  &__table {
+    width: 100%;
+
+    font-family: "opensans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    color: #444444;
+  }
+
+  &__table-cell {
+    padding-top: 9px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__photo {
+    width: 260px;
+    height: 315px;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  &__price {
+    margin: 0;
+    padding-bottom: 28px;
+
+    font-family: "opensansbold", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #444444;
+  }
+
+  &__button {
+    @include button;
+  }
 }

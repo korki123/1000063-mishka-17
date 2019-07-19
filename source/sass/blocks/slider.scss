@@ -1,0 +1,31 @@
+.slider {
+
+  &__list {
+    padding: 0 30px 30px;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 65px;
+
+    font-family: "opensan", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  &__sign {
+    margin: 0;
+
+    font-family: "opensansbold", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+}
