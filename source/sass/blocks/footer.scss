@@ -48,7 +48,9 @@
   }
 
   &__maker {
-
+    position: relative;
+    width: 182px;
+    margin: 0 auto;
   }
 
   &__maker-text {
@@ -59,15 +61,28 @@
     font-weight: bold;
     font-size: 19px;
     line-height: 18px;
-    text-align: center;
+    text-align: left;
     color: #000000;
+
+    &--icon-academy::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      right: 0;
+
+      width: 27px;
+      height: 34px;
+
+      background-image: url("../img/htmlacademy.svg");
+      background-repeat: no-repeat;
+    }
   }
 
-  &__maker-link {
-    width: 27px;
-    height: 34px;
-
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-  }
+  // &__maker-link {
+  //   width: 27px;
+  //   height: 34px;
+  //
+  //   background-image: url("../img/htmlacademy.svg");
+  //   background-repeat: no-repeat;
+  // }
 }
