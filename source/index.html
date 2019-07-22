@@ -8,17 +8,11 @@
 
   <body>
     <header class="page-header">
-      <div class="site-menu">
-        <a class="site-menu__logo" href="#">
-          <img class="site-menu__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина">
-        </a>
-        <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
-      </div>
       <!-- ========================================= выпадающее меню навигация ========================================= -->
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#">Каталог товаров</a>
+            <a class="nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Вязание на заказ</a>
@@ -32,6 +26,12 @@
         </ul>
       </nav>
       <!-- ========================================= выпадающее меню финиш ========================================= -->
+      <div class="site-menu">
+        <a class="site-menu__logo" href="#">
+          <img class="site-menu__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина">
+        </a>
+        <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
+      </div>
     </header>
 
     <main class="page">
@@ -75,7 +75,7 @@
 
         <div class="product-week__bay">
           <p class="product-week__price">Цена: 990 руб.</p>
-          <button class="product-week__button button" type="button" name="order">ЗАКАЗАТЬ</button>
+          <a class="product-week__button button" href="form.html">ЗАКАЗАТЬ</a>
         </div>
       </section>
 
