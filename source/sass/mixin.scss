@@ -1,0 +1,30 @@
+@mixin head3 {
+  margin: 0;
+  padding: 30px 0 3px 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  text-align: left;
+
+  color: #000000;
+}
+
+@mixin button {
+  display: block;
+  width: 260px;
+  padding: 12px 0;
+  margin: 0 auto;
+
+  font-family: "opensansbold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+
+  background-color: #ffffff;
+  border: 2px solid #444444;
+
+  cursor: pointer;
+}
