@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <header class="page-header">
-      <div class="site-menu">
-        <a class="site-menu__logo" href="#">
-          <img class="site-menu__logo-image" src="source/img/mishka-logo-mobile.svg" width="86px" height="35px" alt="Логотип магазина">
-        </a>
-        <button class="site-menu__toggle" type="button" name="button"></button>
-      </div>
-        <!-- ========================================= выпадающее меню навигация ========================================= -->
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#">Каталог товаров</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- ========================================= выпадающее меню финиш ========================================= -->
+<body>
+
+  <header class="page-header">
+    <!-- ========================================= выпадающее меню навигация ========================================= -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Вязание на заказ</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Поиск по сайту</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ========================================= выпадающее меню финиш ========================================= -->
+    <div class="site-menu">
+      <a class="site-menu__logo" href="index.html">
+        <img class="site-menu__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина">
+      </a>
+      <button class="site-menu__toggle" type="button" name="button"></button>
+    </div>
     </header>
 
     <main class="page">
@@ -111,19 +113,19 @@
     </main>
 
     <footer class="footer">
-      <section class="social">
-        <a class="social__icon"><img src="" alt="Инстаграмм">
-        </a>
-        <a class="social__icon"><img src="" alt="Фейсбук">
-        </a>
-        <a class="social__icon"><img src="" alt="Твиттер">
-        </a>
-      </section>
-      <section class="maker">
-        <p class="maker__text">Разработано</p>
-        <a class="maker__link"> <img src="" alt="логотип академии">
-        </a>
-      </section>
+      <div class="footer__wrapper">
+        <section class="footer__social">
+          <a class="footer__social-inst">
+          </a>
+          <a class="footer__social-fb">
+          </a>
+          <a class="footer__social-twit">
+          </a>
+        </section>
+        <section class="footer__maker">
+          <a class="footer__maker-link"><p class="footer__maker-text footer__maker-text--icon-academy">Разработано</p></a>
+        </section>
+      </div>
     </footer>
 
   </body>

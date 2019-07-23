@@ -1,0 +1,27 @@
+
+.site-menu {
+
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid ececec;
+
+  .site-menu__logo {
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .site-menu__toggle {
+    position: relative;
+    top: 32px;
+    right: 32px;
+
+    width: 19px;
+    height: 14px;
+
+    border: 0;
+    background-color: #ffffff;
+    background-image: url("../img/hamburger.svg");
+  }
+}

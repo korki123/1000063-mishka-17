@@ -1,0 +1,52 @@
+.contact {
+  .contact__block {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .contact__head {
+    margin: 0;
+    padding-bottom: 38px;
+
+    font-family: "opensansbold", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
+  }
+
+  .contact__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 37px;
+
+    list-style: none;
+  }
+
+  .contact__item {
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 30px;
+    margin-right: 30px;
+    padding-bottom: 3px;
+
+    &--underline {
+      border-bottom: 1px solid #62d1ba;
+    }
+  }
+
+  .contact__map {
+    width: 320px;
+    height: 458px;
+    background-image: url("http://placehold.it/150x100");
+  }
+
+  .contact__button {
+    @include button;
+    margin: 30px auto;
+  }
+}
