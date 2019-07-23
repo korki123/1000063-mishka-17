@@ -7,13 +7,12 @@
   border-top: 1px solid #ececec;
   border-bottom: 1px solid ececec;
 
-
-  &__logo {
+  .site-menu__logo {
     margin: 0 auto;
     padding: 20px 0;
   }
 
-  &__toggle {
+  .site-menu__toggle {
     position: relative;
     top: 32px;
     right: 32px;

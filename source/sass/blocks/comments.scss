@@ -5,17 +5,17 @@
 
   font-family: "opensansbold", "Arial", sans-serif;
 
-  &__head {
+  .comments__head {
     @include head3;
     padding: 30px;
   }
 
-  &__arrows {
+  .comments__arrows {
     font-size: 0;
     padding: 0 30px 30px;
   }
 
-  &__arrows-next {
+  .comments__arrows-next {
     padding: 0;
 
     box-sizing: border-box;
@@ -34,7 +34,7 @@
     }
   }
 
-  &__button {
+  .comments__button {
     @include button;
   }
 }

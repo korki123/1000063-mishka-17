@@ -1,13 +1,13 @@
 .slider {
-  &__list {
+  .slider__list {
     padding: 0 30px 30px;
   }
 
-  &__item {
+  .slider__item {
     margin: 0;
   }
 
-  &__text {
+  .slider__text {
     margin: 0;
     padding-bottom: 65px;
 
@@ -18,7 +18,7 @@
     color: #444444;
   }
 
-  &__sign {
+  .slider__sign {
     margin: 0;
 
     font-family: "opensansbold", "Arial", sans-serif;

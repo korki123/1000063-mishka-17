@@ -1,10 +1,10 @@
 .contact {
-  &__block {
+  .contact__block {
     width: 260px;
     margin: 0 auto;
   }
 
-  &__head {
+  .contact__head {
     margin: 0;
     padding-bottom: 38px;
 
@@ -16,7 +16,7 @@
     color: #000000;
   }
 
-  &__list {
+  .contact__list {
     display: flex;
     justify-content: space-between;
 
@@ -27,7 +27,7 @@
     list-style: none;
   }
 
-  &__item {
+  .contact__item {
     font-family: "opensans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 30px;
@@ -39,13 +39,13 @@
     }
   }
 
-  &__map {
+  .contact__map {
     width: 320px;
     height: 458px;
     background-image: url("http://placehold.it/150x100");
   }
 
-  &__button {
+  .contact__button {
     @include button;
     margin: 30px auto;
   }
