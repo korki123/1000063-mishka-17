@@ -28,3 +28,13 @@
 
   cursor: pointer;
 }
+
+@mixin center-mobile {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin center-tablet {
+  width: 768px;
+  margin: 0 auto;
+}

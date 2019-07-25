@@ -1,15 +1,22 @@
 
 .site-menu {
+  position: relative;
 
   display: flex;
   width: 320px;
   margin: 0 auto;
+  padding-top: 20px;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid ececec;
 
   .site-menu__logo {
+    width: 86px;
+    height: 35px;
     margin: 0 auto;
     padding: 20px 0;
+
+    background-image: url("../img/mishka-logo-mobile.svg");
+    background-repeat: no-repeat;
   }
 
   .site-menu__toggle {
@@ -23,5 +30,36 @@
     border: 0;
     background-color: #ffffff;
     background-image: url("../img/hamburger.svg");
+  }
+}
+
+// =============================== планшет ================================
+
+@media (min-width: $tablet-width) {
+  .site-menu {
+    margin: 0;
+    padding-left: 50px;
+    width: auto;
+    border-top: none;
+    border-bottom: 1px solid ececec;
+
+    .site-menu__logo {
+      position: absolute;
+      top: 20px;
+      left: 50px;
+      width: 112px;
+      height: 46px;
+      margin: 0;
+      padding: 0;
+
+      background-image: url("../img/logo-tablet.svg");
+      background-repeat: no-repeat;
+
+      // cursor: pointer;
+    }
+
+    .site-menu__toggle {
+      display: none;
+    }
   }
 }

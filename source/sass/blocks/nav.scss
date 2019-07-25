@@ -14,8 +14,6 @@
   }
 
   .nav__item {
-    position: relative;
-
     padding-left: 0;
     padding-right: 0;
     padding-top: 33px;
@@ -25,9 +23,14 @@
     list-style: none;
 
     border-bottom: 1px solid #ececec;
+
+    &--thin {
+      display: none;
+    }
   }
 
   .nav__link {
+    position: relative;
     color: rgba(0, 0, 0, 1);
 
     &--icon-search {
@@ -35,8 +38,8 @@
         content: "";
 
         position: absolute;
-        top: 32px;
-        left: 32px;
+        top: 0;
+        left: -45px;
 
         width: 18px;
         height: 18px;
@@ -52,8 +55,8 @@
         content: "";
 
         position: absolute;
-        top: 32px;
-        left: 32px;
+        top: 0;
+        left: -44px;
 
         width: 21px;
         height: 18px;
@@ -61,6 +64,81 @@
         opacity: 0.2;
 
         background-image: url("../img/icon-cart.svg");
+      }
+    }
+  }
+}
+
+// =============================== планшет ================================
+
+@media (min-width: $tablet-width) {
+  .nav {
+    width: 768px;
+    margin: 0;
+
+    .nav__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav__item {
+      position: relative;
+
+      width: 167px;
+
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      font-size: 15px;
+      line-height: 24px;
+      text-align: left;
+      list-style: none;
+
+      border-bottom: none;
+
+      &--thin {
+        display: block;
+
+        width: 265px;
+        padding-right: 50px;
+        margin-left: auto;
+
+        font-weight: normal;
+        text-align: right;
+      }
+
+      &:nth-child(3) {
+        order: -1;
+
+        width: 82px;
+        margin-left: 320px;
+
+        font-size: 0;
+
+        border-left: 1px solid #ececec;
+        border-right: 1px solid #ececec;
+
+        ::before {
+          top: -10px;
+          left: 30px;
+        }
+      }
+
+      &:nth-child(4) {
+        order: -1;
+
+        width: 265px;
+        padding-right: 49px;
+        margin-left: auto;
+
+        font-size: 17px;
+        text-align: right;
       }
     }
   }

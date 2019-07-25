@@ -9,90 +9,90 @@
   <body>
 
     <header class="page-header">
+      <div class="site-menu">
+        <a class="site-menu__logo" href="#">
+          <img class="site-menu__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина">
+        </a>
+        <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
+      </div>
       <!-- ========================================= выпадающее меню навигация ========================================= -->
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#">Каталог товаров</a>
+            <a class="nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Вязание на заказ</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Поиск по сайту</a>
+            <a class="nav__link nav__link--icon-search" href="#">Поиск по сайту</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Корзина: пока пуста</a>
+            <a class="nav__link nav__link--icon-cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
       <!-- ========================================= выпадающее меню финиш ========================================= -->
-
-      <div class="site-menu">
-        <a class="site-menu__logo" href="index.html">
-          <img class="site-menu__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина">
-        </a>
-        <button class="site-menu__toggle" type="button" name="button"></button>
-      </div>
     </header>
 
-    <main class="catalog-page">
-      <section class="catalog">
-        <h2 class="catalog__head">Каталог товаров</h2>
+      <main class="catalog-page">
+        <section class="catalog">
+          <h2 class="catalog__head">Каталог товаров</h2>
 
-        <div class="catalog__wrapper">
-          <article class="catalog__card">
-            <img class="catalog__photo" src="img/photo-hare-mobile@1x.jpg" width="260" height="196" alt="Фото зайца">
-            <h3 class="catalog__header">Зайчик-попрыгайчик</h3>
-            <p class="catalog__description">Рост 30 см, вес 200 г</p>
-            <a class="catalog__link catalog__link--hare" href="#">
-              <p class="catalog__price catalog__price--icon-cart">1 200 руб.</p>
-            </a>
+          <article class="catalog__card card">
+            <img class="card__photo card__photo--rubbit" src="" alt="Фото зайца">
+            <h3 class="card__header">Зайчик-попрыгайчик</h3>
+            <p class="card__description">Рост 30 см, вес 200 г</p>
+            <p class="card__price">1 200 руб.
+              <a class="card__icon-cart" href="#"><img src="" alt="">
+              </a>
+            </p>
           </article>
 
-          <article class="catalog__card">
-            <img class="catalog__photo" src="img/photo-bowl-mobile@1x.jpg"  width="260" height="196" alt="корзинки">
-            <h3 class="catalog__header">Корзинка для белья</h3>
-            <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-
-            <a class="catalog__link catalog__link--bowl" href="#">
-              <p class="catalog__price catalog__price--icon-cart">690 руб.</p>
-            </a>
+          <article class="catalog__card card">
+            <img class="card__photo card__photo--cart" src="" alt="корзинки">
+            <h3 class="card__header">Корзинка для белья</h3>
+            <p class="card__description">Диаметр 15 см, высота 10 см</p>
+            <p class="card__price card__price--icon-cart">690 руб.
+              <a class="card__icon-cart" href="#"><img src="" alt="">
+              </a>
+            </p>
           </article>
 
-          <article class="catalog__card">
-            <img class="catalog__photo" src="img/photo-toys-mobile@1x.jpg"  width="260" height="196" alt="Большая корзинка">
-            <h3 class="catalog__header">Большая корзинка для игрушек</h3>
-            <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-            <a class="catalog__link catalog__link--toys" href="#">
-              <p class="catalog__price catalog__price--icon-cart">1 500 руб.</p>
-            </a>
+          <article class="catalog__card card">
+            <img class="card__photo card__photo--big-cart" src="" alt="Большая корзинка">
+            <h3 class="card__header">Большая корзинка для игрушек</h3>
+            <p class="card__description">Диаметр 30 см, высота 30 см</p>
+            <p class="card__price card__price--icon-cart">1 500 руб.
+              <a class="card__icon-cart" href="#"><img src="" alt="">
+              </a>
+            </p>
           </article>
 
-          <section class="catalog__card">
-            <h3 class="catalog__header catalog__header--manufacture">Процесс производства</h3>
-            <iframe class="catalog__video" src="img/video-mobile@1x.jpg"  width="260" height="150" ></iframe>
-            <p class="catalog__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
+          <section class="catalog__card manufacture">
+            <h3 class="manufacture__head manufacture__head--icon-video">Процесс производства</h3>
+            <iframe class="manufacture__video" src="" width="" height=""></iframe>
+            <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           </section>
-        </div>
-      </section>
-    </main>
+
+          <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
+        </section>
+      </main>
 
       <footer class="footer">
-        <div class="footer__wrapper">
-          <section class="footer__social">
-            <a class="footer__social-inst">
-            </a>
-            <a class="footer__social-fb">
-            </a>
-            <a class="footer__social-twit">
-            </a>
-          </section>
-          <section class="footer__maker">
-            <a class="footer__maker-link"><p class="footer__maker-text footer__maker-text--icon-academy">Разработано</p></a>
-          </section>
-        </div>
+        <section class="social">
+          <a class="social__icon"><img src="" alt="Инстаграмм">
+          </a>
+          <a class="social__icon"><img src="" alt="Фейсбук">
+          </a>
+          <a class="social__icon"><img src="" alt="Твиттер">
+          </a>
+        </section>
+        <section class="maker">
+          <p class="maker__text">Разработано</p>
+          <a class="maker__link"> <img src="" alt="логотип академии">
+          </a>
+        </section>
       </footer>
 
       <!-- ========================================= модальное окно ========================================= -->
