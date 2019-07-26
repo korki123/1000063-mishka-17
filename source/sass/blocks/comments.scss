@@ -3,38 +3,138 @@
   margin: 0 auto;
   padding-bottom: 30px;
 
-  font-family: "opensansbold", "Arial", sans-serif;
+  font-family: "opensns", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.comments__head {
+  @include head3;
+  padding: 30px;
+}
+
+.comments__slider-list {
+  width: 260px;
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+
+  color: #444444;
+}
+
+.comments__slider-item {
+  margin: 0;
+}
+
+.comments__sign {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.comments__mail {
+  margin: 0;
+  font-size: 17px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+.comments__arrows {
+  font-size: 0;
+  padding: 0 30px 30px;
+}
+
+.comments__arrows-next {
+  padding: 0;
+
+  box-sizing: border-box;
+  width: 130px;
+  height: 50px;
+  background-image: url("../img/huge-arrow-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 1px solid #ececec;
+
+  cursor: pointer;
+
+  &--back {
+    transform: rotate(180deg);
+  }
+}
+
+.comments__button {
+  @include button;
+}
+
+// =============================== планшет ================================
+
+@media (min-width: $tablet-width) {
+  .comments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 668px;
+    padding: 0 50px 70px 50px;
+
+
+    background-image: url("../img/review.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
 
   .comments__head {
-    @include head3;
-    padding: 30px;
+    padding: 0;
+    padding-top: 80px;
+    padding-bottom: 65px;
+    font-size: 43px;
+    line-height: 50px;
+
+    order: 1;
+  }
+
+  .comments__slider-list {
+    width: 668px;
+    margin: 0;
+
+    order: 3;
+  }
+
+  .comments__slider-item {
+    width: 668px;
+  }
+
+  .comments__sign-wrapper {
+    order: 4;
+  }
+
+  .comments__sign {
+    padding-top: 50px;
   }
 
   .comments__arrows {
-    font-size: 0;
-    padding: 0 30px 30px;
+    margin-top: 60px;
+    padding: 0;
+    order: 5;
   }
 
   .comments__arrows-next {
     padding: 0;
 
     box-sizing: border-box;
-    width: 130px;
+    width: 80px;
     height: 50px;
-    background-image: url("../img/huge-arrow-right.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    border: 1px solid #ececec;
-
-    cursor: pointer;
-
-    &--back {
-      transform: rotate(180deg);
-    }
+    border: 0;
   }
 
   .comments__button {
-    @include button;
+    width: 170px;
+    margin: 83px 0 64px 0;
+    order: 2;
   }
 }

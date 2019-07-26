@@ -8,29 +8,29 @@
   padding-top: 20px;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid ececec;
+}
 
-  .site-menu__logo {
-    width: 86px;
-    height: 35px;
-    margin: 0 auto;
-    padding: 20px 0;
+.site-menu__logo {
+  width: 86px;
+  height: 35px;
+  margin: 0 auto;
+  padding: 20px 0;
 
-    background-image: url("../img/mishka-logo-mobile.svg");
-    background-repeat: no-repeat;
-  }
+  background-image: url("../img/mishka-logo-mobile.svg");
+  background-repeat: no-repeat;
+}
 
-  .site-menu__toggle {
-    position: relative;
-    top: 32px;
-    right: 32px;
+.site-menu__toggle {
+  position: relative;
+  top: 32px;
+  right: 32px;
 
-    width: 19px;
-    height: 14px;
+  width: 19px;
+  height: 14px;
 
-    border: 0;
-    background-color: #ffffff;
-    background-image: url("../img/hamburger.svg");
-  }
+  border: 0;
+  background-color: #ffffff;
+  background-image: url("../img/hamburger.svg");
 }
 
 // =============================== планшет ================================
@@ -42,24 +42,24 @@
     width: auto;
     border-top: none;
     border-bottom: 1px solid ececec;
+  }
 
-    .site-menu__logo {
-      position: absolute;
-      top: 20px;
-      left: 50px;
-      width: 112px;
-      height: 46px;
-      margin: 0;
-      padding: 0;
+  .site-menu__logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 112px;
+    height: 46px;
+    margin: 0;
+    padding: 0;
 
-      background-image: url("../img/logo-tablet.svg");
-      background-repeat: no-repeat;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
 
-      // cursor: pointer;
-    }
+    // cursor: pointer;
+  }
 
-    .site-menu__toggle {
-      display: none;
-    }
+  .site-menu__toggle {
+    display: none;
   }
 }
