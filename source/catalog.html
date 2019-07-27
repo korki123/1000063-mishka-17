@@ -7,11 +7,11 @@
   </head>
 
   <body>
-
     <header class="page-header">
       <div class="site-menu">
-        <a class="site-menu__logo" href="#">
-          <img class="site-menu__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина">
+        <a class="site-menu__logo" href="index.html">
+          <!-- <div class="site-menu__logo-image">
+          </div> -->
         </a>
         <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
       </div>
@@ -30,69 +30,80 @@
           <li class="nav__item">
             <a class="nav__link nav__link--icon-cart" href="#">Корзина: пока пуста</a>
           </li>
+          <li class="nav__item nav__item--thin">
+            Бесплатная доставка по России
+          </li>
         </ul>
       </nav>
       <!-- ========================================= выпадающее меню финиш ========================================= -->
     </header>
 
       <main class="catalog-page">
+        <h2 class="catalog__head">Каталог товаров</h2>
         <section class="catalog">
-          <h2 class="catalog__head">Каталог товаров</h2>
-
-          <article class="catalog__card card">
-            <img class="card__photo card__photo--rubbit" src="" alt="Фото зайца">
-            <h3 class="card__header">Зайчик-попрыгайчик</h3>
-            <p class="card__description">Рост 30 см, вес 200 г</p>
-            <p class="card__price">1 200 руб.
-              <a class="card__icon-cart" href="#"><img src="" alt="">
+          <article class="catalog__card">
+            <div class="catalog__photo catalog__photo--hare">
+            </div>
+            <div class="catalog__wrapper">
+              <h3 class="catalog__header">Зайчик-попрыгайчик</h3>
+              <p class="catalog__description">Рост 30 см, вес 200 г</p>
+              <a class="catalog__price" href="">
+                <p class="catalog__icon" href="#">1 200 руб.
+                </p>
               </a>
-            </p>
+            </div>
           </article>
 
-          <article class="catalog__card card">
-            <img class="card__photo card__photo--cart" src="" alt="корзинки">
-            <h3 class="card__header">Корзинка для белья</h3>
-            <p class="card__description">Диаметр 15 см, высота 10 см</p>
-            <p class="card__price card__price--icon-cart">690 руб.
-              <a class="card__icon-cart" href="#"><img src="" alt="">
+          <article class="catalog__card">
+            <div class="catalog__photo catalog__photo--bowl">
+            </div>
+            <div class="catalog__wrapper">
+              <h3 class="catalog__header">Корзинка для белья</h3>
+              <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+              <a class="catalog__price" href="">
+                <p class="catalog__icon" href="#">690 руб.
+                </p>
               </a>
-            </p>
+            </div>
           </article>
 
-          <article class="catalog__card card">
-            <img class="card__photo card__photo--big-cart" src="" alt="Большая корзинка">
-            <h3 class="card__header">Большая корзинка для игрушек</h3>
-            <p class="card__description">Диаметр 30 см, высота 30 см</p>
-            <p class="card__price card__price--icon-cart">1 500 руб.
-              <a class="card__icon-cart" href="#"><img src="" alt="">
+          <article class="catalog__card">
+            <div class="catalog__photo catalog__photo--toys">
+            </div>
+            <div class="catalog__wrapper">
+              <h3 class="catalog__header">Большая корзинка для игрушек</h3>
+              <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+              <a class="catalog__price" href="">
+                <p class="catalog__icon" href="#">1 500 руб.
+                </p>
               </a>
-            </p>
+            </div>
           </article>
 
-          <section class="catalog__card manufacture">
-            <h3 class="manufacture__head manufacture__head--icon-video">Процесс производства</h3>
-            <iframe class="manufacture__video" src="" width="" height=""></iframe>
-            <p class="manufacture__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <section class="catalog__manufacture">
+            <h3 class="catalog__manufacture-head catalog__manufacture-head--icon-video">Процесс производства</h3>
+            <iframe class="catalog__manufacture-video" src="" width="" height=""></iframe>
+            <p class="catalog__manufacture-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
           </section>
-
-          <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
         </section>
       </main>
 
       <footer class="footer">
-        <section class="social">
-          <a class="social__icon"><img src="" alt="Инстаграмм">
-          </a>
-          <a class="social__icon"><img src="" alt="Фейсбук">
-          </a>
-          <a class="social__icon"><img src="" alt="Твиттер">
-          </a>
-        </section>
-        <section class="maker">
-          <p class="maker__text">Разработано</p>
-          <a class="maker__link"> <img src="" alt="логотип академии">
-          </a>
-        </section>
+        <div class="footer__wrapper">
+          <a class="footer__logo-miska" href="#"></a>
+          <section class="footer__social">
+            <a class="footer__social-inst">
+            </a>
+            <a class="footer__social-fb">
+            </a>
+            <a class="footer__social-twit">
+            </a>
+          </section>
+          <section class="footer__maker">
+            <a class="footer__maker-link"><p class="footer__maker-text footer__maker-text--icon-academy">Разработано</p></a>
+          </section>
+        </div>
       </footer>
 
       <!-- ========================================= модальное окно ========================================= -->

@@ -6,7 +6,7 @@
   margin: 0;
   padding-bottom: 38px;
 
-  font-family: "opensansbold", "Arial", sans-serif;
+  font-family: "Open sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -27,7 +27,7 @@
 
 
 .contact__item {
-  font-family: "opensans", "Arial", sans-serif;
+  font-family: "Open sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 30px;
   margin-right: 30px;
@@ -37,6 +37,7 @@
     border-bottom: 1px solid #62d1ba;
   }
 }
+
 
 .contact__map-yandex {
   height: 456px;
@@ -94,7 +95,7 @@
   }
 
   .contact__map-yandex {
-    height: 456px;
+    height: 768px;
     border: none;
   }
 }

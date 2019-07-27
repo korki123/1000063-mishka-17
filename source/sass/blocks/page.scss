@@ -1,14 +1,14 @@
 .page {
   margin: 0 auto;
+}
 
-  .page__break-zigzag {
-    width: 100%;
-    height: 6px;
+.page__break-zigzag {
+  width: 100%;
+  height: 6px;
 
-    background-image: url("../img/zigzag.svg");
-    background-repeat: repeat-x;
-    background-size: auto;
-  }
+  background-image: url("../img/zigzag.svg");
+  background-repeat: repeat-x;
+  background-size: auto;
 }
 
 // =============================== планшет ================================
@@ -17,14 +17,14 @@
   .page {
     margin: 0 auto;
     margin-top: -84px;
+  }
 
-    .page__break-zigzag {
-      width: 100%;
-      height: 6px;
+  .page__break-zigzag {
+    width: 100%;
+    height: 6px;
 
-      background-image: url("../img/zigzag.svg");
-      background-repeat: repeat-x;
-      background-size: auto;
-    }
+    background-image: url("../img/zigzag.svg");
+    background-repeat: repeat-x;
+    background-size: auto;
   }
 }
