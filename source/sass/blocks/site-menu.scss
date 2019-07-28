@@ -14,7 +14,7 @@
   width: 86px;
   height: 35px;
   margin: 0 auto;
-  padding: 20px 0;
+  // padding: 20px 0;
 
   background-image: url("../img/mishka-logo-mobile.svg");
   background-repeat: no-repeat;
@@ -36,12 +36,16 @@
 // =============================== планшет ================================
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+  }
+
   .site-menu {
     margin: 0;
     padding-left: 50px;
     width: auto;
     border-top: none;
-    border-bottom: 1px solid ececec;
+    border-bottom: 1px solid #ececec;
   }
 
   .site-menu__logo {
@@ -61,5 +65,40 @@
 
   .site-menu__toggle {
     display: none;
+  }
+}
+
+// =============================== десктоп ================================
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+  }
+
+  .site-menu {
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 1050px;
+    margin: 0 auto;
+    margin-left: -525px;
+
+    border-bottom: none;
+  }
+
+  .site-menu__logo {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    width: 149px;
+    height: 72px;
+    margin: 0;
+    margin-left: -75px;
+
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
   }
 }

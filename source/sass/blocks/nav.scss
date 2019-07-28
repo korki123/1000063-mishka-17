@@ -23,7 +23,13 @@
   text-align: center;
   list-style: none;
 
+  border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
+
+  &--desktop-one,
+  &--desktop-two {
+    display: none;
+  }
 
   &--thin {
     display: none;
@@ -136,6 +142,107 @@
 
       width: 265px;
       padding-right: 49px;
+      margin-left: auto;
+
+      font-size: 17px;
+      text-align: right;
+    }
+  }
+}
+
+// =============================== десктоп ================================
+
+@media (min-width: $desktop-width) {
+  .nav {
+    @include center-desktop;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .nav__item {
+    position: relative;
+
+    width: 167px;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
+    list-style: none;
+
+    border-bottom: none;
+
+    &--one {
+      width: 185px;
+      border-right: 1px solid #ececec;
+      font-size: 17px;
+    }
+
+    &--two {
+      width: 215px;
+      padding-left: 35px;
+      font-size: 17px;
+    }
+
+    &--thin {
+      display: block;
+
+      width: 265px;
+      padding-right: 0;
+      margin-left: auto;
+
+      font-weight: normal;
+      text-align: right;
+    }
+
+    &--desktop-one {
+      display: block;
+
+      width: 185px;
+    }
+
+    &--desktop-two {
+      width: 215px;
+      padding-left: 35px;
+    }
+
+    &--cart {
+      width: 270px;
+    }
+
+    &:nth-child(3) {
+      order: 0;
+
+      width: 82px;
+      margin-left: 265px;
+
+      font-size: 0;
+
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+
+      ::before {
+        top: -10px;
+        left: 30px;
+      }
+    }
+
+    &:nth-child(4) {
+      order: 0;
+
+      width: 265px;
+      padding-right: 0;
       margin-left: auto;
 
       font-size: 17px;

@@ -38,3 +38,8 @@
   width: 768px;
   margin: 0 auto;
 }
+
+@mixin center-desktop {
+  width: 1150px;
+  margin: 0 auto;
+}
