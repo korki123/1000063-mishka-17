@@ -46,45 +46,6 @@
   height: 195px;
 
   background-color: #f1f1f1;
-
-  &--hare::before {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 260px;
-    height: 195px;
-
-    background-image: url("../img/photo-hare-mobile@1x.jpg");
-  }
-
-  &--bowl::before {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 260px;
-    height: 195px;
-
-    background-image: url("../img/photo-bowl-mobile@1x.jpg");
-  }
-
-  &--toys::before {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 260px;
-    height: 195px;
-
-    background-image: url("../img/photo-toys-mobile@1x.jpg");
-  }
 }
 
 .catalog__description {
@@ -112,24 +73,25 @@
   color: #000000;
 
   border-top: 1px solid #ececec;
+}
 
 
-  &::after {
-    content: "";
+.catalog__price::after {
+  content: "";
 
-    position: absolute;
-    top: 30px;
-    right: 0;
+  position: absolute;
+  top: 30px;
+  right: 0;
 
-    width: 20px;
-    height: 19px;
+  width: 20px;
+  height: 19px;
 
-    background-image: url("../img/icon-cart.svg");
-    opacity: 0.2;
-  }
+  background-image: url("../img/icon-cart.svg");
+  opacity: 0.2;
 }
 
 .catalog__manufacture {
+  position: relative;
   width: 258px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -161,16 +123,20 @@
 }
 
 .catalog__manufacture-video {
+  position: absolute;
+  top: 120px;
+  left: 0;
+
   width: 258px;
   height: 150px;
 
   border: none;
   background-color: #f1f1f1;
-  background-image: url("../img/video-mobile@1x.jpg");
 }
 
 .catalog__manufacture-text {
   margin: 0 30px;
+  padding-top: 150px;
   padding-bottom: 30px;
 
   font-size: 13px;
@@ -246,58 +212,15 @@
 
     width: 334px;
     height: 334px;
-
-    background-color: #f1f1f1;
-
-    &--hare::before {
-      content: "";
-
-      position: absolute;
-      left: 0;
-      top: 0;
-
-      width: 334px;
-      height: 334px;
-
-      background-image: url("../img/photo-hare-tablet@1x.jpg");
-    }
-
-    &--bowl::before {
-      content: "";
-
-      position: absolute;
-      left: 0;
-      top: 0;
-
-      width: 334px;
-      height: 334px;
-
-      background-image: url("../img/photo-bowl-tablet@1x.jpg");
-    }
-
-    &--toys::before {
-      content: "";
-
-      position: absolute;
-      left: 0;
-      top: 0;
-
-      width: 334px;
-      height: 334px;
-
-      background-image: url("../img/photo-toys-tablet@1x.jpg");
-    }
   }
 
   .catalog__description {
     font-size: 15px;
   }
 
-  .catalog__price {
-    margin-top: auto;
-  }
-
   .catalog__icon {
+    margin-top: auto;
+
     font-size: 17px;
 
     border-top: 1px solid #ececec;
@@ -318,14 +241,19 @@
   }
 
   .catalog__manufacture-video {
+    position: relative;
     width: 668px;
     height: 455px;
-    order: -1;
+  }
 
-    background-image: url("../img/video-tablet@1x.jpg");
+  .catalog__wrapper-manufacture {
+    display: flex;
+    flex-direction: column;
   }
 
   .catalog__manufacture-text {
+    padding-top: 0;
+
     border-bottom: none;
   }
 
@@ -333,5 +261,55 @@
 
     width: 584px;
     margin-bottom: 30px;
+  }
+}
+
+// =================================== десктоп ===================================
+
+@media (min-width: $desktop-width) {
+  .catalog-page {
+    @include center-desktop;
+  }
+
+  .catalog {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .catalog__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 316px;
+  }
+
+  .catalog__photo {
+    position: relative;
+
+    width: 316px;
+    height: 462px;
+  }
+
+  .catalog__manufacture {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 1050px;
+  }
+
+  .catalog__manufacture-head {
+  }
+
+  .catalog__manufacture-video {
+    width: 682px;
+    height: 455px;
+    flex-shrink: 0;
   }
 }
