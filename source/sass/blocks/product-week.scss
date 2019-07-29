@@ -190,16 +190,60 @@
 // =============================== десктоп ================================
 
 @media (min-width: $desktop-width) {
-  .product-week: {
+  .product-week {
     @include center-desktop;
+
+    padding-top: 133px;
+    padding-bottom: 70px;
   }
 
-  product-week__wrapper: {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  .product-week__wrapper {
+    position: relative;
     padding: 30px 50px 0 50px;
+
+    margin-left: 175px;
   }
 
+  .product-week__head {
+    width: 600px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    padding-bottom: 30px;
+
+    z-index: 5;
+  }
+
+  .product-week__acsent {
+    position: absolute;
+
+    top: 45px;
+    left: -85px;
+  }
+
+  .product-week__table {
+    padding-bottom: 30px;
+  }
+
+  .product-week__photo-tablet {
+    display: none;
+  }
+
+  .product-week__photo-desktop {
+    display: block;
+    position: absolute;
+    right: -210px;
+    bottom: 0;
+
+    width: 525px;
+    height: 636px;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .page__break-zigzag {
+    height: 20px;
+  }
 }

@@ -142,3 +142,49 @@
     order: 2;
   }
 }
+
+// =============================== десктоп ================================
+
+@media (min-width: $desktop-width) {
+  .comments {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 65px;
+  }
+
+  .comments__head {
+    padding: 0;
+    padding-top: 70px;
+    padding-left: 175px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .comments__slider-list {
+    width: 1050px;
+  }
+
+  .comments__slider-item {
+    width: 1050px;
+  }
+
+  .comments__slider-text {
+    width: 795px;
+    padding-left: 175px;
+  }
+
+  .comments__sign-wrapper {
+    margin-left: 175px;
+
+    order: 3;
+  }
+
+  .comments__arrows {
+    margin: 0;
+    padding-top: 50px;
+
+    order: 5;
+  }
+}

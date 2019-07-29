@@ -170,3 +170,32 @@
     }
   }
 }
+
+// =============================== десктоп ================================
+
+@media (min-width: $desktop-width) {
+  .about {
+    width: 700px;
+    margin: 0 auto;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .about__head {
+    padding-bottom: 50px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__item {
+    flex-basis: 350px;
+
+    padding-right: 50px;
+    padding-bottom: 60px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

@@ -99,3 +99,88 @@
     border: none;
   }
 }
+
+// =============================== десктоп ================================
+
+@media (min-width: $desktop-width) {
+  .contact {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 1150px;
+    margin: 0 auto;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .contact__block {
+    width: 350px;
+    margin-left: 50px;
+  }
+
+  .contact__head {
+    padding-left: 175px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    &--flag::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 50px;
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../img/flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contact__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+    margin: 0;
+    margin-left: 175px;
+  }
+
+  .contact__list {
+    display: flex;
+    justify-content: flex-start;
+
+    flex-basis: 40px;
+  }
+
+  .contact__item {
+    margin-right: 25px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contact__map {
+    margin-left: 50px;
+  }
+
+  .contact__map-yandex {
+    width: 525px;
+    height: 457px;
+    border: none;
+  }
+
+  .contact__button {
+    position: absolute;
+    left: 0;
+    bottom: -29px;
+
+    margin-left: 225px;
+  }
+}
