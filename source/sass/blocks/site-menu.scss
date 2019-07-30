@@ -1,27 +1,104 @@
 
 .site-menu {
+  position: relative;
 
   display: flex;
   width: 320px;
   margin: 0 auto;
+  padding-top: 20px;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid ececec;
+}
+
+.site-menu__logo {
+  width: 86px;
+  height: 35px;
+  margin: 0 auto;
+  // padding: 20px 0;
+
+  background-image: url("../img/mishka-logo-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.site-menu__toggle {
+  position: relative;
+  top: 10px;
+  right: 32px;
+
+  width: 19px;
+  height: 14px;
+
+  border: 0;
+  background-color: #ffffff;
+  background-image: url("../img/hamburger.svg");
+}
+
+// =============================== планшет ================================
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+  }
+
+  .site-menu {
+    margin: 0;
+    padding-left: 50px;
+    width: auto;
+    border-top: none;
+    border-bottom: 1px solid #ececec;
+  }
 
   .site-menu__logo {
-    margin: 0 auto;
-    padding: 20px 0;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 112px;
+    height: 46px;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+
+    // cursor: pointer;
   }
 
   .site-menu__toggle {
+    display: none;
+  }
+}
+
+// =============================== десктоп ================================
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
     position: relative;
-    top: 32px;
-    right: 32px;
+  }
 
-    width: 19px;
-    height: 14px;
+  .site-menu {
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 50%;
 
-    border: 0;
-    background-color: #ffffff;
-    background-image: url("../img/hamburger.svg");
+    width: 1050px;
+    margin: 0 auto;
+    margin-left: -525px;
+
+    border-bottom: none;
+  }
+
+  .site-menu__logo {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    width: 149px;
+    height: 72px;
+    margin: 0;
+    margin-left: -75px;
+
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
   }
 }

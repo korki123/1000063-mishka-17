@@ -4,64 +4,251 @@
   width: 320px;
   margin: 0 auto;
 
-  font-family: "opensansbold", "Arial", sans-serif;
-  font-size: 17px;
+  font-family: "Open sans", "Arial", sans-serif;
   font-weight: bold;
+  font-size: 17px;
   line-height: 24px;
+}
+
+.nav__list {
+  padding: 0;
+}
+
+.nav__item {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 33px;
+  padding-bottom: 30px;
+
+  text-align: center;
+  list-style: none;
+
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+
+  &--desktop-one,
+  &--desktop-two {
+    display: none;
+  }
+
+  &--thin {
+    display: none;
+  }
+}
+
+.nav__link {
+  position: relative;
+  color: rgba(0, 0, 0, 1);
+
+  &--icon-search {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: -45px;
+
+      width: 18px;
+      height: 18px;
+
+      opacity: 0.2;
+
+      background-image: url("../img/icon-search.svg");
+    }
+  }
+
+  &--icon-cart {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: -44px;
+
+      width: 21px;
+      height: 18px;
+
+      opacity: 0.2;
+
+      background-image: url("../img/icon-cart.svg");
+    }
+  }
+}
+
+// =============================== планшет ================================
+
+@media (min-width: $tablet-width) {
+  .nav {
+    width: 768px;
+    margin: 0;
+  }
 
   .nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     padding: 0;
+    margin: 0;
   }
 
   .nav__item {
     position: relative;
 
+    width: 167px;
+
     padding-left: 0;
     padding-right: 0;
-    padding-top: 33px;
+    padding-top: 30px;
     padding-bottom: 30px;
 
-    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
     list-style: none;
 
-    border-bottom: 1px solid #ececec;
-  }
+    border-bottom: none;
 
-  .nav__link {
-    color: rgba(0, 0, 0, 1);
+    &--thin {
+      display: block;
 
-    &--icon-search {
-      &::before {
-        content: "";
+      width: 265px;
+      padding-right: 50px;
+      margin-left: auto;
 
-        position: absolute;
-        top: 32px;
-        left: 32px;
+      font-weight: normal;
+      text-align: right;
+    }
 
-        width: 18px;
-        height: 18px;
+    &:nth-child(3) {
+      order: -1;
 
-        opacity: 0.2;
+      width: 82px;
+      margin-left: 320px;
 
-        background-image: url("../img/icon-search.svg");
+      font-size: 0;
+
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+
+      ::before {
+        top: -10px;
+        left: 30px;
       }
     }
 
-    &--icon-cart {
-      &::before {
-        content: "";
+    &:nth-child(4) {
+      order: -1;
 
-        position: absolute;
-        top: 32px;
-        left: 32px;
+      width: 265px;
+      padding-right: 49px;
+      margin-left: auto;
 
-        width: 21px;
-        height: 18px;
+      font-size: 17px;
+      text-align: right;
+    }
+  }
+}
 
-        opacity: 0.2;
+// =============================== десктоп ================================
 
-        background-image: url("../img/icon-cart.svg");
+@media (min-width: $desktop-width) {
+  .nav {
+    @include center-desktop;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .nav__item {
+    position: relative;
+
+    width: 167px;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
+    list-style: none;
+
+    border-bottom: none;
+
+    &--one {
+      width: 185px;
+      border-right: 1px solid #ececec;
+      font-size: 17px;
+    }
+
+    &--two {
+      width: 215px;
+      padding-left: 35px;
+      font-size: 17px;
+    }
+
+    &--thin {
+      display: block;
+
+      width: 265px;
+      padding-right: 0;
+      margin-left: auto;
+
+      font-weight: normal;
+      text-align: right;
+    }
+
+    &--desktop-one {
+      display: block;
+
+      width: 185px;
+    }
+
+    &--desktop-two {
+      display: block;
+
+      width: 215px;
+      padding-left: 35px;
+    }
+
+    &--cart {
+      width: 270px;
+    }
+
+    &:nth-child(3) {
+      order: 0;
+
+      width: 82px;
+      margin-left: 265px;
+
+      font-size: 0;
+
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+
+      ::before {
+        top: -10px;
+        left: 30px;
       }
+    }
+
+    &:nth-child(4) {
+      order: 0;
+
+      width: 265px;
+      padding-right: 0;
+      margin-left: auto;
+
+      font-size: 17px;
+      text-align: right;
     }
   }
 }

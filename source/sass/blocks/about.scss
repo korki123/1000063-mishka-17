@@ -1,116 +1,201 @@
 .about {
-  width: 320px;
-  margin: 0 auto;
+  @include center-mobile;
 
-  font-family: "opensansbold", "Arial", sans-serif;
+  font-family: "Open sans", "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.about__head {
+  @include head3;
+
+  padding: 30px;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 0;
+  padding: 0 30px;
+}
+
+.about__item {
+  position: relative;
+
+  padding-top: 53px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+
+  list-style: none;
+
+  &--ecology {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 32px;
+      height: 37px;
+      background-image: url("../img/icon-feature-flower.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--style {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-money.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--like {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 34px;
+      height: 27px;
+      background-image: url("../img/icon-feature-heart.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--ball {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 35px;
+      height: 34px;
+      background-image: url("../img/icon-feature-ball.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--support {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 55px;
+      height: 23px;
+      background-repeat: no-repeat;
+      background-image: url("../img/icon-feature-rocket.svg");
+    }
+  }
+
+  &--gift {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 35px;
+      height: 34px;
+      background-image: url("../img/icon-feature-gift.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+// =============================== планшет ================================
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: 668px;
+    margin: 0 auto;
+  }
 
   .about__head {
-    @include head3;
-
-    padding: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 50px;
   }
 
   .about__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: baseline;
-    margin: 0;
-    padding: 0 30px;
+
+    padding: 0;
   }
 
   .about__item {
-    position: relative;
 
+    flex-basis: 334px;
     padding-top: 53px;
-    padding-right: 50px;
     padding-bottom: 30px;
+    padding-right: 100px;
 
-    font-weight: bold;
-    list-style: none;
+    box-sizing: border-box;
 
     &--ecology {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 32px;
-        height: 37px;
-        background-image: url("../img/icon-feature-flower.svg");
-        background-repeat: no-repeat;
-      }
+      order: 1;
     }
 
     &--style {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 47px;
-        height: 27px;
-        background-image: url("../img/icon-feature-money.svg");
-        background-repeat: no-repeat;
-      }
+      order: 3;
     }
 
     &--like {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 34px;
-        height: 27px;
-        background-image: url("../img/icon-feature-heart.svg");
-        background-repeat: no-repeat;
-      }
+      order: 5;
     }
 
     &--ball {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 35px;
-        height: 34px;
-        background-image: url("../img/icon-feature-ball.svg");
-        background-repeat: no-repeat;
-      }
+      order: 2;
     }
 
     &--support {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 55px;
-        height: 23px;
-        background-repeat: no-repeat;
-        background-image: url("../img/icon-feature-rocket.svg");
-      }
+      order: 4;
     }
 
     &--gift {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 35px;
-        height: 34px;
-        background-image: url("../img/icon-feature-gift.svg");
-        background-repeat: no-repeat;
-      }
+      order: 6;
     }
+  }
+}
+
+// =============================== десктоп ================================
+
+@media (min-width: $desktop-width) {
+  .about {
+    width: 700px;
+    margin: 0 auto;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .about__head {
+    padding-bottom: 50px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about__item {
+    flex-basis: 350px;
+
+    padding-right: 50px;
+    padding-bottom: 60px;
+
+    font-size: 20px;
+    line-height: 22px;
   }
 }
