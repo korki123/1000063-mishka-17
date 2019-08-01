@@ -123,10 +123,7 @@
 }
 
 .catalog__manufacture-video {
-  position: absolute;
-  top: 120px;
-  left: 0;
-
+  display: block;
   width: 258px;
   height: 150px;
 
@@ -297,19 +294,24 @@
   }
 
   .catalog__manufacture {
-    display: inline-flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 
     width: 1050px;
   }
 
-  .catalog__manufacture-head {
+  .catalog__wrapper-manufacture {
+    width: 290px;
   }
 
   .catalog__manufacture-video {
     width: 682px;
     height: 455px;
-    flex-shrink: 0;
+  }
+
+  .catalog__button {
+
+    width: 230px;
+    margin-bottom: 30px;
   }
 }
