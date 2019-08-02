@@ -12,15 +12,16 @@
 
 .nav__list {
   padding: 0;
+  margin-bottom: 0;
 }
 
 .nav__item {
-  padding-left: 0;
   padding-right: 0;
-  padding-top: 33px;
-  padding-bottom: 30px;
+  padding-top: 26px;
+  padding-bottom: 27px;
+  padding-left: 75px;
 
-  text-align: center;
+  text-align: left;
   list-style: none;
 
   border-top: 1px solid #ececec;
@@ -45,15 +46,16 @@
       content: "";
 
       position: absolute;
-      top: 0;
-      left: -45px;
+      top: 6px;
+      left: -43px;
 
-      width: 18px;
-      height: 18px;
+      width: 19px;
+      height: 19px;
 
       opacity: 0.2;
 
       background-image: url("../img/icon-search.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -62,8 +64,8 @@
       content: "";
 
       position: absolute;
-      top: 0;
-      left: -44px;
+      top: 4px;
+      left: -45px;
 
       width: 21px;
       height: 18px;

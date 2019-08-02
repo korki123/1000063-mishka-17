@@ -12,12 +12,13 @@
 
 .site-menu__logo {
   width: 86px;
-  height: 35px;
+  height: 41px;
   margin: 0 auto;
   // padding: 20px 0;
 
   background-image: url("../img/mishka-logo-mobile.svg");
   background-repeat: no-repeat;
+  background-position-x: 8px;
 }
 
 .site-menu__toggle {

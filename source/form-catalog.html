@@ -52,102 +52,113 @@
 
         <form class="form__field" action="index.html" method="post">
           <fieldset class="form-type">
-            <div class="form-type__group-name">ТИП</div>
-            <div class="form-type__label-wrapper">
-              <label class="form-type__label">
-                <input class="form-type__radio" type="radio" name="type" value="accessories" checked>
-                <span class="form-type__icon form-type__icon--checked"></span>Аксессуар для  интерьера
-              </label>
-              <label class="form-type__label">
-                <input class="form-type__radio" type="radio" name="type" value="toy">
-                <span class="form-type__icon"></span>Детская игрушка
-              </label>
+            <div class="form-type__wrapper">
+              <div class="form-type__group-name">ТИП</div>
+              <div class="form-type__label-wrapper">
+                <label class="form-type__label">
+                  <input class="form-type__radio" type="radio" name="type" value="accessories" checked>
+                  <span class="form-type__icon form-type__icon--checked"></span>Аксессуар для  интерьера
+                </label>
+                <label class="form-type__label">
+                  <input class="form-type__radio" type="radio" name="type" value="toy">
+                  <span class="form-type__icon"></span>Детская игрушка
+                </label>
+              </div>
             </div>
           </fieldset>
 
           <div class="form__color">
             <fieldset class="form-type">
-              <div class="form-type__group-name">Цвет</div>
-              <div class="form-type__label-wrapper">
-                <label class="form-type__label form-type__label--checkbox">
-                  <input class="form-type__checkbox" type="checkbox" name="white" checked>
-                  <span class="form-type__checkbox-icon"></span>Белый
-                </label>
+              <div class="form-type__wrapper form-type__wrapper--color">
+                <div class="form-type__group-name">Цвет</div>
+                <div class="form-type__label-wrapper form-type__label-wrapper--color">
+                  <label class="form-type__label form-type__label--checkbox">
+                    <input class="form-type__checkbox" type="checkbox" name="white" checked>
+                    <span class="form-type__checkbox-icon"></span>Белый
+                  </label>
 
-                <label class="form-type__label form-type__label--checkbox">
-                  <input class="form-type__checkbox" type="checkbox" name="grey" checked>
-                  <span class="form-type__checkbox-icon"></span>Серый
-                </label>
+                  <label class="form-type__label form-type__label--checkbox">
+                    <input class="form-type__checkbox" type="checkbox" name="grey" checked>
+                    <span class="form-type__checkbox-icon"></span>Серый
+                  </label>
 
-                <label class="form-type__label form-type__label--checkbox">
-                  <input class="form-type__checkbox" type="checkbox" name="tiffany">
-                  <span class="form-type__checkbox-icon"></span>«Тиффани»
-                </label>
+                  <label class="form-type__label form-type__label--checkbox">
+                    <input class="form-type__checkbox" type="checkbox" name="tiffany">
+                    <span class="form-type__checkbox-icon"></span>«Тиффани»
+                  </label>
 
-                <label class="form-type__label form-type__label--checkbox">
-                  <input class="form-type__checkbox" type="checkbox" name="black">
-                  <span class="form-type__checkbox-icon"></span>Черный
-                </label>
+                  <label class="form-type__label form-type__label--checkbox">
+                    <input class="form-type__checkbox" type="checkbox" name="black">
+                    <span class="form-type__checkbox-icon"></span>Черный
+                  </label>
 
-                <label class="form-type__label form-type__label--checkbox">
-                  <input class="form-type__checkbox" type="checkbox" name="pink">
-                  <span class="form-type__checkbox-icon"></span>Розовый
-                </label>
+                  <label class="form-type__label form-type__label--checkbox">
+                    <input class="form-type__checkbox" type="checkbox" name="pink">
+                    <span class="form-type__checkbox-icon"></span>Розовый
+                  </label>
 
-                <label class="form-type__label form-type__label--last form-type__label--checkbox">
-                  <input class="form-type__checkbox" type="checkbox" name="orange">
-                  <span class="form-type__checkbox-icon"></span>Оранжевый
-                </label>
+                  <label class="form-type__label form-type__label--last form-type__label--checkbox">
+                    <input class="form-type__checkbox" type="checkbox" name="orange">
+                    <span class="form-type__checkbox-icon"></span>Оранжевый
+                  </label>
+                </div>
               </div>
             </fieldset>
           </div>
 
-          <fieldset class="form-type">
-            <div class="form-type__group-name">ФИО</div>
+          <fieldset class="form-type form-type--name">
+            <div class="form-type__wrapper form-type__wrapper--name">
+              <div class="form-type__group-name">ФИО</div>
 
-            <div class="form-type__label-wrapper form-type__label-wrapper--area">
-              <label class="form-type__label-area"> Имя:
-                <input class="form-type__username" type="text" name="name" value="Введите ваше имя*" required>
-              </label>
+              <div class="form-type__label-wrapper form-type__label-wrapper--area">
+                <label for="name" class="form-type__label-area"> Имя:</label>
+                <input class="form-type__username" id="name" type="text" name="name" value="Введите ваше имя*" required>
 
-              <!-- <label class="form-type__label-area">Фамилия:
-                <input class="form-type__username" type="text" name="surname" value="Укажите фамилию*" required>
-              </label>
+                <label for="surname" class="form-type__label-area">Фамилия:</label>
+                <input class="form-type__username" id="surname" type="text" name="surname" value="Укажите фамилию*" required>
 
-              <label class="form-type__label-area"> Отчество:
-                <input class="form-type__username" type="text" name="last-name" value="Отчество, если желаете">
-              </label> -->
+
+                <label for="last-name" class="form-type__label-area"> Отчество:</label>
+                <input class="form-type__username" id="last-name" type="text" name="last-name" value="Отчество, если желаете">
+
+              </div>
             </div>
           </fieldset>
 
-            <fieldset class="form-type">
-              <div class="form-type__group-name">тел:</div>
-
-              <div class="form-type__label-wrapper">
-                <label class="form-type__label-area">
-                  <input class="form-type__phone" type="tel" name="tel" value="+7 XXX XXX XX XX*" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required><span class="form-type__phone form-type__phone--icon-tel"></span>
-                </label>
+          <div class="form__phone">
+            <fieldset class="form-type form-type--name">
+              <div class="form-type__wrapper form-type__wrapper--phone">
+                <div class="form-type__group-name">тел:</div>
+                <div class="form-type__label-wrapper form-type__label-wrapper--phone">
+                  <label for="phone" class="form-type__label-area"></label>
+                  <input class="form-type__phone" id="phone" type="tel" name="tel" value="+7 XXX XXX XX XX*" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+                </div>
               </div>
             </fieldset>
-
-            <fieldset class="form-type">
+          <fieldset class="form-type">
+            <div class="form-type__wrapper form-type__wrapper--e-mail">
               <div class="form-type__group-name">E-mail:</div>
-              <div class="form-type__label-wrapper">
-              <label class="form-type__label-area">
-                <input class="form-type__email" type="email" name="e-mail" value="Ваш Email*" required><span class="form-type__email form-type__email--icon-email"></span>
-              </label>
+              <div class="form-type__label-wrapper form-type__label-wrapper--e-mail">
+                <label for="e-mail" class="form-type__label-area"></label>
+                <input class="form-type__email" id="e-mail" type="email" name="e-mail" value="Ваш e-mail" required>
+              </div>
             </div>
-            </fieldset>
+          </fieldset>
+        </div>
 
-            <fieldset class="form-type form-type--last">
+          <fieldset class="form-type form-type--comment">
+            <div class="form-type__wrapper">
               <div class="form-type__group-name">Доп:</div>
               <div class="form-type__label-wrapper">
                 <textarea class="form-type__comments" name="comments">Опишите все ваши  пожелания к заказу</textarea>
               </div>
-            </fieldset>
+            </div>
+          </fieldset>
 
-          <p class="form-type__footnote">*Поля обязательны для заполнения</p>
-          <button class="form__button button" type="button" name="button">ОТПРАВИТЬ ЗАКАЗ</button>
+          <div class="form-type__footnote-button-wrapper">
+            <p class="form-type__footnote">*Поля обязательны для заполнения</p>
+            <button class="form__button button" type="button" name="button">ОТПРАВИТЬ ЗАКАЗ</button>
+          </div>
         </form>
 
       </main>
