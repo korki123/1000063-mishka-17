@@ -1,7 +1,7 @@
 .comments {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 45px;
 
   font-family: "Open sans", "Arial", sans-serif;
   font-weight: bold;
@@ -15,6 +15,8 @@
 .comments__slider-list {
   width: 260px;
   margin: 0 auto;
+  padding-bottom: 11px;
+
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
@@ -28,6 +30,7 @@
 
 .comments__sign {
   margin: 0;
+  padding-bottom: 5px;
 
   font-weight: bold;
   font-size: 17px;
@@ -36,20 +39,26 @@
   color: #000000;
 }
 
+.comments__sign-wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .comments__mail {
   margin: 0;
+
+  padding-bottom: 27px;
 
   font-weight: normal;
   font-size: 17px;
   line-height: 30px;
-  padding-bottom: 30px;
 
   color: #444444;
 }
 
 .comments__arrows {
   font-size: 0;
-  padding: 0 30px 30px;
+  padding: 0 30px 40px;
 }
 
 .comments__arrows-next {
@@ -75,6 +84,7 @@
   @include button;
 }
 
+
 // =============================== планшет ================================
 
 @media (min-width: $tablet-width) {
@@ -84,8 +94,7 @@
     justify-content: space-between;
 
     width: 668px;
-    padding: 0 50px 70px 50px;
-
+    padding: 0 50px 87px 50px;
 
     background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
@@ -94,8 +103,8 @@
 
   .comments__head {
     padding: 0;
-    padding-top: 80px;
-    padding-bottom: 65px;
+    padding-top: 77px;
+    padding-bottom: 0;
     font-size: 43px;
     line-height: 50px;
 
@@ -105,6 +114,7 @@
   .comments__slider-list {
     width: 668px;
     margin: 0;
+    padding-bottom: 9px;
 
     order: 3;
   }
@@ -113,8 +123,16 @@
     width: 668px;
   }
 
+  .comments__slider-text {
+    margin-bottom: 0;
+
+    font-size: 17px;
+  }
+
   .comments__sign-wrapper {
     order: 4;
+
+    margin: 0;
   }
 
   .comments__sign {
@@ -131,14 +149,14 @@
     padding: 0;
 
     box-sizing: border-box;
-    width: 80px;
-    height: 50px;
+    width: 87px;
+    height: 36px;
     border: 0;
   }
 
   .comments__button {
     width: 170px;
-    margin: 83px 0 64px 0;
+    margin: 83px 0 23px 0;
     order: 2;
   }
 }

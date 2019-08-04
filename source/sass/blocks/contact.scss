@@ -1,26 +1,35 @@
-.contact__block {
+.contact {
   @include center-mobile;
+  padding-top: 34px;
+}
+
+
+.contact__block {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .contact__head {
   margin: 0;
-  padding-bottom: 38px;
+  padding-bottom: 24px;
 
   font-family: "Open sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 34px;
   text-align: left;
+
   color: #000000;
 }
 
 .contact__list {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 
   margin: 0;
   padding: 0;
-  padding-bottom: 37px;
+  padding-bottom: 30px;
 
   list-style: none;
 }
@@ -29,12 +38,20 @@
 .contact__item {
   font-family: "Open sans", "Arial", sans-serif;
   font-size: 15px;
-  font-weight: 30px;
-  margin-right: 30px;
-  padding-bottom: 3px;
+  line-height: 30px;
+
+  &:first-child {
+    flex-basis: 75px;
+    flex-shrink: 0;
+  }
 
   &--underline {
     border-bottom: 1px solid #62d1ba;
+    line-height: 28px;
+  }
+
+  &--address {
+    padding-bottom: 6px;
   }
 }
 
@@ -46,15 +63,21 @@
 
 .contact__button {
   @include button;
-  margin: 30px auto;
+  margin: 36px auto 39px;
 }
 
 // ================================== планшет ==================================
 
 @media (min-width: $tablet-width) {
-  .contact__block {
+  .contact {
     @include center-tablet;
-    padding-top: 67px;
+  }
+
+  .contact__block {
+    width: 668px;
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 19px;
   }
 
   .contact__wrapper {
@@ -68,7 +91,7 @@
   .contact__head {
     position: relative;
 
-    padding: 0 50px 50px 50px;
+    padding: 0 0 50px 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -77,11 +100,11 @@
       content: "";
 
       position: absolute;
-      top: -10;
-      right: 0;
+      top: -16px;
+      right: 3px;
 
-      width: 57px;
-      height: 81px;
+      width: 47px;
+      height: 82px;
 
       background-image: url("../img/flag.svg");
       background-repeat: no-repeat;
@@ -89,14 +112,44 @@
   }
 
   .contact__list {
-    flex-basis: 305px;
+    justify-content: flex-start;
+    flex-basis: 334px;
 
     text-align: left;
   }
 
+  .contact__item {
+    font-size: 17px;
+
+    &--underline {
+      position: relative;
+
+      border: none;
+    }
+
+    &--underline::after {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      bottom: 67px;
+
+      width: 200px;
+      height: 1px;
+
+      background-color: #62d1ba;
+    }
+  }
+
   .contact__map-yandex {
-    height: 768px;
+    height: 458px;
     border: none;
+  }
+
+  .contact__button {
+    width: 230px;
+    margin-top: 50px;
+    margin-bottom: 57px;
   }
 }
 

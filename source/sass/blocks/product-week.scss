@@ -81,6 +81,7 @@
   margin-top: 29px;
   padding-bottom: 24px;
 
+  background-image: url("../img/triple-set-mobile@1x.jpg");
   background-color: #f1f1f1;
   order: 0;
 }
@@ -120,20 +121,28 @@
 @media (min-width: $tablet-width) {
   .product-week {
     @include center-tablet;
+
+    padding-bottom: 54px;
   }
 
   .product-week__wrapper {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px 0 50px;
+
+    width: 668px;
+    margin: 0 auto;
+    pading: 0;
+    padding-top: 45px;
   }
 
   .product-week__head {
     width: 500px;
-    margin: 0;
     padding: 0;
+    // padding-top: 45px;
 
     font-size: 43px;
     line-height: 50px;
@@ -144,7 +153,9 @@
 
   .product-week__acsent {
     width: 75px;
-    margin: 0;
+    padding: 0;
+    padding-right: 28px;
+    padding-left: 65px;
 
     font-size: 17px;
     font-weight: bold;
@@ -158,11 +169,14 @@
     position: relative;
 
     width: 668px;
-    padding-top: 60px;
+    padding-top: 48px;
   }
 
   .product-week__description {
     width: 290px;
+    padding-bottom: 37px;
+
+    line-height: 30px;
   }
 
   .product-week__table {
@@ -170,28 +184,39 @@
     padding-top: 30px;
   }
 
+  .product-week__table-cell {
+    &:last-child {
+      padding-left: 0;
+    }
+  }
+
   .product-week__bay {
     margin-right: auto;
     padding-top: 60px;
   }
 
-  .product-week__photo-mobile {
-    display: none;
+  .product-week__price {
+    padding-bottom: 32px;
+    font-size: 20px;
   }
 
-  .product-week__photo-tablet {
+  .product-week__button {
+    width: 290px;
+  }
+
+  .product-week__photo-mobile {
     display: block;
     position: absolute;
 
     width: 334px;
     height: 400px;
-    right: 0;
+    right: 31px;
     bottom: 0;
 
     padding: 0;
     margin: 0;
 
-    background-clip: clip;
+    background-color: #f1f1f1;
   }
 }
 
@@ -239,8 +264,9 @@
   }
 
   .product-week__photo-desktop {
-    display: block;
     position: absolute;
+
+    display: block;
     right: -210px;
     bottom: 0;
 

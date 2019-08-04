@@ -14,11 +14,10 @@
   width: 86px;
   height: 41px;
   margin: 0 auto;
-  // padding: 20px 0;
+  margin-left: 116px;
 
   background-image: url("../img/mishka-logo-mobile.svg");
   background-repeat: no-repeat;
-  background-position-x: 8px;
 }
 
 .site-menu__toggle {
@@ -46,13 +45,13 @@
     padding-left: 50px;
     width: auto;
     border-top: none;
-    border-bottom: 1px solid #ececec;
+    border-bottom: none;
   }
 
   .site-menu__logo {
     position: absolute;
-    top: 20px;
-    left: 50px;
+    top: 22px;
+    left: 48px;
     width: 112px;
     height: 46px;
     margin: 0;
