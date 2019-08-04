@@ -92,7 +92,7 @@
     align-items: center;
 
     width: 680px;
-    padding-top: 30px;
+    padding-top: 26px;
     padding-bottom: 30px;
   }
 
@@ -100,7 +100,8 @@
     width: 102px;
     height: 34px;
 
-    margin-left: 14px;
+    margin-left: 6px;
+    margin-bottom: 5px;
 
     background-image: url("../img/logo-footer.svg");
   }
@@ -110,12 +111,21 @@
     margin-left: 139px;
     padding-top: 28px;
 
-    border-bottom: none;
+    border-bottom: 15px;
   }
 
   .footer__maker {
     margin: 0;
-    padding-top: 3px;
+    margin-right: 7px;
+    padding-top: 9px;
+  }
+
+  .footer__maker-text {
+    &--icon-academy {
+      &::after {
+        top: 28px;
+      }
+    }
   }
 }
 
@@ -129,7 +139,7 @@
   }
 
   .footer__logo-miska {
-    margin-left: 8px;
+    margin-left: 0;
   }
 
   .footer__social {
@@ -140,10 +150,20 @@
     padding-top: 8px;
   }
 
-  .footer__maker-text--icon-academy {
-    &::after {
-      top: 27px;
-      right: -12px;
+  .footer__maker-text {
+    &--icon-academy {
+      padding-left: 3px;
+
+      &::after {
+        top: 28px;
+        right: -12px;
+      }
     }
   }
+
+  // .footer__maker-text--icon-academy {
+  //   &::after {
+  //     top: 27px;
+  //     right: -12px;
+  //   }
 }
