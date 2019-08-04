@@ -127,4 +127,23 @@
     margin: 0 auto;
     padding: 27px 0;
   }
+
+  .footer__logo-miska {
+    margin-left: 8px;
+  }
+
+  .footer__social {
+    margin-left: 329px;
+  }
+
+  .footer__maker {
+    padding-top: 8px;
+  }
+
+  .footer__maker-text--icon-academy {
+    &::after {
+      top: 27px;
+      right: -12px;
+    }
+  }
 }

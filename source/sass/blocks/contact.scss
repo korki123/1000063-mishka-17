@@ -14,9 +14,9 @@
   padding-bottom: 24px;
 
   font-family: "Open sans", "Arial", sans-serif;
-  font-weight: bold;
   font-size: 18px;
   line-height: 34px;
+  font-weight: bold;
   text-align: left;
 
   color: #000000;
@@ -165,18 +165,20 @@
 
     width: 1150px;
     margin: 0 auto;
-
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 105px;
+    padding-top: 0;
   }
 
   .contact__block {
     width: 350px;
+    margin-right: 175px;
     margin-left: 50px;
   }
 
   .contact__head {
-    padding-left: 175px;
+    padding-top: 34px;
+    padding-left: 170px;
 
     font-size: 53px;
     line-height: 57px;
@@ -185,8 +187,8 @@
       content: "";
 
       position: absolute;
-      top: 0;
-      left: 50px;
+      top: 26px;
+      left: 63px;
 
       width: 47px;
       height: 81px;
@@ -210,29 +212,36 @@
     justify-content: flex-start;
 
     flex-basis: 40px;
+    padding-bottom: 19px;
   }
 
   .contact__item {
-    margin-right: 25px;
+    margin-right: 0;
 
     font-size: 17px;
     line-height: 30px;
+
+    &--address {
+      width: 265px;
+    }
   }
 
   .contact__map {
-    margin-left: 50px;
+    width: 525px;
+    height: 457px;
+    margin-left: 0;
+    margin-top: -8px;
   }
 
   .contact__map-yandex {
     width: 525px;
-    height: 457px;
     border: none;
   }
 
   .contact__button {
     position: absolute;
     left: 0;
-    bottom: -29px;
+    bottom: -57px;
 
     margin-left: 225px;
   }

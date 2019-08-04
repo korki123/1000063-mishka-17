@@ -168,13 +168,13 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 65px;
+    padding-bottom: 135px;
   }
 
   .comments__head {
     padding: 0;
     padding-top: 70px;
-    padding-left: 175px;
+    padding-left: 178px;
 
     font-size: 53px;
     line-height: 57px;
@@ -190,19 +190,37 @@
 
   .comments__slider-text {
     width: 795px;
-    padding-left: 175px;
+
+    margin-top: 21px;
+    padding-left: 182px;
   }
 
   .comments__sign-wrapper {
-    margin-left: 175px;
+    margin-left: 183px;
 
     order: 3;
   }
 
+  .comments__sign {
+    padding-top: 31px;
+  }
+
   .comments__arrows {
     margin: 0;
-    padding-top: 50px;
+    padding-top: 41px;
 
     order: 5;
+  }
+
+  .comments__arrows-next {
+    background-position-x: 24px;
+
+    &--back {
+      background-position-x: 12px;
+    }
+  }
+
+  .comments__button {
+    margin-top: 79px;
   }
 }

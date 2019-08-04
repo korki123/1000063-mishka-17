@@ -227,8 +227,8 @@
     width: 700px;
     margin: 0 auto;
 
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 35px;
+    padding-bottom: 31px;
   }
 
   .about__head {
@@ -239,12 +239,16 @@
   }
 
   .about__item {
-    flex-basis: 350px;
+    flex-basis: 344px;
 
     padding-right: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--support {
+      padding-right: 10px;
+    }
   }
 }

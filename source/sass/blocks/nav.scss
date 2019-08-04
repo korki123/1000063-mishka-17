@@ -223,8 +223,9 @@
       display: block;
 
       width: 265px;
-      padding-right: 0;
       margin-left: auto;
+      padding-top: 17px;
+      padding-right: 0;
 
       font-weight: normal;
       text-align: right;
@@ -233,6 +234,8 @@
     &--desktop-one {
       display: block;
 
+      padding-top: 17px;
+
       width: 185px;
     }
 
@@ -240,6 +243,7 @@
       display: block;
 
       width: 215px;
+      padding-top: 17px;
       padding-left: 35px;
     }
 
