@@ -43,24 +43,22 @@
 
 .showcase__link {
   display: inline-block;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  padding-right: 160px;
+  padding-left: 28px;
+
 
   color: #ffffff;
-
   background-color: transparent;
 }
 
 .showcase__item {
   position: relative;
 
-  padding-top: 26px;
-  padding-bottom: 29px;
-  padding-right: 160px;
-  padding-left: 28px;
-
   list-style: none;
 
   border: none;
-
   background-color: #63d1bb;
 
   &:nth-child(2n) {
@@ -156,6 +154,7 @@
     width: 668px;
     margin: 0 auto;
     padding: 0;
+    padding-bottom: 2px;
 
     font-size: 19px;
     line-height: 24px;
@@ -166,8 +165,10 @@
   .showcase__link {
     flex-basis: 334px;
 
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 26px;
+    padding-bottom: 33px;
+    padding-right: 160px;
+    padding-left: 34px;
 
     color: #ffffff;
   }
@@ -178,11 +179,6 @@
     flex-basis: 334px;
     flex-grow: 0;
     flex-shrink: 1;
-
-    padding-top: 20px;
-    padding-bottom: 22px;
-    padding-right: 140px;
-    padding-left: 36px;
 
     line-height: 30px;
     list-style: none;
@@ -262,14 +258,14 @@
     margin: 0 auto;
   }
 
-  .showcase__link {
+  .showcase__item {
     flex-basis: 525px;
   }
 
-  .showcase__item {
-    padding-top: 20px;
+  .showcase__link {
+    padding-top: 29px;
     padding-right: 319px;
-    padding-bottom: 21px;
+    padding-bottom: 31px;
     padding-left: 35px;
 
     line-height: 30px;
