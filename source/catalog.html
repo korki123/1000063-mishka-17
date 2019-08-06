@@ -27,7 +27,7 @@
           <li class="nav__item">
             <a class="nav__link nav__link--icon-search" href="#">Поиск по сайту</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item--cart">
             <a class="nav__link nav__link--icon-cart" href="#">Корзина: пока пуста</a>
           </li>
           <li class="nav__item nav__item--desktop-one">
@@ -52,11 +52,14 @@
               <div class="catalog__photo catalog__photo--hare">
                 <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
               </div>
-              <div class="catalog__wrapper">
+            </a>
+            <div class="catalog__wrapper">
+              <a class="catalog__wrapper-link" href="#">
                 <h3 class="catalog__header">Зайчик-попрыгайчик</h3>
-                <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+                <p class="catalog__description">Рост 30 см, вес 200 г</p>
               </a>
-              <p class="catalog__icon" href="#">1 500 руб. <a class="catalog__price" href=""></a>
+              <p class="catalog__icon" href="#">1 200 руб.
+                <a class="catalog__price" href=""></a>
               </p>
             </div>
           </article>
@@ -66,11 +69,14 @@
               <div class="catalog__photo catalog__photo--bowl">
                 <img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
               </div>
-              <div class="catalog__wrapper">
+            </a>
+            <div class="catalog__wrapper">
+              <a class="catalog__wrapper-link" href="#">
                 <h3 class="catalog__header">Корзинка для белья</h3>
-                <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+                <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
               </a>
-              <p class="catalog__icon" href="#">1 500 руб. <a class="catalog__price" href=""></a>
+              <p class="catalog__icon" href="#">690 руб.
+                <a class="catalog__price" href=""></a>
               </p>
             </div>
           </article>
@@ -80,22 +86,32 @@
               <div class="catalog__photo catalog__photo--toys">
                 <img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
               </div>
-              <div class="catalog__wrapper">
-                <h3 class="catalog__header">Большая корзинка для игрушек</h3>
+            </a>
+            <div class="catalog__wrapper">
+              <a class="catalog__wrapper-link" href="#">
+                <h3 class="catalog__header">Большая корзинка для&nbsp;игрушек</h3>
                 <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
               </a>
-              <p class="catalog__icon" href="#">1 500 руб. <a class="catalog__price" href=""></a>
+              <p class="catalog__icon" href="#">1 500 руб.
+                <a class="catalog__price" href="#"></a>
               </p>
             </div>
           </article>
 
           <section class="catalog__manufacture">
-            <img class="catalog__manufacture-video" src="img/video-mobile@1x.jpg" width="258" height="150" alt="видео производство">
-            <div class="catalog__wrapper-manufacture">
-              <h3 class="catalog__manufacture-head catalog__manufacture-head--icon-video">Процесс производства</h3>
-              <p class="catalog__manufacture-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <div class="catalog__manufacture-wrapper-player">
+              <img class="catalog__manufacture-video" src="img/video-mobile@1x.jpg" width="260" height="150" alt="видео производство">
+              <button class="catalog__manufacture-video-button" type="button" name="button">
+                <img src="img/play.svg" width="101" height="77" alt="кнопка плеера">
+              </button>
+            </div>
+            <!-- <div class="catalog__wrapper-manufacture"> -->
+            <h3 class="catalog__manufacture-head catalog__manufacture-head--icon-video">Процесс производства</h3>
+            <p class="catalog__manufacture-text">По просьбам наших любимых&nbsp;фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <div class="catalog__button-wrapper">
               <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
             </div>
+            <!-- </div> -->
           </section>
 
         </section>
@@ -119,14 +135,18 @@
       </footer>
 
       <!-- ========================================= модальное окно ========================================= -->
-      <section class="modal">
-        <p class="modal__head">Добавить  в корзину</p>
-        <p class="modal__text">Выберите размер:</p>
-        <p class="modal__size modal__size--select">s</p>
-        <p class="modal__size">m</p>
-        <p class="modal__size">l</p>
-        <button class="modal__button button" type="button" name="button">Добавить</button>
-      </section>
+      <!-- <section class="modal">
+        <div class="modal__wrapper">
+          <p class="modal__head">Добавить в&nbsp;корзину</p>
+          <p class="modal__text">Выберите размер:</p>
+          <div class="modal__size-wrapper">
+            <p class="modal__size modal__size--select">s</p>
+            <p class="modal__size">m</p>
+            <p class="modal__size">l</p>
+          </div>
+            <button class="modal__button button" type="button" name="button">Добавить</button>
+        </div>
+      </section> -->
       <!-- ========================================= модальное окно финиш ========================================= -->
 
   </body>

@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
 
-  width: 566px;
+  width: 320px;
   height: 336px;
   margin-left: -50%;
   margin-top: -50%;
@@ -24,10 +24,13 @@
 }
 
 .modal__head {
+  width: 260px;
+  margin: 0 auto;
+
   padding-top: 50px;
 
-  font-size: 30px;
-  line-height: 57px;
+  font-size: 25px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
