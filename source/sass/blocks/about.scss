@@ -8,7 +8,7 @@
 .about__head {
   @include head3;
 
-  padding: 30px;
+  padding: 26px 0 33px 28px;
 }
 
 .about__list {
@@ -27,14 +27,17 @@
   padding-right: 50px;
   padding-bottom: 30px;
 
+  line-height: 20px;
   list-style: none;
 
   &--ecology {
+    padding-right: 75px;
+
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -1px;
+      left: 8px;
 
       width: 32px;
       height: 37px;
@@ -58,11 +61,13 @@
   }
 
   &--like {
+    padding-right: 70px;
+
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 5px;
+      left: 8px;
 
       width: 34px;
       height: 27px;
@@ -75,8 +80,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 2px;
+      left: 3px;
 
       width: 35px;
       height: 34px;
@@ -89,8 +94,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 3px;
+      left: -5px;
 
       width: 55px;
       height: 23px;
@@ -120,12 +125,17 @@
   .about {
     width: 668px;
     margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 
   .about__head {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 50px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .about__list {
@@ -138,35 +148,74 @@
 
   .about__item {
 
-    flex-basis: 334px;
+    flex-basis: 327px;
     padding-top: 53px;
-    padding-bottom: 30px;
+    padding-bottom: 58px;
     padding-right: 100px;
+    padding-left: 0;
 
     box-sizing: border-box;
 
+    font-size: 20px;
+    line-height: 22px;
+
     &--ecology {
       order: 1;
+
+      &::before {
+        left: 9px;
+      }
     }
 
     &--style {
       order: 3;
+
+      padding-right: 65px;
+
+      &::before {
+        left: 1px;
+      }
     }
 
     &--like {
       order: 5;
+
+      &::before {
+        left: 9px;
+      }
     }
 
     &--ball {
       order: 2;
+
+      padding-right: 50px;
+      padding-left: 7px;
+
+      &::before {
+        left: 10px;
+      }
     }
 
     &--support {
       order: 4;
+
+      padding-right: 24px;
+      padding-left: 7px;
+
+      &::before {
+        left: 2px;
+      }
     }
 
     &--gift {
       order: 6;
+
+      padding-right: 60px;
+      padding-left: 7px;
+
+      &::before {
+        left: 9px;
+      }
     }
   }
 }
@@ -175,11 +224,11 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    width: 700px;
+    width: 709px;
     margin: 0 auto;
 
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 35px;
+    padding-bottom: 31px;
   }
 
   .about__head {
@@ -189,13 +238,21 @@
     line-height: 57px;
   }
 
+  .about__list {
+    padding-left: 3px;
+  }
+
   .about__item {
-    flex-basis: 350px;
+    flex-basis: 344px;
 
     padding-right: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--support {
+      padding-right: 10px;
+    }
   }
 }

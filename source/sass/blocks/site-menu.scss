@@ -12,9 +12,9 @@
 
 .site-menu__logo {
   width: 86px;
-  height: 35px;
+  height: 41px;
   margin: 0 auto;
-  // padding: 20px 0;
+  margin-left: 116px;
 
   background-image: url("../img/mishka-logo-mobile.svg");
   background-repeat: no-repeat;
@@ -42,16 +42,16 @@
 
   .site-menu {
     margin: 0;
-    padding-left: 50px;
+    padding-left: 44px;
     width: auto;
     border-top: none;
-    border-bottom: 1px solid #ececec;
+    border-bottom: none;
   }
 
   .site-menu__logo {
     position: absolute;
-    top: 20px;
-    left: 50px;
+    top: 22px;
+    left: 47px;
     width: 112px;
     height: 46px;
     margin: 0;
@@ -96,7 +96,7 @@
     width: 149px;
     height: 72px;
     margin: 0;
-    margin-left: -75px;
+    margin-left: -99px;
 
     background-image: url("../img/logo-desktop.svg");
     background-repeat: no-repeat;

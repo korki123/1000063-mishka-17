@@ -1,0 +1,80 @@
+.modal {
+  position: relative;
+
+  font-family: "Open sans", "Arial", sans-serif;
+  text-align: center;
+
+  background-color: rgba(240, 240, 240, 0.9);
+
+  z-index: 20;
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 320px;
+  height: 336px;
+  margin-left: -50%;
+  margin-top: -50%;
+
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 0 10px rgba(0, 1, 1, 0.25);
+}
+
+.modal__head {
+  width: 260px;
+  margin: 0 auto;
+
+  padding-top: 50px;
+
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.modal__text {
+  padding-top: 35px;
+
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.modal__size-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.modal__size {
+  width: 108px;
+  height: 48px;
+  padding-top: 20px;
+
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #444444;
+  border: 2px solid #444444;
+
+  &--select {
+    border: 2px solid #63d1bb;
+  }
+}
+
+.modal__button {
+  width: 350px;
+  margin: 0 auto;
+
+  background-color: #63d1bb;
+  color: #ffffff;
+}

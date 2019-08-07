@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 26px 0;
   margin: 0 30px;
 
   border-bottom: 1px solid #e5e5e5;
@@ -56,7 +56,7 @@
 
 .footer__maker-text {
   margin: 0;
-  padding: 30px 0;
+  padding: 28px 0 32px;
 
   font-family: "Open sans", "Arial", sans-serif;
   font-weight: bold;
@@ -69,11 +69,11 @@
     &::after {
       content: "";
       position: absolute;
-      top: 25px;
-      right: 0;
+      top: 19px;
+      right: -7px;
 
-      width: 27px;
-      height: 34px;
+      width: 40px;
+      height: 50px;
 
       background-image: url("../img/htmlacademy.svg");
       background-repeat: no-repeat;
@@ -91,25 +91,41 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 668px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    width: 680px;
+    padding-top: 26px;
+    padding-bottom: 30px;
   }
 
   .footer__logo-miska {
     width: 102px;
     height: 34px;
 
+    margin-left: 6px;
+    margin-bottom: 5px;
+
     background-image: url("../img/logo-footer.svg");
   }
 
   .footer__social {
-    border-bottom: none;
     margin: 0 auto;
+    margin-left: 139px;
+    padding-top: 28px;
+
+    border-bottom: 15px;
   }
 
   .footer__maker {
     margin: 0;
+    margin-right: 7px;
+    padding-top: 9px;
+  }
+
+  .footer__maker-text {
+    &--icon-academy {
+      &::after {
+        top: 28px;
+      }
+    }
   }
 }
 
@@ -120,5 +136,28 @@
     width: 1050px;
     margin: 0 auto;
     padding: 27px 0;
+  }
+
+  .footer__logo-miska {
+    margin-left: 0;
+  }
+
+  .footer__social {
+    margin-left: 329px;
+  }
+
+  .footer__maker {
+    padding-top: 8px;
+  }
+
+  .footer__maker-text {
+    &--icon-academy {
+      padding-left: 3px;
+
+      &::after {
+        top: 28px;
+        right: -12px;
+      }
+    }
   }
 }
