@@ -96,9 +96,14 @@
     width: 668px;
     padding: 0 50px 87px 50px;
 
-    background-image: url("../img/review.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px;
+    }
   }
 
   .comments__head {

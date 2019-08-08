@@ -50,6 +50,7 @@
 .catalog__photo {
   position: relative;
 
+  display: block;
   width: 260px;
   height: 195px;
 
@@ -59,7 +60,7 @@
 .catalog__description {
   margin: 0 26px;
   margin-top: 4px;
-  // padding-bottom: 19px;
+  padding-bottom: 19px;
 
   font-size: 13px;
   line-height: 30px;
@@ -234,7 +235,7 @@
     justify-content: space-between;
 
     width: 668px;
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   .catalog__header {
@@ -246,8 +247,8 @@
   .catalog__photo {
     position: relative;
 
-    width: 334px;
-    height: 332px;
+    width: 330px;
+    height: 330px;
   }
 
   .catalog__description {
@@ -282,7 +283,7 @@
 
   .catalog__manufacture-video {
     position: relative;
-    width: 668px;
+    width: 682px;
     height: 455px;
   }
 
@@ -350,7 +351,7 @@
   }
 
   .catalog__head {
-    padding-top: 94px;
+    padding-top: 97px;
     padding-bottom: 111px;
 
     margin-top: -76px;
@@ -424,11 +425,12 @@
   }
 
   .catalog__description {
-    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
 
   .catalog__icon {
     padding-bottom: 28px;
+    margin-left: 26px;
     // flex-grow: 1;
   }
 
