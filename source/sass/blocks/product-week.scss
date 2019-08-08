@@ -1,7 +1,7 @@
 .product-week {
   @include center-mobile;
 
-  padding-bottom: 37px;
+  padding-bottom: 34px;
 
   font-family: "Open sans", "Arial", sans-serif;
 }
@@ -81,7 +81,6 @@
   margin-top: 29px;
   padding-bottom: 24px;
 
-  background-image: url("../img/triple-set-mobile@1x.jpg");
   background-color: #f1f1f1;
   order: 0;
 }
@@ -123,7 +122,7 @@
     @include center-tablet;
 
     padding: 0;
-    padding-bottom: 54px;
+    padding-bottom: 50px;
   }
 
   .product-week__wrapper {
@@ -175,7 +174,7 @@
 
   .product-week__description {
     width: 290px;
-    padding-bottom: 37px;
+    padding-bottom: 34px;
 
     font-size: 17px;
     line-height: 30px;
@@ -300,8 +299,9 @@
   }
 
   .page__break-zigzag {
-    width: 1050px;
-    height: 20px;
-    margin: 0 auto;
+    // width: 1050px;
+    height: 23px;
+    transform: scale(0.913, -1);
+    // margin: 0 auto;
   }
 }
