@@ -15,6 +15,8 @@
           </div> -->
         </a>
         <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
+
+        <!-- <button class="site-menu__toggle site-menu__toggle--icon-close" type="button" name="button"></button> -->
       </div>
       <!-- ========================================= выпадающее меню навигация ========================================= -->
       <nav class="nav">
@@ -224,18 +226,27 @@
       </footer>
 
       <!-- ========================================= модальное окно ========================================= -->
-      <!-- <section class="modal">
+      <section class="modal">
+      </div>
+      <div class="modal-overlay">
+
         <div class="modal__wrapper">
           <p class="modal__head">Добавить в&nbsp;корзину</p>
           <p class="modal__text">Выберите размер:</p>
           <div class="modal__size-wrapper">
-            <p class="modal__size modal__size--select">s</p>
-            <p class="modal__size">m</p>
-            <p class="modal__size">l</p>
+            <label class="modal__size">
+              <input class="modal__radio visually-hidden" type="radio" name="size" checked><span class="modal__size-text">s</span>
+            </label>
+            <label class="modal__size">
+              <input class="modal__radio visually-hidden" type="radio" name="size"><span class="modal__size-text">m</span>
+            </label>
+            <label class="modal__size">
+              <input class="modal__radio visually-hidden"type="radio" name="size" value="l"><span class="modal__size-text">l</span>
+            </label>
           </div>
-            <button class="modal__button button" type="button" name="button">Добавить</button>
+          <button class="modal__button button" type="button" name="button">Добавить</button>
         </div>
-      </section> -->
+      </section>
       <!-- ========================================= модальное окно финиш ========================================= -->
 
   </body>

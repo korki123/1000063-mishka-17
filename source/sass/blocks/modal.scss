@@ -1,62 +1,65 @@
 .modal {
-  position: relative;
+  display: none;
 
   font-family: "Open sans", "Arial", sans-serif;
   text-align: center;
-
-  background-color: rgba(240, 240, 240, 0.9);
 
   z-index: 20;
 }
 
 .modal__wrapper {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50px;
+  left: 50%;
 
-  width: 320px;
-  height: 336px;
-  margin-left: -50%;
-  margin-top: -50%;
+  width: 318px;
+  margin-left: -159px;
+  // margin-top: -50%;
+  padding-top: 5px;
+  padding-bottom: 45px;
 
-  border: 1px solid #c6c6c6;
-  box-shadow: 0 0 10px rgba(0, 1, 1, 0.25);
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+  box-shadow: 0 10px 10px rgba(0, 1, 1, 0.25);
 }
 
 .modal__head {
   width: 260px;
-  margin: 0 auto;
-
-  padding-top: 50px;
+  margin: 25px auto 12px;
 
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .modal__text {
-  padding-top: 35px;
+  margin-bottom: 21px;
 
-  font-size: 17px;
+  font-size: 15px;
   line-height: 30px;
+  text-align: center;
 }
 
 .modal__size-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 
-  width: 350px;
+  width: 260px;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding-top: 30px;
 }
 
-.modal__size {
-  width: 108px;
-  height: 48px;
-  padding-top: 20px;
+.modal__size-text {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 78px;
+  margin: 0;
+  padding: 17px 0 17px 0;
 
   font-size: 17px;
   line-height: 16px;
@@ -65,16 +68,102 @@
 
   color: #444444;
   border: 2px solid #444444;
+  outline: none;
+  cursor: pointer;
+}
 
-  &--select {
-    border: 2px solid #63d1bb;
-  }
+.modal__size .modal__radio[type="radio"]:checked + .modal__size-text {
+  border-color: #63d1bb;
 }
 
 .modal__button {
-  width: 350px;
+  width: 260px;
+  height: 52px;
   margin: 0 auto;
+
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
 
   background-color: #63d1bb;
   color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+
+// =================================== планшет ===================================
+
+@media (min-width: $tablet-width) {
+  .modal__wrapper {
+    top: 100px;
+
+    box-sizing: border-box;
+    width: 562px;
+    margin-left: -281px;
+    // padding: 0 108px 46px;
+
+    border: 1px solid #c6c6c6;
+  }
+
+  .modal__head {
+    width: 354px;
+    margin: 29px auto 13px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__text {
+    font-size: 17px;
+    line-height: 30px;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .modal__size-wrapper {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .modal__size-text {
+    width: 108px;
+    margin: 0;
+    padding: 17px 0 17px 0;
+
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .modal__button {
+    width: 350px;
+  }
+}
+
+// =================================== десктоп ===================================
+
+@media (min-width: $desktop-width) {
+  .modal__wrapper {
+    top: 100px;
+
+    box-sizing: border-box;
+    width: 566px;
+    margin-left: -283px;
+  }
 }
