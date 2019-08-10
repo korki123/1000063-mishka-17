@@ -39,13 +39,8 @@
   width: 260px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 0;
 
   border: none;
-
-  // &--last {
-  //   padding-bottom: 18px;
-  // }
 
   &--e-mail {
     padding-bottom: 13px;
@@ -689,7 +684,6 @@
   }
 
   .form-type__label {
-
     &--checkbox {
       flex-basis: 182px;
 
