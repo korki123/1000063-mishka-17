@@ -3,8 +3,10 @@
 }
 
 .page__break-zigzag {
-  width: 100%;
+  width: 320px;
   height: 6px;
+
+  margin: 0 auto;
 
   background-image: url("../img/zigzag.svg");
   background-repeat: repeat-x;
@@ -20,12 +22,12 @@
   }
 
   .page__break-zigzag {
-    width: 100%;
+    width: 768px;
     height: 15px;
 
     transform: scaleY(-1);
 
-    background-image: url("../img/zigzag.svg");
+    background-image: url("../img/bg-zigzag-line-tablet.svg");
     // background-size: auto;
   }
 }
