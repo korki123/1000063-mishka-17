@@ -96,9 +96,14 @@
     width: 668px;
     padding: 0 50px 87px 50px;
 
-    background-image: url("../img/review.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px;
+    }
   }
 
   .comments__head {
@@ -191,7 +196,7 @@
   .comments__slider-text {
     width: 795px;
 
-    margin-top: 21px;
+    margin-top: 16px;
     padding-left: 175px;
   }
 
@@ -202,7 +207,7 @@
   }
 
   .comments__sign {
-    padding-top: 28px;
+    padding-top: 30px;
   }
 
   .comments__arrows {
