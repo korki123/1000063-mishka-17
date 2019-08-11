@@ -252,6 +252,11 @@
     height: 330px;
   }
 
+  .catalog-image {
+    width: 330px;
+    height: 330px;
+  }
+
   .catalog__description {
     font-size: 15px;
   }
@@ -348,7 +353,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-page {
-    @include center-desktop;
+    margin: 0 auto;
   }
 
   .catalog__head {
@@ -436,11 +441,15 @@
   }
 
   .catalog__photo {
-    position: relative;
-
     width: 316px;
     height: 462px;
   }
+
+  .catalog-image {
+    width: 316px;
+    height: 462px;
+  }
+
 
   .catalog__header {
     font-size: 20px;
@@ -469,6 +478,11 @@
     height: 455px;
 
     background-color: #f1f1f1;
+  }
+
+  .catalog__manufacture-video {
+    width: 682px;
+    height: 455px;
   }
 
   .catalog__manufacture-head {
