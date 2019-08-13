@@ -67,6 +67,7 @@
   box-sizing: border-box;
   width: 130px;
   height: 50px;
+
   background-image: url("../img/huge-arrow-right.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -78,6 +79,19 @@
   &--back {
     transform: rotate(180deg);
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+
+  // &:focus {
+  //   outline: none;
+  // }
 }
 
 .comments__button {
@@ -141,11 +155,11 @@
   }
 
   .comments__sign {
-    padding-top: 50px;
+    padding-top: 48px;
   }
 
   .comments__arrows {
-    margin-top: 60px;
+    margin-top: 58px;
     padding: 0;
     order: 5;
   }

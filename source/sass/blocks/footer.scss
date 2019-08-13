@@ -7,11 +7,18 @@
   margin: 0 auto;
 }
 
+.footer__icon-miska {
+  display: none;
+}
+
 .footer__social {
   display: flex;
   justify-content: center;
   align-items: center;
+
+
   padding: 26px 0;
+  padding-right: 7px;
   margin: 0 30px;
 
   border-bottom: 1px solid #e5e5e5;
@@ -25,32 +32,23 @@
   width: 22px;
   height: 21px;
   margin: 0 20px;
-
-  background-image: url("../img/icon-insta.svg");
-  background-repeat: no-repeat;
 }
 
 .footer__social-fb {
   width: 15px;
   height: 28px;
   margin: 0 20px;
-
-  background-image: url("../img/icon-fb.svg");
-  background-repeat: no-repeat;
 }
 
 .footer__social-twit {
   width: 23px;
   height: 20px;
   margin: 0 20px;
-
-  background-image: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
 }
 
 .footer__maker {
   position: relative;
-  width: 182px;
+  width: 187px;
   margin: 0 auto;
 }
 
@@ -64,21 +62,18 @@
   line-height: 18px;
   text-align: left;
   color: #000000;
+}
 
-  &--icon-academy {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 19px;
-      right: -7px;
+.footer__icon-academy {
+  position: absolute;
+  top: 14px;
+  right: -3px;
 
-      width: 40px;
-      height: 50px;
+  width: 40px;
+  height: 50px;
 
-      background-image: url("../img/htmlacademy.svg");
-      background-repeat: no-repeat;
-    }
-  }
+  // background-image: url("../img/htmlacademy.svg");
+  // background-repeat: no-repeat;
 }
 
 // =================================== планшет ===================================
@@ -100,32 +95,33 @@
     width: 102px;
     height: 34px;
 
-    margin-left: 6px;
-    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+  }
 
-    background-image: url("../img/logo-footer.svg");
+  .footer__icon-miska {
+    display: block;
+
+    width: 102px;
+    height: 34px;
   }
 
   .footer__social {
     margin: 0 auto;
     margin-left: 139px;
-    padding-top: 28px;
+    padding-top: 32px;
 
     border-bottom: 15px;
   }
 
   .footer__maker {
     margin: 0;
-    margin-right: 7px;
+    margin-right: 4px;
     padding-top: 9px;
   }
 
-  .footer__maker-text {
-    &--icon-academy {
-      &::after {
-        top: 28px;
-      }
-    }
+  .footer__icon-academy {
+    top: 24px;
   }
 }
 
@@ -139,7 +135,13 @@
   }
 
   .footer__logo-miska {
-    margin-left: 0;
+    width: 103px;
+    height: auto;
+    margin: 0;
+  }
+
+  .footer__icon-miska {
+    width: 103px;
   }
 
   .footer__social {
@@ -153,11 +155,11 @@
   .footer__maker-text {
     &--icon-academy {
       padding-left: 3px;
-
-      &::after {
-        top: 28px;
-        right: -12px;
-      }
     }
+  }
+
+  .footer__icon-academy {
+    top: 23px;
+    right: -9px;
   }
 }

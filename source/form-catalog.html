@@ -15,27 +15,29 @@
           </div> -->
         </a>
         <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
+
+        <!-- <button class="site-menu__toggle site-menu__toggle--icon-close" type="button" name="button"></button> -->
       </div>
       <!-- ========================================= выпадающее меню навигация ========================================= -->
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item nav__item--one">
-            <a class="nav__link" href="catalog.html">Каталог товаров</a>
+            <a class="nav__link nav__link--one" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav__item nav__item--two">
-            <a class="nav__link" href="form-catalog.html">Вязание на заказ</a>
+            <a class="nav__link nav__link--two" href="form-catalog.html">Вязание на заказ</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--icon-search" href="#">Поиск по сайту</a>
+            <a class="nav__link nav__link--icon-search" href="#"><img class="icon-search" src="img/icon-search.svg" width="19" height="19" alt=" иконка поиск"> Поиск по сайту</a>
           </li>
           <li class="nav__item nav__item--cart">
-            <a class="nav__link nav__link--icon-cart" href="#">Корзина: пока пуста</a>
+            <a class="nav__link nav__link--icon-cart" href="#"><img class="icon-cart" src="img/icon-cart.svg" width="21" height="19" alt="иконка корзина"> Корзина: пока пуста</a>
           </li>
           <li class="nav__item nav__item--desktop-one">
-            <a class="nav__link" href="#">Новые поступления</a>
+            <a class="nav__link nav__link--desktop-one" href="#">Новые поступления</a>
           </li>
           <li class="nav__item nav__item--desktop-two">
-            <a class="nav__link" href="#">Распродажа</a>
+            <a class="nav__link nav__link--desktop-two" href="#">Распродажа</a>
           </li>
           <li class="nav__item nav__item--thin">
             Бесплатная доставка по России
@@ -113,13 +115,13 @@
 
               <div class="form-type__label-wrapper form-type__label-wrapper--area">
                 <label for="name" class="form-type__label-area"> Имя:</label>
-                <input class="form-type__username" id="name" type="text" name="name" value="Введите ваше имя*" required>
+                <input class="form-type__username" id="name" type="text" name="name" placeholder="Введите ваше имя*" value="" required>
 
                 <label for="surname" class="form-type__label-area">Фамилия:</label>
-                <input class="form-type__username" id="surname" type="text" name="surname" value="Укажите фамилию*" required>
+                <input class="form-type__username" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" value="" required>
 
                 <label for="last-name" class="form-type__label-area"> Отчество:</label>
-                <input class="form-type__username" id="last-name" type="text" name="last-name" value="Отчество, если желаете">
+                <input class="form-type__username" id="last-name" type="text" name="last-name" placeholder="Отчество, если желаете" value="">
               </div>
             </div>
           </fieldset>
@@ -130,7 +132,7 @@
                 <div class="form-type__group-name">тел:</div>
                 <div class="form-type__label-wrapper form-type__label-wrapper--phone">
                   <label for="phone"></label>
-                  <input class="form-type__phone" id="phone" type="tel" name="tel" value="+7 XXX XXX XX XX*" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+                  <input class="form-type__phone" id="phone" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" value="" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
                 </div>
               </div>
             </fieldset>
@@ -140,7 +142,7 @@
                 <div class="form-type__group-name">E-mail:</div>
                 <div class="form-type__label-wrapper form-type__label-wrapper--e-mail">
                   <label for="e-mail" class="form-type__label-area"></label>
-                  <input class="form-type__email" id="e-mail" type="email" name="e-mail" value="Ваш e-mail" required>
+                  <input class="form-type__email" id="e-mail" type="email" name="e-mail" placeholder="Ваш e-mail" value="" required>
                 </div>
               </div>
             </fieldset>
@@ -150,7 +152,7 @@
             <div class="form-type__wrapper form-type__wrapper--comment">
               <div class="form-type__group-name form-type__group-name--comment">Доп:</div>
               <div class="form-type__label-wrapper form-type__label-wrapper--comment">
-                <textarea class="form-type__comments" name="comments">Опишите все ваши  пожелания к заказу</textarea>
+                <textarea class="form-type__comments" name="comments" placeholder="Опишите все ваши  пожелания к заказу"></textarea>
               </div>
             </div>
           </fieldset>
@@ -165,17 +167,25 @@
 
       <footer class="footer">
         <div class="footer__wrapper">
-          <a class="footer__logo-miska" href="#"></a>
+          <a class="footer__logo-miska" href="#">
+            <img class="footer__icon-miska" src="img/logo-footer.svg" width="112" height="46" alt="логотип мишка">
+          </a>
           <section class="footer__social">
             <a class="footer__social-inst">
+              <img src="img/icon-insta.svg" width="22" height="21" alt="">
             </a>
             <a class="footer__social-fb">
+              <img src="img/icon-fb.svg" width="15" height="28" alt="">
             </a>
             <a class="footer__social-twit">
+              <img src="img/icon-twitter.svg" width="23" height="20" alt="">
             </a>
           </section>
           <section class="footer__maker">
-            <a class="footer__maker-link"><p class="footer__maker-text footer__maker-text--icon-academy">Разработано</p></a>
+            <a class="footer__maker-link" href="">
+              <p class="footer__maker-text footer__maker-text--icon-academy">Разработано</p>
+              <img class="footer__icon-academy" src="img/htmlacademy.svg" width="40" height="50" alt="логотип академии">
+            </a>
           </section>
         </div>
       </footer>

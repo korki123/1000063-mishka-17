@@ -92,6 +92,34 @@
   &:nth-child(2n) {
     background-color: #56c3b2;
   }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 0 0 #63d1bb;
+
+    .showcase__link--toy {
+      opacity: 0.7;
+    }
+
+    .showcase__link--interior {
+      opacity: 0.7;
+    }
+
+    &:active .showcase__item {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    .showcase__link {
+      opacity: 0.3;
+    }
+  }
+
+  &:nth-child(2n):hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 0 0 #56c3b2;
+  }
 }
 
 
@@ -173,6 +201,15 @@
     padding-left: 34px;
 
     color: #ffffff;
+
+    &--interior {
+      top: 3px;
+    }
+
+    &--toy {
+      top: 5px;
+      right: -125px;
+    }
   }
 
   .showcase__item {

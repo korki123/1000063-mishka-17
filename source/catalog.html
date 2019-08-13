@@ -22,22 +22,22 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item nav__item--one">
-            <a class="nav__link" href="catalog.html">Каталог товаров</a>
+            <a class="nav__link nav__link--one" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav__item nav__item--two">
-            <a class="nav__link" href="form-catalog.html">Вязание на заказ</a>
+            <a class="nav__link nav__link--two" href="form-catalog.html">Вязание на заказ</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--icon-search" href="#">Поиск по сайту</a>
+            <a class="nav__link nav__link--icon-search" href="#"><img class="icon-search" src="img/icon-search.svg" width="19" height="19" alt=" иконка поиск"> Поиск по сайту</a>
           </li>
           <li class="nav__item nav__item--cart">
-            <a class="nav__link nav__link--icon-cart" href="#">Корзина: пока пуста</a>
+            <a class="nav__link nav__link--icon-cart" href="#"><img class="icon-cart" src="img/icon-cart.svg" width="21" height="19" alt="иконка корзина"> Корзина: пока пуста</a>
           </li>
           <li class="nav__item nav__item--desktop-one">
-            <a class="nav__link" href="#">Новые поступления</a>
+            <a class="nav__link nav__link--desktop-one" href="#">Новые поступления</a>
           </li>
           <li class="nav__item nav__item--desktop-two">
-            <a class="nav__link" href="#">Распродажа</a>
+            <a class="nav__link nav__link--desktop-two" href="#">Распродажа</a>
           </li>
           <li class="nav__item nav__item--thin">
             Бесплатная доставка по России
@@ -177,12 +177,12 @@
                                   img/video-desktop@1x.webp 1x">
                   <source type="image/webp"
                           media="(min-width: 768px)"
-                          srcset="img/video-mobile@2x.webp 2x,
-                                  img/video-mobile@1x.webp 1x">
-                  <source type="image/webp"
-                          media="(min-width: 768px)"
                           srcset="img/video-tablet@2x.webp 2x,
                                   img/video-tablet@1x.webp 1x">
+                  <source type="image/webp"
+                          media="(min-width: 768px)"
+                          srcset="img/video-mobile@2x.webp 2x,
+                                  img/video-mobile@1x.webp 1x">
 
                   <source media="(min-width: 1150px)"
                           srcset="img/video-desktop@2x.jpg 2x,
@@ -210,17 +210,25 @@
 
       <footer class="footer">
         <div class="footer__wrapper">
-          <a class="footer__logo-miska" href="#"></a>
+          <a class="footer__logo-miska" href="#">
+            <img class="footer__icon-miska" src="img/logo-footer.svg" width="112" height="46" alt="логотип мишка">
+          </a>
           <section class="footer__social">
             <a class="footer__social-inst">
+              <img src="img/icon-insta.svg" width="22" height="21" alt="">
             </a>
             <a class="footer__social-fb">
+              <img src="img/icon-fb.svg" width="15" height="28" alt="">
             </a>
             <a class="footer__social-twit">
+              <img src="img/icon-twitter.svg" width="23" height="20" alt="">
             </a>
           </section>
           <section class="footer__maker">
-            <a class="footer__maker-link"><p class="footer__maker-text footer__maker-text--icon-academy">Разработано</p></a>
+            <a class="footer__maker-link" href="">
+              <p class="footer__maker-text footer__maker-text--icon-academy">Разработано</p>
+              <img class="footer__icon-academy" src="img/htmlacademy.svg" width="40" height="50" alt="логотип академии">
+            </a>
           </section>
         </div>
       </footer>

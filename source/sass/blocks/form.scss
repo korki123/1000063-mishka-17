@@ -253,6 +253,7 @@
   font-weight: normal;
   color: rgba(68, 68, 68, 0.3);
 
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
 }
@@ -269,6 +270,7 @@
   font-weight: normal;
   color: rgba(68, 68, 68, 0.3);
 
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
 }
@@ -695,21 +697,73 @@
 
   .form-type__username {
     width: 520px;
+
+    &:hover {
+      border-color: #62d1ba;
+    }
+
+    &:active {
+      border-color: #62d1ba;
+    }
   }
 
   .form-type__comments {
     width: 660px;
+
+    &:hover {
+      border-color: #62d1ba;
+    }
+
+    &:active {
+      border-color: #62d1ba;
+    }
   }
 
   .form-type__phone {
     width: 682px;
+
+    &:hover {
+      border-color: #62d1ba;
+    }
+
+    &:active {
+      border-color: #62d1ba;
+    }
   }
 
   .form-type__email {
     width: 682px;
+
+    &:hover {
+      border-color: #62d1ba;
+    }
+
+    &:active {
+      border-color: #62d1ba;
+    }
   }
 
   .form-type__footnote-button-wrapper {
     width: 700px;
+  }
+
+  .form-type__icon {
+    &:hover {
+      border-color: #62d1ba;
+    }
+
+    &:active {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  .form-type__checkbox-icon {
+    &:hover {
+      border-color: #62d1ba;
+    }
+
+    &:active {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
