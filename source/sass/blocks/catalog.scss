@@ -186,6 +186,8 @@
 }
 
 .catalog__button {
+  position: relative;
+
   @include button;
 
   width: 192px;
@@ -241,6 +243,14 @@
 
     width: 668px;
     margin-bottom: 53px;
+
+    // &:hover {
+    //   box-shadow: -417px 0 0 80px #ffffff, 0 0 10px 6px rgba(0, 0, 0, 0.1);
+    // }
+
+    // &:active {
+    //   box-shadow: -417px 0 0 80px #ffffff, 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    // }
   }
 
   .catalog__header {
@@ -281,15 +291,43 @@
     flex-direction: column;
 
     width: 334px;
+
+    &:hover {
+      box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .catalog__manufacture {
+    position: relative;
+
     display: flex;
     flex-direction: column;
 
     width: 668px;
 
     border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 668px;
+      height: 287px;
+    }
+
+    &:hover::before {
+      box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active::before {
+      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .catalog__manufacture-video {
@@ -301,13 +339,16 @@
   .catalog__manufacture-video-button {
     bottom: 190px;
 
+    &:hover {
+      transform: scale(1.2);
+    }
+
     &:active {
       opacity: 0.3;
 
       transform: scale(0.8);
     }
   }
-
 
   .catalog__wrapper-manufacture {
     display: flex;
@@ -427,11 +468,6 @@
     margin: 0;
   }
 
-  // .catalog__photo {
-  //   width: 316px;
-  //   height: 462px;
-  // }
-
   .catalog__wrapper {
     display: flex;
     flex-direction: column;
@@ -442,8 +478,6 @@
     min-height: 100px;
 
     padding-top: 25px;
-
-    // background-color: red;
   }
 
   .catalog__wrapper-link {
@@ -470,7 +504,6 @@
     height: 462px;
   }
 
-
   .catalog__header {
     font-size: 20px;
     line-height: 24px;
@@ -480,7 +513,6 @@
   .catalog__manufacture {
     position: relative;
 
-    flex-direction: column;
     justify-content: flex-start;
 
     width: 1050px;
@@ -488,12 +520,24 @@
 
     border: 1px solid #ececec;
 
-    &:hover {
-      box-shadow: -417px 0 0 47px #ffffff, 0 0 10px 6px rgba(0, 0, 0, 0.1);
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: auto;
+      right: 0;
+      bottom: 0;
+
+      width: 366px;
+      height: 455px;
     }
 
-    &:active {
-      box-shadow: -417px 0 0 47px #ffffff, 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    &:hover::before {
+      box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active::before {
+      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
     }
   }
 
