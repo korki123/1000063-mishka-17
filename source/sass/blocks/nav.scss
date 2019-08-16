@@ -69,6 +69,17 @@
   height: 19px;
 }
 
+.nav__link:hover .icon-search,
+.nav__link:hover .icon-cart {
+  fill: #63d1bb;
+}
+
+.nav__link:active .icon-search,
+.nav__link:active .icon-cart {
+  opacity: 0.3;
+}
+
+
 // =============================== планшет ================================
 
 @media (min-width: $tablet-width) {
@@ -276,8 +287,6 @@
     &--icon-search {
       padding-top: 30px;
       padding-bottom: 34px;
-
-      fill: red;
     }
   }
 
@@ -528,13 +537,17 @@
 
   // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-  .icon-search {
-    top: 37px;
-    left: 32px;
-  }
-
-  .icon-cart {
-    top: 35px;
-    left: 29px;
-  }
+  // .icon-search {
+  //   top: 37px;
+  //   left: 32px;
+  //
+  //   &:hover {
+  //     fill: #63d1bb;
+  //   }
+  // }
+  //
+  // .icon-cart {
+  //   top: 35px;
+  //   left: 29px;
+  // }
 }

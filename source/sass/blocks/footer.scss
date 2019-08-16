@@ -34,23 +34,93 @@
   margin: 0 20px;
 }
 
+.footer__icon-inst {
+  width: 22px;
+  height: 21px;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .footer__social-fb {
   width: 15px;
   height: 28px;
   margin: 0 20px;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+.footer__icon-fb {
+  width: 15px;
+  height: 28px;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 
 .footer__social-twit {
   width: 23px;
   height: 20px;
   margin: 0 20px;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+.footer__icon-twit {
+  width: 23px;
+  height: 20px;
+}
+
 
 .footer__maker {
   position: relative;
   width: 187px;
   margin: 0 auto;
 }
+
+.footer__maker-link {
+  color: #000000;
+  fill: #63d1bb;
+
+  &:hover {
+    color: #000000;
+    fill: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
+  }
+}
+
+// .footer__maker-link:hover {
+//   color: #000000;
+//   fill: #46c1ae;
+// }
+
 
 .footer__maker-text {
   margin: 0;
@@ -61,7 +131,7 @@
   font-size: 19px;
   line-height: 18px;
   text-align: left;
-  color: #000000;
+  // color: #000000;
 }
 
 .footer__icon-academy {
@@ -72,10 +142,17 @@
   width: 40px;
   height: 50px;
 
-
-  // background-image: url("../img/htmlacademy.svg");
-  // background-repeat: no-repeat;
+  // fill: #63d1bb;
 }
+
+// .footer__maker-link:hover .footer__icon-academy {
+//   fill: #46c1ae;
+// }
+//
+// .footer__maker-link:active {
+//   opacity: 0.3;
+// }
+
 
 // =================================== планшет ===================================
 
@@ -98,6 +175,14 @@
 
     margin-left: 5px;
     margin-bottom: 4px;
+
+    &:hover {
+      fill: #63d1bb;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .footer__icon-miska {
@@ -105,8 +190,6 @@
 
     width: 102px;
     height: 34px;
-
-    fill: #000000;
   }
 
   .footer__social {
@@ -124,7 +207,11 @@
   }
 
   .footer__icon-academy {
-    top: 24px;
+    top: 31px;
+    right: 3px;
+
+    width: 27px;
+    height: 34px;
   }
 }
 
@@ -162,11 +249,11 @@
   }
 
   .footer__icon-academy {
-    top: 23px;
-    right: -9px;
+    top: 31px;
+    right: -2px;
 
-    width: 40px;
-    height: 50px;
+    width: 27px;
+    height: 34px;
   }
 
   .icon-academy {
