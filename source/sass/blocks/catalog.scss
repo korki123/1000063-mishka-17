@@ -67,6 +67,17 @@
   }
 }
 
+// .catalog__price {
+//   &:hover {
+//     fill: #63d1bb;
+//   }
+//
+//   &:active {
+//     opacity: 0.3;
+//   }
+// }
+
+
 .catalog__photo {
   position: relative;
 
@@ -110,7 +121,7 @@
 .catalog__price {
   position: absolute;
   bottom: 31px;
-  right: 27px;
+  right: 1px;
 
   display: block;
 
@@ -130,15 +141,14 @@
   }
 }
 
-.catalog__price:hover .catalog__header {
-  opasity: 0.6;
-}
+// .catalog__price:hover .catalog__header {
+//   opasity: 0.6;
+// }
 
 .catalog__wrapper-cart {
   width: 20px;
   height: 19px;
 }
-
 
 .catalog__manufacture {
   position: relative;
@@ -181,6 +191,15 @@
 
   border: none;
   background-color: transparent;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
 }
 
 .catalog__manufacture-head {
@@ -312,10 +331,6 @@
     font-size: 15px;
   }
 
-  .catalog__price {
-    right: 33px;
-  }
-
   .catalog__icon {
     margin: 0 31px;
     margin-top: auto;
@@ -324,6 +339,11 @@
     font-size: 17px;
 
     border-top: 1px solid #ececec;
+  }
+
+  .catalog__price {
+    right: 3px;
+    bottom: 34px;
   }
 
   .catalog__wrapper {
@@ -379,15 +399,15 @@
   .catalog__manufacture-video-button {
     bottom: 190px;
 
-    &:hover {
-      transform: scale(1.2);
-    }
-
-    &:active {
-      opacity: 0.3;
-
-      transform: scale(0.8);
-    }
+    // &:hover {
+    //   transform: scale(1.2);
+    // }
+    //
+    // &:active {
+    //   opacity: 0.3;
+    //
+    //   transform: scale(0.8);
+    // }
   }
 
   .catalog__wrapper-manufacture {

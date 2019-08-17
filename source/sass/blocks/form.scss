@@ -99,47 +99,68 @@
     padding-top: 30px;
   }
 
-  &--phone {
-    padding-top: 22px;
+  // &--phone {
+  //   padding-top: 22px;
+  //
+  //   ::after {
+  //     content: "";
+  //
+  //     position: absolute;
+  //     bottom: 20px;
+  //     right: 8px;
+  //
+  //     width: 25px;
+  //     height: 24px;
+  //
+  //     background-image: url("../img/icon-phone.svg");
+  //     opacity: 0.3;
+  //   }
+  // }
 
-    ::after {
-      content: "";
-
-      position: absolute;
-      bottom: 20px;
-      right: 8px;
-
-      width: 25px;
-      height: 24px;
-
-      background-image: url("../img/icon-phone.svg");
-      opacity: 0.3;
-    }
-  }
-
-  &--e-mail {
-    padding-top: 21px;
-
-    ::after {
-      content: "";
-
-      position: absolute;
-      bottom: 15px;
-      right: 5px;
-
-      width: 32px;
-      height: 27px;
-
-      background-image: url("../img/icon-mail.svg");
-      opacity: 0.3;
-    }
-  }
-
+  // &--e-mail {
+  //   padding-top: 21px;
+  //
+  //   ::after {
+  //     content: "";
+  //
+  //     position: absolute;
+  //     bottom: 15px;
+  //     right: 5px;
+  //
+  //     width: 32px;
+  //     height: 27px;
+  //
+  //     background-image: url("../img/icon-mail.svg");
+  //     opacity: 0.3;
+  //   }
+  // }
+  //
   &--comment {
     padding-top: 24px;
   }
 }
 
+.form__icon-phone {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+
+  width: 32px;
+  height: 27px;
+
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.form__icon-mail {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+
+  width: 32px;
+  height: 27px;
+
+  fill: rgba(0, 0, 0, 0.3);
+}
 
 .form-type__label {
   position: relative;
@@ -299,6 +320,15 @@
   }
 }
 
+.form-type__phone:hover + .form__icon-phone {
+  fill: #62d1ba;
+}
+
+.form-type__phone:active + .form__icon-phone {
+  fill: #62d1ba;
+}
+
+
 .form-type__email {
   position: relative;
 
@@ -327,6 +357,16 @@
     border-color: #62d1ba;
   }
 }
+
+.form-type__email:hover + .form__icon-mail {
+  fill: #62d1ba;
+}
+
+.form-type__email:active + .form__icon-mail {
+  fill: #62d1ba;
+}
+
+
 
 .form-type__comments {
   width: 220px;
