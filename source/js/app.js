@@ -1,21 +1,40 @@
-var chart = document.querySelector(".catalog__price");
-var modalShow = document.querySelector(".modal");
+// var chart = document.querySelector(".catalog__price");
+// var modalShow = document.querySelector(".modal");
+//
+// chart.addEventListener("click", function (evt) {
+//
+//   evt.preventDefault();
+//   // console.log ("нажали на корзинку");
+//
+//   modalShow.classList.add("modal-show");
+//
+// });
 
-chart.addEventListener("click", function (evt) {
+// var modalPush = querySelector(".modal-overlay");
+// var modalPush = querySelector(".modal__button");
+// var modalClose = querySelector(".modal-show");
+//
+// modalPush.addEventListener("click", funtion() {
+//
+//   modalClose.classList.remove("modal-show");
+//
+// });
 
-  evt.preventDefault();
-  console.log ("нажали на корзинку");
+// charts.forEach((chart) => {
+//   chart.addEventListener("click", function (evt) {
+//
+//     evt.preventDefault();
+//     console.log ("нажали на корзинку");
+//   });
+// })
 
-  modalShow.classList.add("modal-show");
+var charts = document.querySelectorAll(".catalog__price");
 
-});
+charts.forEach((chart) => {
+  chart.addEventListener("click", function (evt) {
 
-var modalPush = querySelector(".modal-overlay");
-var modalPush = querySelector(".modal__button");
-var modalClose = querySelector(".modal-show");
+    evt.preventDefault();
+    console.log ("нажали на корзинку");
 
-modalPush.addEventListener("click", funtion() {
-
-  modalClose.classList.remove("modal-show");
-
-});
+  });
+})

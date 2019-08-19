@@ -99,8 +99,9 @@
     padding-top: 30px;
   }
 
-  // &--phone {
-  //   padding-top: 22px;
+  &--phone {
+    padding-top: 6px;
+  }
   //
   //   ::after {
   //     content: "";
@@ -117,9 +118,10 @@
   //   }
   // }
 
-  // &--e-mail {
-  //   padding-top: 21px;
-  //
+  &--e-mail {
+    padding-top: 6px;
+  }
+
   //   ::after {
   //     content: "";
   //
@@ -153,7 +155,7 @@
 
 .form__icon-mail {
   position: absolute;
-  bottom: 15px;
+  bottom: 11px;
   right: 5px;
 
   width: 32px;
@@ -285,6 +287,10 @@
     border-color: #62d1ba;
   }
 
+  &:focus {
+    outline: 1px solid #62d1ba;
+  }
+
 
   // &:last-child {
   //   padding-bottom: 5px;
@@ -296,6 +302,7 @@
 
   width: 260px;
   padding: 0;
+  padding-top: 15px;
   padding-bottom: 18px;
 
   font-size: 17px;
@@ -317,6 +324,10 @@
 
   &:active {
     border-color: #62d1ba;
+  }
+
+  &:focus {
+    outline: 1px solid #62d1ba;
   }
 }
 
@@ -334,6 +345,7 @@
 
   width: 260px;
   padding: 0;
+  padding-top: 15px;
   padding-bottom: 18px;
 
   font-size: 17px;
@@ -356,6 +368,10 @@
   &:active {
     border-color: #62d1ba;
   }
+
+  &:focus {
+    outline: 1px solid #62d1ba;
+  }
 }
 
 .form-type__email:hover + .form__icon-mail {
@@ -365,8 +381,6 @@
 .form-type__email:active + .form__icon-mail {
   fill: #62d1ba;
 }
-
-
 
 .form-type__comments {
   width: 220px;
@@ -391,6 +405,10 @@
 
   &:active {
     border-color: #62d1ba;
+  }
+
+  &:focus {
+    outline: 1px solid #62d1ba;
   }
 }
 
@@ -421,7 +439,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    margin: -72px;
+    margin: -66px;
     border-top: 1px solid #ededed;
   }
 
@@ -436,14 +454,14 @@
     line-height: 50px;
 
     margin-bottom: 61px;
-    padding-top: 96px;
-    padding-bottom: 90px;
+    padding-top: 94px;
+    padding-bottom: 92px;
 
     &::before {
       content: "";
 
       position: absolute;
-      left: -10px;
+      left: -13px;
       bottom: -1px;
 
       width: 100%;
@@ -497,7 +515,16 @@
     padding-top: 15px;
     padding-bottom: 0;
 
+    &--name {
+      margin-bottom: 15px;
+      padding-top: 0;
+    }
+
     &--phone {
+      padding-top: 0;
+    }
+
+    &--e-mail {
       padding-top: 0;
     }
 
@@ -627,6 +654,8 @@
 
   .form-type__label-area {
     font-size: 19px;
+
+    padding-top: 16px;
   }
 
   .form-type__username {
@@ -634,8 +663,8 @@
     // display: inline-block;
     min-width: 350px;
     margin-left: 25px;
-    margin-bottom: 40px;
-    padding-top: 0;
+    margin-bottom: 24px;
+    // padding-top: 0;
     padding-left: 18px;
 
     //
@@ -650,7 +679,7 @@
   }
 
   .form__phone {
-    padding-top: 64px;
+    padding-top: 49px;
     padding-bottom: 37px;
 
     background-color: #f1f1f1;
@@ -662,6 +691,18 @@
     padding-left: 18px;
 
     background-color: transparent;
+  }
+
+  .form__icon-phone {
+    width: 25px;
+    height: 24px;
+
+    right: 27px;
+    bottom: 18px;
+  }
+
+  .form__icon-mail {
+    right: 23px;
   }
 
   .form-type__email {
@@ -686,17 +727,17 @@
 
     width: 668px;
     margin: 0 auto;
-    margin-bottom: 93px;
+    margin-bottom: 117px;
   }
 
   .form-type__footnote {
     font-size: 17px;
+    margin: 0;
   }
 
   .form__button {
     width: 230px;
     margin: 0;
-    margin-bottom: 30px;
     order: -1;
   }
 }
@@ -722,10 +763,11 @@
     padding-bottom: 120px;
 
     &::before {
-      left: -41px;
+      left: -49px;
       height: 34px;
 
       background-image: url("../img/wave-desktop-1150.svg");
+      background-repeat: repeat-x;
     }
   }
 
@@ -820,9 +862,18 @@
     width: 682px;
   }
 
+  .form__icon-phone {
+    right: 9px;
+  }
+
+  .form__icon-mail {
+    right: 4px;
+  }
+
+
   .form-type__footnote-button-wrapper {
     width: 700px;
-    margin-bottom: 91px;
+    margin-bottom: 117px;
   }
 
   .form-type__icon {
