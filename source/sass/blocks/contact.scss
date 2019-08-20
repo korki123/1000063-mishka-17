@@ -1,6 +1,7 @@
 .contact {
   @include center-mobile;
   padding-top: 34px;
+  margin-bottom: 39px;
 }
 
 
@@ -39,6 +40,7 @@
   font-family: "Open sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
+  color: #444444;
 
   &:first-child {
     flex-basis: 75px;
@@ -46,8 +48,40 @@
   }
 
   &--underline {
-    border-bottom: 1px solid #62d1ba;
+    position: relative;
+
     line-height: 28px;
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+
+      width: 180px;
+      height: 1px;
+
+      background-color: #62d1ba;
+    }
+
+    &:hover {
+      color: #62d1ba;
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      &::before {
+        width: 158px;
+      }
+    }
+  }
+
+  &--mail-address {
+    color: #444444;
   }
 
   &--address {
@@ -70,7 +104,7 @@
 
 .contact__button {
   @include button;
-  margin: 36px auto 39px;
+  margin: 40px auto 0;
 }
 
 // ================================== планшет ==================================
@@ -134,17 +168,17 @@
       border: none;
     }
 
-    &--underline::after {
-      content: "";
-
-      position: absolute;
+    &--underline::before {
       right: 0;
-      bottom: 67px;
+      bottom: 68px;
 
       width: 200px;
-      height: 1px;
+    }
 
-      background-color: #62d1ba;
+    &--underline:active {
+      &::before {
+        width: 180px;
+      }
     }
   }
 
@@ -160,7 +194,7 @@
 
   .contact__button {
     width: 230px;
-    margin-top: 50px;
+    margin-top: 54px;
     margin-bottom: 57px;
   }
 }
@@ -186,6 +220,7 @@
     width: 350px;
     margin-right: 175px;
     margin-left: 50px;
+    padding-top: 25px;
   }
 
   .contact__head {
@@ -236,13 +271,20 @@
     &--address {
       width: 265px;
     }
+
+    &--underline {
+      &::before {
+        right: 3px;
+        bottom: 11px;
+      }
+    }
   }
 
   .contact__map {
     width: 525px;
     height: 457px;
     margin-left: 0;
-    margin-top: -8px;
+    margin-top: -11px;
   }
 
   .contact__map-yandex {

@@ -1,7 +1,7 @@
 .product-week {
   @include center-mobile;
 
-  padding-bottom: 34px;
+  padding-bottom: 36px;
 
   font-family: "Open sans", "Arial", sans-serif;
 }
@@ -79,7 +79,7 @@
   height: 315px;
   margin: 0 auto;
   margin-top: 29px;
-  padding-bottom: 24px;
+  margin-bottom: 21px;
 
   background-color: #f1f1f1;
   order: 0;
@@ -112,6 +112,11 @@
 
 .product-week__button {
   @include button;
+
+  :hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
 }
 
 
@@ -136,7 +141,7 @@
     width: 668px;
     margin: 0 auto;
     pading: 0;
-    padding-top: 45px;
+    padding-top: 43px;
   }
 
   .product-week__head {
@@ -169,12 +174,12 @@
     position: relative;
 
     width: 668px;
-    padding-top: 50px;
+    padding-top: 49px;
   }
 
   .product-week__description {
     width: 290px;
-    padding-bottom: 34px;
+    padding-bottom: 38px;
 
     font-size: 17px;
     line-height: 30px;
@@ -287,7 +292,7 @@
 
     display: block;
     right: -211px;
-    bottom: 0;
+    bottom: -2px;
 
     width: 525px;
     height: 636px;
