@@ -4,6 +4,8 @@ var modalShow = document.querySelector('.modal');
 var overlay = document.querySelector('.modal-overlay');
 var charts = document.querySelectorAll('.catalog__price');
 
+var mobileClose = document.querySelector('.site-menu__toggle--icon-close')
+
 order.addEventListener('click', function (evt) {
 
   evt.preventDefault();
@@ -11,7 +13,6 @@ order.addEventListener('click', function (evt) {
 
   modalShow.classList.add('modal-show');
 });
-
 
 
 overlay.addEventListener('click', function (evt) {
@@ -31,3 +32,13 @@ charts.forEach((chart) => {
 
   });
 });
+
+// -----------------------------_---------------------------------
+
+
+var navigation = document.querySelector('.nav');
+var toggle  = document.querySelector('.site-menu__toggle');
+
+toggle.addEventListener('click', fuction (etv) {
+
+})
