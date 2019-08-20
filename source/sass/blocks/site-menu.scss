@@ -51,7 +51,16 @@
 
   border: 0;
   background-color: #ffffff;
-  background-image: url("../img/icon-menu-close.svg");
+
+  cursor: pointer;
+
+  &--icon-close {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+
+  &--icon-hamburger {
+    background-image: url("../img/hamburger.svg");
+  }
 }
 
 // =============================== планшет ================================

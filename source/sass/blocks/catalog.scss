@@ -27,11 +27,11 @@
 
   border: 1px solid #ededed;
 
-  &:hover {
+  &:hover .catalog__wrapper {
     box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active {
+  &:active .catalog__wrapper {
     box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.1);
   }
 }
@@ -170,11 +170,11 @@
 
   border: 1px solid #ededed;
 
-  &:hover {
+  &:hover .catalog__manufacture-wrapper-text {
     box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active {
+  &:active .catalog__manufacture-wrapper-text {
     box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.1);
   }
 }
@@ -205,6 +205,17 @@
 
   border: none;
   background-color: #f1f1f1;
+}
+
+.catalog__manufacture-player-link {
+  &:hover + .catalog__manufacture-video-button {
+    transform: scale(1.2);
+  }
+
+  &:active + .catalog__manufacture-video-button {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
 }
 
 .catalog__manufacture-video-button {

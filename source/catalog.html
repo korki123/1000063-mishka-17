@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" crs="js/app.js"></script>
   </head>
 
   <body>
@@ -62,9 +61,10 @@
           <!-- <div class="site-menu__logo-image">
           </div> -->
         </a>
-        <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
 
-        <!-- <button class="site-menu__toggle site-menu__toggle--icon-close" type="button" name="button"></button> -->
+        <button class="site-menu__toggle site-menu__toggle--icon-close" type="button" name="button"></button>
+
+        <!-- <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button> -->
       </div>
       <!-- ========================================= выпадающее меню навигация ========================================= -->
       <nav class="nav">
@@ -147,7 +147,7 @@
               <p class="catalog__icon">1 200 руб.
                 <a class="catalog__price" href="">
                   <svg class="catalog__wrapper-cart">
-                    <use xlink:href="#icon-cart">
+                    <use xlink:href="#icon-cart"></use>
                   </svg>
                 </a>
               </p>
@@ -190,7 +190,7 @@
                 <p class="catalog__icon">690 руб.
                   <a class="catalog__price" href="">
                     <svg class="catalog__wrapper-cart">
-                      <use xlink:href="#icon-cart">
+                      <use xlink:href="#icon-cart"></use>
                     </svg>
                   </a>
                 </p>
@@ -233,7 +233,7 @@
                 <p class="catalog__icon">1 500 руб.
                   <a class="catalog__price" href="#">
                     <svg class="catalog__wrapper-cart">
-                      <use xlink:href="#icon-cart">
+                      <use xlink:href="#icon-cart"></use>
                     </svg>
                   </a>
                 </p>
@@ -242,35 +242,35 @@
 
             <section class="catalog__manufacture">
               <div class="catalog__manufacture-wrapper-player">
-                <picture>
-                  <source type="image/web"
-                          media="(min-width: 1150px)"
-                          srcset="img/video-desktop@2x.webp 2x,
-                                  img/video-desktop@1x.webp 1x">
-                  <source type="image/webp"
-                          media="(min-width: 768px)"
-                          srcset="img/video-tablet@2x.webp 2x,
-                                  img/video-tablet@1x.webp 1x">
-                  <source type="image/webp"
-                          media="(min-width: 768px)"
-                          srcset="img/video-mobile@2x.webp 2x,
-                                  img/video-mobile@1x.webp 1x">
+                <a class="catalog__manufacture-player-link" href="">
+                  <picture>
+                    <source type="image/web"
+                    media="(min-width: 1150px)"
+                    srcset="img/video-desktop@2x.webp 2x,
+                    img/video-desktop@1x.webp 1x">
+                    <source type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="img/video-tablet@2x.webp 2x,
+                    img/video-tablet@1x.webp 1x">
+                    <source type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="img/video-mobile@2x.webp 2x,
+                    img/video-mobile@1x.webp 1x">
 
-                  <source media="(min-width: 1150px)"
-                          srcset="img/video-desktop@2x.jpg 2x,
-                                  img/video-desktop@1x.jpg 1x">
-                  <source media="(min-width: 768px)"
-                          srcset="img/video-tablet@2x.jpg 2x,
-                                  img/video-tablet@1x.jpg 1x">
+                    <source media="(min-width: 1150px)"
+                    srcset="img/video-desktop@2x.jpg 2x,
+                    img/video-desktop@1x.jpg 1x">
+                    <source media="(min-width: 768px)"
+                    srcset="img/video-tablet@2x.jpg 2x,
+                    img/video-tablet@1x.jpg 1x">
 
-                  <img class="catalog__manufacture-video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x, img/video-mobile@1x.jpg 1x" width="260" height="150" alt="видео производство">
-                </picture>
-
+                    <img class="catalog__manufacture-video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x, img/video-mobile@1x.jpg 1x" width="260" height="150" alt="видео производство">
+                  </picture>
+                </a>
                 <button class="catalog__manufacture-video-button" type="button" name="button">
                   <img src="img/play.svg" width="101" height="77" alt="кнопка плеера">
                 </button>
               </div>
-
               <div class="catalog__manufacture-wrapper-text">
                 <h3 class="catalog__manufacture-head catalog__manufacture-head--icon-video">Процесс производства</h3>
                 <p class="catalog__manufacture-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -319,6 +319,7 @@
               <svg class="footer__icon-academy">
                 <use class="icon-academy" xlink:href="#logo-academy"></use>
               </svg>
+            </a>
               <!-- <img class="footer__icon-academy" src="img/htmlacademy.svg" width="40" height="50" alt="логотип академии">
             </a> -->
           </section>
@@ -377,6 +378,6 @@
 
       </script> -->
 
-
+      <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
