@@ -1,20 +1,9 @@
 
-var order = document.querySelector('.product-week__button');
 var modalShow = document.querySelector('.modal');
 var overlay = document.querySelector('.modal-overlay');
 var charts = document.querySelectorAll('.catalog__price');
 
 var mobileClose = document.querySelector('.site-menu__toggle--icon-close')
-
-// ====================== показать модалку. главная
-
-order.addEventListener('click', function (evt) {
-
-  evt.preventDefault();
-  console.log('нажали на корзинку');
-
-  modalShow.classList.add('modal-show');
-});
 
 // ====================== закрыть модалку
 
@@ -26,19 +15,32 @@ overlay.addEventListener('click', function (evt) {
   modalShow.classList.remove('modal-show');
 });
 
-// ====================== показать модалку. каталог (не работает)
+// ====================== показать модалку. каталог (работает)
+
+
 
 charts.forEach((chart) => {
+  chart.addEventListener('click', function (etv) {
 
-  chart.addEventListener('click', function (evt) {
+    etv.preventDefault();
 
     modalShow.classList.add('modal-show');
 
   });
 });
 
+//  {
+//  chart.addEventListener("click", function (evt) {
+//    evt.preventDefault();
+//    console.log ("нажали на корзинку");
+//  }
+// }
 
-// ====================== мобильное меню. (работает)
+
+
+
+
+// ====================== мобильное меню. каталог (работает)
 
 
 var navToggle  = document.querySelector('.site-menu__toggle--icon-close');
