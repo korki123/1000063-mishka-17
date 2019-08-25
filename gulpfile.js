@@ -77,9 +77,12 @@ gulp.task("sprite", function(){
   .pipe(gulp.dest("source/img"))
 });
 
-galp.task("thtml", function() {
+gulp.task("posthtml", function() {
   return gulp.src("source/*.html")
-  .pipe(posthtml([include()]))
 
-  pipe.(gulp.dest("source"));
-})
+  .pipe(posthtml([
+    include()
+  ]))
+
+  .pipe(gulp.dest("source"))
+});
