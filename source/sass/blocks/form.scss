@@ -220,7 +220,7 @@
 }
 
 .form-type__radio:focus + .form-type__icon {
-  outline: 3px solid #62d1ba;
+  border-color: #62d1ba;
 }
 
 
@@ -249,7 +249,7 @@
 }
 
 .form-type__checkbox:focus + .form-type__checkbox-icon {
-  outline: 3px solid #62d1ba;
+  border-color: #62d1ba;
 }
 
 
