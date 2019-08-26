@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
@@ -12,7 +12,7 @@
     <!-- ========================================= спрайт ========================================= -->
 
     <div style="display: none">
-      <include src="source/img/sprite.svg"></include>
+      <include src="build/img/sprite.svg"></include>
     </div>
 
     <!-- ================================================================================== -->
@@ -42,7 +42,7 @@
           <li class="nav__item">
             <a class="nav__link nav__link--icon-search" href="#">
               <svg class="icon-search">
-                <use xlink:href="#icon-search"></use>
+                <use xlink:href="#sprite-icon-search"></use>
               </svg>
               Поиск по сайту</a>
             </li>
@@ -50,7 +50,7 @@
           <li class="nav__item nav__item--cart">
             <a class="nav__link nav__link--icon-cart" href="#">
               <svg class="icon-cart">
-                <use xlink:href="#icon-cart"></use>
+                <use xlink:href="#sprite-icon-cart"></use>
               </svg>
               <!-- <img class="icon-cart" src="img/icon-cart.svg" width="21" height="19" alt="иконка корзина">  -->
 
@@ -157,7 +157,7 @@
                   <label for="phone">
                     <input class="form-type__phone" id="phone" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" value="" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required="">
                     <svg class="form__icon-phone">
-                      <use xlink:href="#icon-phone"></use>
+                      <use xlink:href="#sprite-icon-phone"></use>
                     </svg>
                   </label>
                 </div>
@@ -171,7 +171,7 @@
                   <label for="e-mail" class="form-type__label-area">
                     <input class="form-type__email" id="e-mail" type="email" name="e-mail" placeholder="Ваш E-mail" value="" required="">
                     <svg class="form__icon-mail">
-                      <use xlink:href="#icon-mail"></use>
+                      <use xlink:href="#sprite-icon-mail"></use>
                     </svg>
                   </label>
                 </div>
@@ -199,27 +199,27 @@
       <footer class="footer">
         <div class="footer__wrapper">
           <a class="footer__logo-miska" href="#">
-            <svg class="footer__icon-miska" width="112" height="46">
-              <use xlink:href="#logo-footer"></use>
+            <svg class="footer__icon-miska">
+              <use xlink:href="#sprite-logo-footer"></use>
             </svg>
             <!-- <img class="footer__icon-miska" src="img/logo-footer.svg" width="112" height="46" alt="логотип мишка"> -->
           </a>
           <section class="footer__social">
             <a class="footer__social-inst" href="">
               <svg class="footer__icon-inst">
-                <use xlink:href="#icon-insta"></use>
+                <use xlink:href="#sprite-icon-insta"></use>
               </svg>
               <!-- <img src="img/icon-insta.svg" width="22" height="21" alt=""> -->
             </a>
             <a class="footer__social-fb" href="">
               <svg class="footer__icon-fb">
-                <use xlink:href="#icon-fb"></use>
+                <use xlink:href="#sprite-icon-fb"></use>
               </svg>
               <!-- <img src="img/icon-fb.svg" width="15" height="28" alt=""> -->
             </a>
             <a class="footer__social-twit" href="">
               <svg class="footer__icon-twit">
-                <use xlink:href="#icon-twitter"></use>
+                <use xlink:href="#sprite-icon-twitter"></use>
               </svg>
               <!-- <img src="img/icon-twitter.svg" width="23" height="20" alt=""> -->
             </a>

@@ -219,6 +219,10 @@
   background-position: center;
 }
 
+.form-type__radio:focus + .form-type__icon {
+  outline: 3px solid #62d1ba;
+}
+
 
 .form-type__checkbox {
   appearance: none;
@@ -244,10 +248,8 @@
   }
 }
 
-.form-type__checkbox:checked + .form-type__checkbox-icon {
-  background-image: url("../img/tick-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.form-type__checkbox:focus + .form-type__checkbox-icon {
+  outline: 3px solid #62d1ba;
 }
 
 
