@@ -123,14 +123,14 @@
     background-color: #56c3b2;
   }
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 0 0 #63d1bb;
+  // &:hover {
+  //   transform: translateY(-5px);
+  //   box-shadow: 0 5px 0 0 #63d1bb;
 
-    &::after {
-      opacity: 0.7;
-    }
+  &::after {
+    opacity: 0.7;
   }
+  // }
 
   &:active {
     .showcase__link {
@@ -142,10 +142,10 @@
     }
   }
 
-  &:nth-child(2n):hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 0 0 #56c3b2;
-  }
+  // &:nth-child(2n):hover {
+  //   transform: translateY(-5px);
+  //   box-shadow: 0 5px 0 0 #56c3b2;
+  // }
 }
 
 
@@ -249,6 +249,16 @@
     list-style: none;
 
     border: none;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 0 0 #63d1bb;
+    }
+
+    &:nth-child(2n):hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 0 0 #56c3b2;
+    }
 
     &--interior::after {
       top: 30px;

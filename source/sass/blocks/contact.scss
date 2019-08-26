@@ -1,7 +1,7 @@
 .contact {
-  @include center-mobile;
-  padding-top: 34px;
+  margin: 0 auto;
   margin-bottom: 39px;
+  padding-top: 34px;
 }
 
 
@@ -82,6 +82,10 @@
 
   &--mail-address {
     color: #444444;
+
+    &:hover {
+      color: #62d1ba;
+    }
   }
 
   &--address {
@@ -90,13 +94,13 @@
 }
 
 .contact__map {
-  width: 320px;
+  width: 100%;
   height: 457px;
   margin: 0 auto;
 }
 
 .contact__map-yandex {
-  width: 320px;
+  width: 100%;
   height: 457px;
 
   border-width: 0;
