@@ -29,16 +29,6 @@ charts.forEach((chart) => {
   });
 });
 
-//  {
-//  chart.addEventListener("click", function (evt) {
-//    evt.preventDefault();
-//    console.log ("нажали на корзинку");
-//  }
-// }
-
-
-
-
 
 // ====================== мобильное меню. каталог (работает)
 

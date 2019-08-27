@@ -35,7 +35,6 @@
   position: relative;
 
   display: block;
-  padding-right: auto;
   padding-top: 26px;
   padding-bottom: 27px;
   padding-left: 75px;
@@ -102,92 +101,6 @@
     margin: 0;
   }
 
-  // .nav__item {
-  //   position: relative;
-  //
-  //   width: 167px;
-  //
-  //   padding-left: 3px;
-  //   padding-right: 0;
-  //   padding-top: 24px;
-  //   padding-bottom: 30px;
-  //
-  //   font-size: 15px;
-  //   line-height: 24px;
-  //   text-align: left;
-  //   list-style: none;
-  //
-  //   border-top: none;
-  //   border-bottom: none;
-  //
-  //   &--one {
-  //     padding-top: 17px;
-  //   }
-  //
-  //   &--two {
-  //     padding-top: 17px;
-  //   }
-  //
-  //   &--thin {
-  //     display: block;
-  //     flex-grow: 1;
-  //
-  //     padding-right: 51px;
-  //     // margin-left: auto;
-  //
-  //     font-weight: normal;
-  //     line-height: 12px;
-  //     text-align: right;
-  //   }
-  //
-  //   &--cart {
-  //     padding-left: 0;
-  //     margin-bottom: 8px;
-  //   }
-  //
-  //   &:nth-child(3) {
-  //     order: -1;
-  //
-  //     width: 82px;
-  //     margin-left: 320px;
-  //
-  //     font-size: 0;
-  //
-  //     border-left: 1px solid #ececec;
-  //     border-right: 1px solid #ececec;
-  //
-  //     ::before {
-  //       top: 13px;
-  //       left: 35px;
-  //       width: 24px;
-  //       height: 24px;
-  //     }
-  //   }
-  //
-  //   &:nth-child(4) {
-  //     order: -1;
-  //
-  //     width: 265px;
-  //     padding-top: 30px;
-  //     padding-right: 49px;
-  //     padding-bottom: 27px;
-  //     // margin-left: auto;
-  //
-  //     font-size: 17px;
-  //     text-align: right;
-  //
-  //     ::before {
-  //       top: 5px;
-  //       left: 33px;
-  //     }
-  //   }
-  // }
-  //
-  // .nav__link {
-  //   padding: 0;
-  // }
-  // +++++++++++++++++++++++++++++проба+++++++++++++++++++++++++++++++++++++
-
   .nav__item {
     position: relative;
 
@@ -219,7 +132,6 @@
       flex-grow: 1;
 
       padding-right: 51px;
-      // margin-left: auto;
 
       font-weight: normal;
       line-height: 12px;
@@ -258,15 +170,9 @@
       padding-top: 0;
       padding-right: 0;
       padding-bottom: 0;
-      // margin-left: auto;
 
       font-size: 17px;
       text-align: right;
-
-      // &::before {
-      //   top: 36px;
-      //   left: 33px;
-      // }
     }
   }
 
@@ -324,112 +230,8 @@
     margin: 0 auto;
   }
 
-  // .nav__item {
-  //   position: relative;
-  //
-  //   width: 167px;
-  //
-  //   padding-left: 0;
-  //   padding-right: 0;
-  //   padding-top: 30px;
-  //   padding-bottom: 30px;
-  //
-  //   font-size: 15px;
-  //   line-height: 24px;
-  //   text-align: left;
-  //   list-style: none;
-  //
-  //   border-bottom: none;
-  //
-  //   &--one {
-  //     width: 185px;
-  //     border-right: 1px solid #ececec;
-  //     font-size: 17px;
-  //   }
-  //
-  //   &--two {
-  //     width: 215px;
-  //     padding-left: 35px;
-  //     font-size: 17px;
-  //   }
-  //
-  //   &--thin {
-  //     display: block;
-  //
-  //     width: 265px;
-  //     margin-left: auto;
-  //     padding-top: 17px;
-  //     padding-right: 0;
-  //
-  //     font-weight: normal;
-  //     text-align: right;
-  //   }
-  //
-  //   &--desktop-one {
-  //     display: block;
-  //
-  //     padding-top: 17px;
-  //
-  //     width: 185px;
-  //   }
-  //
-  //   &--desktop-two {
-  //     display: block;
-  //
-  //     width: 215px;
-  //     padding-top: 17px;
-  //     padding-left: 35px;
-  //   }
-  //
-  //   &--cart {
-  //     width: 270px;
-  //
-  //     padding-right: 4px;
-  //   }
-  //
-  //   &:nth-child(3) {
-  //     order: 0;
-  //
-  //     width: 82px;
-  //     margin-left: 265px;
-  //
-  //     font-size: 0;
-  //
-  //     border-left: 1px solid #ececec;
-  //     border-right: 1px solid #ececec;
-  //
-  //     ::before {
-  //       top: 6px;
-  //       left: 30px;
-  //     }
-  //   }
-  //
-  //   &:nth-child(4) {
-  //     order: 0;
-  //
-  //     width: 265px;
-  //     padding-right: 0;
-  //     margin-left: auto;
-  //
-  //     font-size: 17px;
-  //     text-align: right;
-  //   }
-  // }
-
-
-  // ++++++++++++++++++++++++++++++++++++++ проба +++++++++++++++++++++++++++++
-
   .nav__item {
-    // width: 167px;
-
     padding: 0;
-
-    // font-size: 15px;
-    // line-height: 24px;
-    // text-align: left;
-    // list-style: none;
-
-    // border-bottom: none;
 
     &--one {
       width: 185px;
@@ -486,11 +288,6 @@
 
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
-
-      // ::before {
-      //   top: 6px;
-      //   left: 30px;
-      // }
     }
 
     &:nth-child(4) {
@@ -539,18 +336,6 @@
     }
   }
 
-
-  // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-  // .icon-search {
-  //   top: 37px;
-  //   left: 32px;
-  //
-  //   &:hover {
-  //     fill: #63d1bb;
-  //   }
-  // }
-  //
   .icon-cart {
     left: 29px;
   }

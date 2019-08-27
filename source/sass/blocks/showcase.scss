@@ -58,17 +58,6 @@
   color: #ffffff;
   background-color: transparent;
 
-  // &--interior {
-  //   position: absolute;
-  //   top: -2px;
-  //   right: -123px;
-  //
-  //   width: 40px;
-  //   height: 62px;
-  //
-  //   opacity: 0.5;
-  // }
-
   &--toy {
     position: absolute;
     top: -5px;
@@ -123,14 +112,9 @@
     background-color: #56c3b2;
   }
 
-  // &:hover {
-  //   transform: translateY(-5px);
-  //   box-shadow: 0 5px 0 0 #63d1bb;
-
   &::after {
     opacity: 0.7;
   }
-  // }
 
   &:active {
     .showcase__link {
@@ -141,11 +125,6 @@
       opacity: 0.3;
     }
   }
-
-  // &:nth-child(2n):hover {
-  //   transform: translateY(-5px);
-  //   box-shadow: 0 5px 0 0 #56c3b2;
-  // }
 }
 
 
