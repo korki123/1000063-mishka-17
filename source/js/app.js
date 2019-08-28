@@ -28,27 +28,39 @@ overlay.addEventListener('click', function (evt) {
 
 // ====================== показать модалку. каталог (не работает)
 
-charts.forEach((chart) => {
-
-  chart.addEventListener('click', function (evt) {
-
-    modalShow.classList.add('modal-show');
-
-  });
-});
+// charts.forEach((chart) => {
+//
+//   chart.addEventListener('click', function (evt) {
+//
+//     modalShow.classList.add('modal-show');
+//
+//   });
+// });
 
 
 // ====================== мобильное меню. (работает)
 
 
-var navToggle  = document.querySelector('.site-menu__toggle--icon-close');
-var navigation = document.querySelector('.nav');
+// var navToggle  = document.querySelector('.site-menu__toggle--icon-close');
+// var navigation = document.querySelector('.nav');
+//
+//   navToggle.addEventListener('click', function (etv) {
+//
+//     etv.preventDefault();
+//
+//     navToggle.classList.toggle('site-menu__toggle--icon-hamburger');
+//
+//     navigation.classList.toggle('nav-close');
+//   });
 
-  navToggle.addEventListener('click', function (etv) {
 
-    etv.preventDefault();
+var navToggle = document.querySelector('.site-menu__toggle--icon-hamburger');
+var navigation = document.querySelector('.nav-close');
 
-    navToggle.classList.toggle('site-menu__toggle--icon-hamburger');
+ navToggle.addEventListener('click', function(etv) {
+   etv.preventDefault();
 
-    navigation.classList.toggle('nav-close');
-  });
+   navToggle.classList.toggle('site-menu__toggle--icon-close');
+
+   navigation.classList.toggle('nav');
+ });

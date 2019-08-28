@@ -24,10 +24,10 @@
       <div class="site-menu">
         <a class="site-menu__logo" href="index.html">
         </a>
-        <button class="site-menu__toggle site-menu__toggle--icon-close" type="button" name="button"></button>
+        <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
       </div>
       <!-- ========================================= выпадающее меню навигация ========================================= -->
-      <nav class="nav">
+      <nav class="nav-close">
         <ul class="nav__list">
           <li class="nav__item nav__item--one">
             <a class="nav__link nav__link--one" href="catalog.html">Каталог товаров</a>
@@ -186,7 +186,7 @@
           </div>
 
           <div class="contact__map">
-            <iframe class="contact__map-yandex" src="https://yandex.ru/map-widget/v1/-/CGVWjC35" width="560" height="400" allowfullscreen="allowfullscreen"></iframe>
+            <iframe class="contact__map-yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac376d8178b21d2eeb46cb9eef020b2be96fc048463bdbcb83aba081faa7549cd&source=constructor" width="560" height="400" allowfullscreen="allowfullscreen"></iframe>
           </div>
 
           <a class="contact__button button" href="#">Напишите нам</a>
@@ -233,7 +233,7 @@
   <section class="modal">
     <div class="modal-overlay"></div>
 
-    <div class="modal__wrapper">
+    <form class="modal__wrapper">
       <p class="modal__head">Добавить в&nbsp;корзину</p>
       <p class="modal__text">Выберите размер:</p>
       <div class="modal__size-wrapper">
@@ -247,8 +247,8 @@
           <input class="modal__radio visually-hidden" type="radio" name="size" value="l"><span class="modal__size-text">l</span>
         </label>
       </div>
-      <button class="modal__button button" type="button" name="button">Добавить</button>
-    </div>
+      <button class="modal__button button" type="submit" form="" name="button">Добавить</button>
+    </form>
   </section>
   <!-- ========================================= модальное окно финиш ========================================= -->
 

@@ -33,14 +33,25 @@ charts.forEach((chart) => {
 // ====================== мобильное меню. каталог (работает)
 
 
-var navToggle  = document.querySelector('.site-menu__toggle--icon-close');
-var navigation = document.querySelector('.nav');
+// var navToggle  = document.querySelector('.site-menu__toggle--icon-close');
+// var navigation = document.querySelector('.nav');
+//
+//   navToggle.addEventListener('click', function (etv) {
+//
+//     etv.preventDefault();
+//
+//     navToggle.classList.toggle('site-menu__toggle--icon-hamburger');
+//
+//     navigation.classList.toggle('nav-close');
+//   });
 
-  navToggle.addEventListener('click', function (etv) {
+var navToggle = document.querySelector('.site-menu__toggle--icon-hamburger');
+var navigation = document.querySelector('.nav-close');
 
-    etv.preventDefault();
+ navToggle.addEventListener('click', function(etv) {
+   etv.preventDefault();
 
-    navToggle.classList.toggle('site-menu__toggle--icon-hamburger');
+   navToggle.classList.toggle('site-menu__toggle--icon-close');
 
-    navigation.classList.toggle('nav-close');
-  });
+   navigation.classList.toggle('nav');
+ });

@@ -24,12 +24,10 @@
       <div class="site-menu">
         <a class="site-menu__logo" href="index.html">
         </a>
-
-        <button class="site-menu__toggle site-menu__toggle--icon-close" type="button" name="button"></button>
-
+        <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
       </div>
       <!-- ========================================= выпадающее меню навигация ========================================= -->
-      <nav class="nav">
+      <nav class="nav-close">
         <ul class="nav__list">
           <li class="nav__item nav__item--one">
             <a class="nav__link nav__link--one" href="catalog.html">Каталог товаров</a>
@@ -51,9 +49,8 @@
               <svg class="icon-cart">
                 <use xlink:href="#sprite-icon-cart"></use>
               </svg>
-              <!-- <img class="icon-cart" src="img/icon-cart.svg" width="21" height="19" alt="иконка корзина">  -->
-
-              Корзина: пока пуста</a>
+              Корзина: пока пуста
+            </a>
           </li>
           <li class="nav__item nav__item--desktop-one">
             <a class="nav__link nav__link--desktop-one" href="#">Новые поступления</a>
@@ -177,39 +174,38 @@
                 </p>
               </div>
             </article>
+          </section>
 
-            <section class="catalog__manufacture">
-              <div class="catalog__manufacture-wrapper-player">
-                <a class="catalog__manufacture-player-link" href="">
-                  <picture>
-                    <source type="image/web" media="(min-width: 1150px)" srcset="img/video-desktop@2x.webp 2x,
-                    img/video-desktop@1x.webp 1x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@2x.webp 2x,
-                    img/video-tablet@1x.webp 1x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/video-mobile@2x.webp 2x,
-                    img/video-mobile@1x.webp 1x">
+          <section class="catalog__manufacture">
+            <div class="catalog__manufacture-wrapper-player">
+              <a class="catalog__manufacture-player-link" href="">
+                <picture>
+                  <source type="image/web" media="(min-width: 1150px)" srcset="img/video-desktop@2x.webp 2x,
+                  img/video-desktop@1x.webp 1x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@2x.webp 2x,
+                  img/video-tablet@1x.webp 1x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video-mobile@2x.webp 2x,
+                  img/video-mobile@1x.webp 1x">
 
-                    <source media="(min-width: 1150px)" srcset="img/video-desktop@2x.jpg 2x,
-                    img/video-desktop@1x.jpg 1x">
-                    <source media="(min-width: 768px)" srcset="img/video-tablet@2x.jpg 2x,
-                    img/video-tablet@1x.jpg 1x">
+                  <source media="(min-width: 1150px)" srcset="img/video-desktop@2x.jpg 2x,
+                  img/video-desktop@1x.jpg 1x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@2x.jpg 2x,
+                  img/video-tablet@1x.jpg 1x">
 
-                    <img class="catalog__manufacture-video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x, img/video-mobile@1x.jpg 1x" width="260" height="150" alt="видео производство">
-                  </picture>
-                </a>
-                <button class="catalog__manufacture-video-button" type="button" name="button">
-                  <img src="img/play.svg" width="101" height="77" alt="кнопка плеера">
-                </button>
+                  <img class="catalog__manufacture-video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x, img/video-mobile@1x.jpg 1x" width="260" height="150" alt="видео производство">
+                </picture>
+              </a>
+              <button class="catalog__manufacture-video-button" type="button" name="button">
+                <img src="img/play.svg" width="101" height="77" alt="кнопка плеера">
+              </button>
+            </div>
+            <div class="catalog__manufacture-wrapper-text">
+              <h3 class="catalog__manufacture-head catalog__manufacture-head--icon-video">Процесс производства</h3>
+              <p class="catalog__manufacture-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <div class="catalog__button-wrapper">
+                <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
               </div>
-              <div class="catalog__manufacture-wrapper-text">
-                <h3 class="catalog__manufacture-head catalog__manufacture-head--icon-video">Процесс производства</h3>
-                <p class="catalog__manufacture-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-                <div class="catalog__button-wrapper">
-                  <button class="catalog__button button" type="button" name="button">Сделать заказ</button>
-                </div>
-              </div>
-
-            </section>
+            </div>
 
           </section>
       </main>
@@ -220,26 +216,22 @@
             <svg class="footer__icon-miska">
               <use xlink:href="#sprite-logo-footer"></use>
             </svg>
-            <!-- <img class="footer__icon-miska" src="img/logo-footer.svg" width="112" height="46" alt="логотип мишка"> -->
           </a>
           <section class="footer__social">
             <a class="footer__social-inst" href="">
               <svg class="footer__icon-inst">
                 <use xlink:href="#sprite-icon-insta"></use>
               </svg>
-              <!-- <img src="img/icon-insta.svg" width="22" height="21" alt=""> -->
             </a>
             <a class="footer__social-fb" href="">
               <svg class="footer__icon-fb">
                 <use xlink:href="#sprite-icon-fb"></use>
               </svg>
-              <!-- <img src="img/icon-fb.svg" width="15" height="28" alt=""> -->
             </a>
             <a class="footer__social-twit" href="">
               <svg class="footer__icon-twit">
                 <use xlink:href="#sprite-icon-twitter"></use>
               </svg>
-              <!-- <img src="img/icon-twitter.svg" width="23" height="20" alt=""> -->
             </a>
           </section>
           <section class="footer__maker">
@@ -247,11 +239,9 @@
               <p class="footer__maker-text footer__maker-text--icon-academy">Разработано</p>
 
               <svg class="footer__icon-academy">
-                <use class="icon-academy" xlink:href="#logo-academy"></use>
+                <use class="icon-academy" xlink:href="#sprite-logo-academy"></use>
               </svg>
             </a>
-              <!-- <img class="footer__icon-academy" src="img/htmlacademy.svg" width="40" height="50" alt="логотип академии">
-            </a> -->
           </section>
         </div>
       </footer>
@@ -280,34 +270,7 @@
 
       <!-- ========================================= модальное окно финиш ========================================= -->
 
-      <!-- ========================================= скрипт ========================================= -->
-
-      <!-- <script>
-      var chart = document.querySelectorAll(".catalog__price");
-      var modalShow = document.querySelector(".modal");
-
-      chart.addEventListener("click", function (evt) {
-
-        evt.preventDefault();
-        console.log ("нажали на корзинку");
-
-        modalShow.classList.add("modal-show");
-
-      });
-
-      var modalPush = querySelector(".modal-overlay");
-      var modalPush = querySelector(".modal__button");
-      var modalClose = querySelector(".modal-show");
-
-      modalClose.addEventListener("click", funtion() {
-
-        modalClose.classList.remove("modal-show");
-
-      });
-
-
-      </script> -->
-
+      <!-- <script type="text/javascript" src="js/app.js"></script> -->
       <script type="text/javascript" src="js/catalog.js"></script>
   </body>
 </html>

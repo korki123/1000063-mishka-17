@@ -1,5 +1,5 @@
-.nav {
-  display: block;
+.nav-close {
+  display: none;
   width: 320px;
   margin: 0 auto;
 
@@ -7,6 +7,10 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+}
+
+.nav {
+  display: block;
 }
 
 .nav__list {
@@ -79,18 +83,19 @@
   opacity: 0.3;
 }
 
-.nav-close {
-  display: none;
-}
-
-
 // =============================== планшет ================================
 
 @media (min-width: $tablet-width) {
-  .nav {
+  .nav-close {
+    display: block;
     width: 768px;
     margin: 0;
   }
+
+  // .nav {
+  //   width: 768px;
+  //   margin: 0;
+  // }
 
   .nav__list {
     display: flex;
