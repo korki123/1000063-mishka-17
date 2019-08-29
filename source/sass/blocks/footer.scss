@@ -12,14 +12,16 @@
 }
 
 .footer__social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  width: 150px;
+  // flex-wrap: wrap;
+
+  // justify-content: space-between;
+  // align-items: center;
 
 
-  padding: 26px 0;
-  padding-right: 7px;
-  margin: 0 30px;
+  padding: 24px 0;
+  margin: 0 auto;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -29,9 +31,11 @@
 }
 
 .footer__social-inst {
-  width: 22px;
-  height: 21px;
-  margin: 0 20px;
+  display: inline-block;
+
+  width: 50px;
+  height: 28px;
+  margin: 0;
 }
 
 .footer__icon-inst {
@@ -48,9 +52,13 @@
 }
 
 .footer__social-fb {
-  width: 15px;
+  display: inline-block;
+
+  width: 50px;
   height: 28px;
-  margin: 0 20px;
+  margin: 0;
+
+  text-align: center;
 
   &:hover {
     fill: #63d1bb;
@@ -65,6 +73,8 @@
   width: 15px;
   height: 28px;
 
+  margin-right: 7px;
+
   &:hover {
     fill: #63d1bb;
   }
@@ -75,9 +85,13 @@
 }
 
 .footer__social-twit {
-  width: 23px;
-  height: 20px;
-  margin: 0 20px;
+  display: inline-block;
+
+  width: 50px;
+  height: 28px;
+  margin: 0;
+
+  text-align: right;
 
   &:hover {
     fill: #63d1bb;
@@ -91,6 +105,8 @@
 .footer__icon-twit {
   width: 23px;
   height: 20px;
+
+  margin-right: 8px;
 }
 
 
@@ -117,7 +133,7 @@
 
 .footer__maker-text {
   margin: 0;
-  padding: 28px 0 32px;
+  padding: 23px 0 32px;
 
   font-family: "Open sans", "Arial", sans-serif;
   font-weight: bold;
@@ -128,7 +144,7 @@
 
 .footer__icon-academy {
   position: absolute;
-  top: 23px;
+  top: 18px;
   right: 4px;
 
   width: 27px;
@@ -144,7 +160,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     width: 680px;
     padding-top: 26px;
@@ -172,12 +188,13 @@
 
     width: 102px;
     height: 34px;
+
+    margin-top: 23px;
   }
 
   .footer__social {
-    margin: 0 auto;
-    margin-left: 139px;
-    padding-top: 32px;
+    margin: 0 auto 0 157px;
+    padding-top: 29px;
 
     border-bottom: 15px;
   }
@@ -186,6 +203,10 @@
     margin: 0;
     margin-right: 4px;
     padding-top: 9px;
+  }
+
+  .footer__maker-text {
+    padding-top: 27px;
   }
 
   .footer__icon-academy {
@@ -214,7 +235,7 @@
   }
 
   .footer__social {
-    margin-left: 329px;
+    margin-left: 348px;
   }
 
   .footer__maker {
