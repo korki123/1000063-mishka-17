@@ -67,43 +67,27 @@ overlay.addEventListener('click', function (evt) {
 
  // ====================== Поведение навигации без/с js.  (работает)
 
-var navClose  = document.querySelector('.site-menu__toggle--icon-close');
-var navHamburger = document.querySelector('.site-menu__toggle--icon-hamburger');
-var navigation = document.querySelector('.nav');
 
-  document.addEventListener('DOMContentLoaded', function(etv) {
+  // //
+  // //
+  // navToggleScript.addEventListener('.site-menu__toggle--icon-hamburger');
+  // navigationScript.addEventListener('.js-nav-close');
+  var navToggle  = document.querySelector('.js-toggle-nav');
+  var navigation = document.querySelector('.js-nav');
 
-    etv.preventDefault();
+  function toggleNav() {
+    navToggle.classList.toggle('site-menu__toggle--icon-close'); // default
+    navToggle.classList.toggle('site-menu__toggle--icon-hamburger');
 
-    navClose.classList.add('site-menu__toggle--icon-hamburger');
+    navigation.classList.toggle('nav--open'); // default
+    navigation.classList.toggle('nav--close');
+  }
 
-    navigation.classList.toggle('nav-close');
+  document.addEventListener('DOMContentLoaded', function () {
+    toggleNav();
   });
 
-  // ========================================================================================
-
-
-  // navHamburger.addEventListener('click', function(etv) {
-  //
-  //   etv.preventDefault();
-  //
-  //   navClose.classList.remove('site-menu__toggle--icon-hamburger');
-  //
-  // })
-  //
-  //
-
-  // var navToggleScript = document.querySelector('js__toggle--icon-hamburger');
-  // var navigationScript = document.querySelector('.js-nav-close');
-  //
-  //
-  // navToggleScript.addEventListener('.site-menu__toggle--icon-hamburger');
-  // navigationScript.addEventListener('.nav-close');
-  //
-  // navToggleScript.addEventListener('click', function (etv) {
-  //
-  //   etv.preventDefault ();
-  //
-  //   navToggleScript.classList.toggle('site-menu__toggle--icon-close');
-  //   navigationScript.classList.toggle('js-nav');
-  // });
+  navToggle.addEventListener('click', function (etv) {
+    etv.preventDefault();
+    toggleNav();
+  });
