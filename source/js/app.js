@@ -67,18 +67,18 @@ overlay.addEventListener('click', function (evt) {
 
  // ====================== Поведение навигации без/с js.  (работает)
 
-var navClose  = document.querySelector('.site-menu__toggle--icon-close');
-var navHamburger = document.querySelector('.site-menu__toggle--icon-hamburger');
-var navigation = document.querySelector('.nav');
-
-  document.addEventListener('DOMContentLoaded', function(etv) {
-
-    etv.preventDefault();
-
-    navClose.classList.add('site-menu__toggle--icon-hamburger');
-
-    navigation.classList.toggle('nav-close');
-  });
+// var navClose  = document.querySelector('.site-menu__toggle--icon-close');
+// var navHamburger = document.querySelector('.site-menu__toggle--icon-hamburger');
+// var navigation = document.querySelector('.nav');
+//
+//   document.addEventListener('DOMContentLoaded', function(etv) {
+//
+//     etv.preventDefault();
+//
+//     navClose.classList.add('site-menu__toggle--icon-hamburger');
+//
+//     navigation.classList.toggle('nav-close');
+//   });
 
   // ========================================================================================
 

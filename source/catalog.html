@@ -24,10 +24,10 @@
       <div class="site-menu">
         <a class="site-menu__logo" href="index.html">
         </a>
-        <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button>
+        <button class="site-menu__toggle site-menu__toggle--icon-close" type="button" name="button"></button>
       </div>
       <!-- ========================================= выпадающее меню навигация ========================================= -->
-      <nav class="nav-close">
+      <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item nav__item--one">
             <a class="nav__link nav__link--one" href="catalog.html">Каталог товаров</a>
@@ -71,7 +71,6 @@
         <section class="catalog">
           <article class="catalog__card">
             <a class="catalog__card-link" href="#">
-              <!-- <div class="catalog__photo catalog__photo--hare"> -->
 
                 <picture class="catalog__photo catalog__photo--hare">
                   <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@2x.webp 2x,
@@ -96,7 +95,7 @@
               </a>
               <p class="catalog__description">Рост 30 см, вес 200 г</p>
               <p class="catalog__icon">1 200 руб.
-                <a class="catalog__price" href="">
+                <a class="catalog__price" href="#">
                   <svg class="catalog__wrapper-cart">
                     <use xlink:href="#sprite-icon-cart"></use>
                   </svg>
@@ -131,7 +130,7 @@
                 </a>
                 <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
                 <p class="catalog__icon">690 руб.
-                  <a class="catalog__price" href="">
+                  <a class="catalog__price" href="#">
                     <svg class="catalog__wrapper-cart">
                       <use xlink:href="#sprite-icon-cart"></use>
                     </svg>
@@ -272,5 +271,7 @@
 
       <!-- <script type="text/javascript" src="js/app.js"></script> -->
       <script type="text/javascript" src="js/catalog.js"></script>
+      <script src="js/mobile-nav.js">
+
   </body>
 </html>
