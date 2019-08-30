@@ -8,7 +8,7 @@ var mobileClose = document.querySelector('.site-menu__toggle--icon-close')
 // ====================== показать модалку. главная
 
 order.addEventListener('click', function (evt) {
-  
+
   evt.preventDefault();
 
   modalShow.classList.add('modal-show');

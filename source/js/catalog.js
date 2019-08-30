@@ -18,7 +18,7 @@ overlay.addEventListener('click', function (evt) {
 
 charts.forEach((chart) => {
   chart.addEventListener('click', function (etv) {
-    
+
     etv.preventDefault();
 
     modalShow.classList.add('modal-show');
