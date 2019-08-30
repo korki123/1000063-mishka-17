@@ -264,15 +264,16 @@
 
 @media (min-width: $tablet-width) {
   .catalog-page {
-    margin: -67px;
+    margin-top: -67px;
+    margin-bottom: 65px;
 
     border-top: 1px solid #ededed;
   }
 
   .catalog {
     @include center-tablet;
-    padding-bottom: 43px;
-    margin-bottom: 26px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .catalog__head {
@@ -478,7 +479,6 @@
     width: 1050px;
     margin: 0 auto;
     padding-top: 53px;
-    padding-bottom: 43px;
   }
 
   .catalog__card {
@@ -558,7 +558,7 @@
     width: 1050px;
     min-height: 455px;
 
-    border: 1px solid #ececec;
+    margin-bottom: 107px;
 
     &:hover::before {
       box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.1);
@@ -600,6 +600,7 @@
 
   .catalog__manufacture-wrapper-text {
     padding-left: 20px;
+    border: 1px solid #ececec;
   }
 
   .catalog__manufacture-head {
