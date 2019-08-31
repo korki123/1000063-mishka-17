@@ -4,7 +4,6 @@
   padding-top: 34px;
 }
 
-
 .contact__block {
   width: 260px;
   margin: 0 auto;
@@ -34,7 +33,6 @@
 
   list-style: none;
 }
-
 
 .contact__item {
   font-family: "Open sans", "Arial", sans-serif;
@@ -174,7 +172,7 @@
 
     &--underline::before {
       right: 0;
-      bottom: 68px;
+      top: 26px;
 
       width: 200px;
     }
@@ -274,6 +272,7 @@
 
     &--address {
       width: 265px;
+      padding-bottom: 50px;
     }
 
     &--underline {
@@ -297,10 +296,11 @@
   }
 
   .contact__button {
-    position: absolute;
+    position: static;
     left: 0;
-    bottom: -57px;
 
+    margin: 0;
+    margin-top: -51px;
     margin-left: 225px;
   }
 }

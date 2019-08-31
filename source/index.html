@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
-  </head>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+</head>
 
   <body>
 
@@ -23,8 +25,6 @@
         <a class="site-menu__logo" href="index.html">
         </a>
         <button class="site-menu__toggle site-menu__toggle--icon-close" type="button" name="button"></button>
-
-        <!-- <button class="site-menu__toggle site-menu__toggle--icon-hamburger" type="button" name="button"></button> -->
       </div>
       <!-- ========================================= выпадающее меню навигация ========================================= -->
       <nav class="nav">
@@ -49,9 +49,8 @@
               <svg class="icon-cart">
                 <use xlink:href="#sprite-icon-cart"></use>
               </svg>
-              <!-- <img class="icon-cart" src="img/icon-cart.svg" width="21" height="19" alt="иконка корзина">  -->
-
-              Корзина: пока пуста</a>
+              Корзина: пока пуста
+            </a>
           </li>
           <li class="nav__item nav__item--desktop-one">
             <a class="nav__link nav__link--desktop-one" href="#">Новые поступления</a>
@@ -187,7 +186,7 @@
           </div>
 
           <div class="contact__map">
-            <iframe class="contact__map-yandex" src="https://yandex.ru/map-widget/v1/-/CGVWjC35" width="560" height="400" allowfullscreen="allowfullscreen"></iframe>
+            <iframe class="contact__map-yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac376d8178b21d2eeb46cb9eef020b2be96fc048463bdbcb83aba081faa7549cd&source=constructor" width="560" height="400" allowfullscreen="allowfullscreen"></iframe>
           </div>
 
           <a class="contact__button button" href="#">Напишите нам</a>
@@ -200,26 +199,22 @@
         <svg class="footer__icon-miska">
           <use xlink:href="#sprite-logo-footer"></use>
         </svg>
-        <!-- <img class="footer__icon-miska" src="img/logo-footer.svg" width="112" height="46" alt="логотип мишка"> -->
       </a>
       <section class="footer__social">
         <a class="footer__social-inst" href="">
           <svg class="footer__icon-inst">
             <use xlink:href="#sprite-icon-insta"></use>
           </svg>
-          <!-- <img src="img/icon-insta.svg" width="22" height="21" alt=""> -->
         </a>
         <a class="footer__social-fb" href="">
           <svg class="footer__icon-fb">
             <use xlink:href="#sprite-icon-fb"></use>
           </svg>
-          <!-- <img src="img/icon-fb.svg" width="15" height="28" alt=""> -->
         </a>
         <a class="footer__social-twit" href="">
           <svg class="footer__icon-twit">
             <use xlink:href="#sprite-icon-twitter"></use>
           </svg>
-          <!-- <img src="img/icon-twitter.svg" width="23" height="20" alt=""> -->
         </a>
       </section>
       <section class="footer__maker">
@@ -230,8 +225,6 @@
             <use class="icon-academy" xlink:href="#sprite-logo-academy"></use>
           </svg>
         </a>
-          <!-- <img class="footer__icon-academy" src="img/htmlacademy.svg" width="40" height="50" alt="логотип академии">
-        </a> -->
       </section>
     </div>
   </footer>
@@ -240,7 +233,7 @@
   <section class="modal">
     <div class="modal-overlay"></div>
 
-    <div class="modal__wrapper">
+    <form class="modal__wrapper">
       <p class="modal__head">Добавить в&nbsp;корзину</p>
       <p class="modal__text">Выберите размер:</p>
       <div class="modal__size-wrapper">
@@ -254,12 +247,15 @@
           <input class="modal__radio visually-hidden" type="radio" name="size" value="l"><span class="modal__size-text">l</span>
         </label>
       </div>
-      <button class="modal__button button" type="button" name="button">Добавить</button>
-    </div>
+      <button class="modal__button button" type="submit" form="" name="button">Добавить</button>
+    </form>
   </section>
   <!-- ========================================= модальное окно финиш ========================================= -->
 
-  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/modal.js"></script>
+  <script src="js/mobile-nav.js">
+
+  </script>
 
   </body>
 </html>
