@@ -2,7 +2,7 @@
   @include center-mobile;
 }
 
-.catalog__head {
+.catalog-page__head {
   margin: 0;
   margin-bottom: 30px;
   padding-top: 72px;
@@ -135,7 +135,7 @@
   height: 19px;
 }
 
-.catalog__manufacture {
+.manufacture {
   position: relative;
 
   display: flex;
@@ -147,16 +147,16 @@
 
   border: 1px solid #ededed;
 
-  &:hover .catalog__manufacture-wrapper-text {
+  &:hover .manufacture-wrapper-text {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:active .catalog__manufacture-wrapper-text {
+  &:active .manufacture-wrapper-text {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
-.catalog__manufacture-wrapper-player {
+.manufacture-wrapper-player {
   position: absolute;
 
   top: 97px;
@@ -165,7 +165,7 @@
   background-color: #f1f1f1;
 }
 
-.catalog__manufacture-video {
+.manufacture-video {
   display: block;
   width: 260px;
   height: 150px;
@@ -174,18 +174,18 @@
   background-color: #f1f1f1;
 }
 
-.catalog__manufacture-player-link {
-  &:hover + .catalog__manufacture-video-button {
+.manufacture-player-link {
+  &:hover + .manufacture-video-button {
     transform: scale(1.2);
   }
 
-  &:active + .catalog__manufacture-video-button {
+  &:active + .manufacture-video-button {
     opacity: 0.3;
     transform: scale(0.8);
   }
 }
 
-.catalog__manufacture-video-button {
+.manufacture-video-button {
   position: absolute;
 
   bottom: 25%;
@@ -212,7 +212,7 @@
   }
 }
 
-.catalog__manufacture-head {
+.manufacture-head {
   position: relative;
   margin: 0;
   padding: 24px 30px 175px 90px;
@@ -237,7 +237,7 @@
   }
 }
 
-.catalog__manufacture-text {
+.manufacture-text {
   margin: 0 30px;
   margin-right: 36px;
   padding-top: 27px;
@@ -251,7 +251,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.catalog__button {
+.manufacture-wrapper-text__button {
   position: relative;
 
   @include button;
@@ -276,7 +276,7 @@
     margin-bottom: 0;
   }
 
-  .catalog__head {
+  .catalog-page__head {
     position: relative;
 
     font-size: 43px;
@@ -356,7 +356,7 @@
     width: 334px;
   }
 
-  .catalog__manufacture {
+  .manufacture {
     position: relative;
 
     display: flex;
@@ -367,13 +367,13 @@
     border: none;
   }
 
-  .catalog__manufacture-wrapper-player {
+  .manufacture-wrapper-player {
     position: relative;
     top: auto;
     bottom: auto;
   }
 
-  .catalog__manufacture-video {
+  .manufacture-video {
     position: relative;
     top: 0;
 
@@ -381,7 +381,7 @@
     height: 455px;
   }
 
-  .catalog__manufacture-video-button {
+  .manufacture-video-button {
     bottom: 190px;
   }
 
@@ -390,7 +390,7 @@
     flex-direction: column;
   }
 
-  .catalog__manufacture-head {
+  .manufacture-head {
     padding-top: 37px;
     padding-left: 104px;
     padding-bottom: 25px;
@@ -408,7 +408,7 @@
     }
   }
 
-  .catalog__manufacture-text {
+  .manufacture-text {
     margin: 0;
     padding-top: 8px;
     padding-right: 40px;
@@ -424,13 +424,13 @@
     border-bottom: none;
   }
 
-  .catalog__button-wrapper {
+  .manufacture-wrapper-text__button-wrapper {
     padding-bottom: 15px;
     border: 1px solid #ececec;
     border-top: none;
   }
 
-  .catalog__button {
+  .manufacture-wrapper-text__button {
 
     width: 584px;
     margin-bottom: 30px;
@@ -445,7 +445,7 @@
     margin-top: 31px;
   }
 
-  .catalog__head {
+  .catalog-page__head {
     padding-top: 97px;
     padding-bottom: 111px;
 
@@ -548,7 +548,7 @@
     padding-top: 0;
   }
 
-  .catalog__manufacture {
+  .manufacture {
     position: relative;
 
     display: flex;
@@ -569,7 +569,7 @@
     }
   }
 
-  .catalog__manufacture-wrapper-player {
+  .manufacture-wrapper-player {
     position: relative;
     bottom: 0;
 
@@ -581,12 +581,12 @@
     background-color: #f1f1f1;
   }
 
-  .catalog__manufacture-video {
+  .manufacture-video {
     width: 682px;
     height: 455px;
   }
 
-  .catalog__manufacture-video-button {
+  .manufacture-video-button {
     &:hover {
       transform: scale(1.2);
     }
@@ -598,12 +598,12 @@
     }
   }
 
-  .catalog__manufacture-wrapper-text {
+  .manufacture-wrapper-text {
     padding-left: 20px;
     border: 1px solid #ececec;
   }
 
-  .catalog__manufacture-head {
+  .manufacture-head {
     width: 350px;
     box-sizing: border-box;
 
@@ -620,7 +620,7 @@
     }
   }
 
-  .catalog__manufacture-text {
+  .manufacture-text {
     width: 350px;
     box-sizing: border-box;
 
@@ -634,7 +634,7 @@
     border: none;
   }
 
-  .catalog__button {
+  .manufacture-wrapper-text__button {
     width: 230px;
 
     margin: 0;
@@ -642,7 +642,7 @@
     margin-right: 58px;
   }
 
-  .catalog__button-wrapper {
+  .manufacture-wrapper-text__button-wrapper {
     border: none;
   }
 }
