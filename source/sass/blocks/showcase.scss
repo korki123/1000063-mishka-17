@@ -258,13 +258,13 @@
     &::before {
       content: "";
       position: absolute;
-      left: -45px;
+      left: 0;
       bottom: -14px;
-      transform: scaleX(1.087);
+      // transform: scaleX(1.087);
 
       height: 34px;
 
-      background-image: url("../img/wave-desktop-1150.svg");
+      background-image: url("../img/wave-desktop-1150-new.svg");
     }
   }
 

@@ -1,0 +1,221 @@
+.form {
+  font-family: "Open sans", "Arial", sans-serif;
+}
+
+.form-page {
+  @include center-mobile;
+}
+
+.form__head {
+  margin: 0;
+  margin-bottom: 24px;
+  padding-top: 72px;
+  padding-bottom: 74px;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: #f1f1f1;
+}
+
+.form__text {
+  width: 258px;
+  margin: 0 30px;
+  margin-bottom: 23px;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Open sans", "Arial", sans-serif;
+
+  color: #444444;
+}
+
+.form-type {
+  display: flex;
+  flex-direction: column;
+
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+
+  border: none;
+
+  &--e-mail {
+    padding-bottom: 13px;
+  }
+}
+
+.form-type__wrapper {
+  padding-bottom: 19px;
+
+  &--name {
+    padding-bottom: 8px;
+  }
+
+  &--phone {
+    padding-bottom: 31px;
+  }
+
+  &--comment {
+    padding-bottom: 0;
+  }
+}
+
+.form-type__group-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  color: #63d1bb;
+
+  &::after {
+    content: "";
+
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 1px;
+
+    margin-left: 24px;
+
+    background-color: #63d1bb;
+  }
+}
+
+.form-type__label-wrapper {
+  position: relative;
+  padding-top: 35px;
+
+  &--area {
+    padding-top: 30px;
+  }
+
+  &--phone {
+    padding-top: 6px;
+  }
+
+  &--e-mail {
+    padding-top: 6px;
+  }
+
+  &--comment {
+    padding-top: 24px;
+  }
+}
+
+.form__icon-phone {
+  position: absolute;
+  bottom: 15px;
+  right: 5px;
+
+  width: 32px;
+  height: 27px;
+
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.form__icon-mail {
+  position: absolute;
+  bottom: 11px;
+  right: 5px;
+
+  width: 32px;
+  height: 27px;
+
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+// ======================================= планшет =======================================
+
+@media (min-width: $tablet-width) {
+  .form {
+    margin: -66px;
+    border-top: 1px solid #ededed;
+  }
+
+  .form-page {
+    @include center-tablet;
+  }
+
+  .form__head {
+    position: relative;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-bottom: 61px;
+    padding-top: 94px;
+    padding-bottom: 92px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: -13px;
+      bottom: -1px;
+
+      width: 100%;
+      height: 23px;
+
+      background-image: url("../img/bg-zigzag-fill-tablet.svg");
+      background-repeat: repeat-x;
+
+      z-index: 5;
+    }
+  }
+
+  .form__text {
+    width: 668px;
+
+    margin: 0 auto;
+    padding-bottom: 56px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+// ======================================= десктоп =======================================
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin-top: -41px;
+  }
+
+  .form-page {
+    @include center-desktop;
+  }
+
+  .form__head {
+    font-size: 53px;
+    line-height: 57px;
+
+    margin-bottom: 105px;
+    padding-top: 92px;
+    padding-bottom: 120px;
+
+    &::before {
+      left: -49px;
+      height: 34px;
+
+      background-image: url("../img/wave-desktop-1150.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
+  .form__text {
+    width: 700px;
+    margin: 0 auto;
+    padding-left: 195px;
+    padding-right: 195px;
+  }
+}

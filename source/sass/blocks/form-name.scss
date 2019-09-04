@@ -1,0 +1,191 @@
+.form-type {
+  // display: flex;
+  // flex-direction: column;
+  //
+  // width: 260px;
+  // margin: 0 auto;
+  // padding: 0;
+  //
+  // border: none;
+}
+
+.form-type__wrapper {
+  // padding-bottom: 19px;
+
+  &--name {
+    padding-bottom: 8px;
+  }
+}
+
+.form-type__group-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  color: #63d1bb;
+
+  &::after {
+    content: "";
+
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 1px;
+
+    margin-left: 24px;
+
+    background-color: #63d1bb;
+  }
+}
+
+.form-type__label-wrapper {
+  // position: relative;
+  // padding-top: 35px;
+
+  &--area {
+    padding-top: 30px;
+  }
+}
+
+.form-type__label-area {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.form-type__username {
+  display: block;
+
+  width: 260px;
+  margin-bottom: 22px;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #444444;
+
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    border-color: #62d1ba;
+    outline: none;
+  }
+}
+
+
+// ======================================= планшет =======================================
+
+@media (min-width: $tablet-width) {
+  .form-type {
+    &--name {
+      padding-bottom: 0;
+    }
+  }
+
+  .form-type__wrapper {
+    // display: flex;
+    // flex-direction: row;
+    // align-items: baseline;
+    //
+    // width: 668px;
+    // padding-top: 15px;
+    // padding-bottom: 0;
+
+    &--name {
+      margin-bottom: 18px;
+      padding-top: 0;
+    }
+  }
+
+  .form-type__label-wrapper {
+    // margin-left: 129px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &--area {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-left: 124px;
+    }
+  }
+
+  .form-type__group-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 17px;
+
+    &::after {
+      content: none;
+    }
+
+    &--comment {
+      padding-top: 16px;
+    }
+  }
+
+  .form-type__label-area {
+    font-size: 19px;
+
+    padding-top: 16px;
+  }
+
+  .form-type__username {
+    flex-grow: 1;
+    min-width: 350px;
+    margin-left: 25px;
+    margin-bottom: 24px;
+    padding-left: 18px;
+
+    border: none;
+    border-bottom: 2px solid #000000;
+  }
+}
+
+// ======================================= десктоп =======================================
+
+@media (min-width: $desktop-width) {
+  .form-type {
+    width: 930px;
+  }
+
+  .form-type__label-wrapper {
+    margin-left: 74px;
+  }
+
+
+  .form-type__wrapper {
+    &--name {
+      width: 815px;
+    }
+  }
+
+  .form-type__username {
+    width: 530px;
+  }
+}

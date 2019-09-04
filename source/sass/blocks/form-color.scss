@@ -1,0 +1,248 @@
+.form-type-color {
+  display: flex;
+  flex-direction: column;
+
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+
+  border: none;
+}
+
+.form-type__wrapper {
+  padding-bottom: 19px;
+}
+
+.form-type__group-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  color: #63d1bb;
+
+  &::after {
+    content: "";
+
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 1px;
+
+    margin-left: 24px;
+
+    background-color: #63d1bb;
+  }
+}
+
+.form-type__label-wrapper {
+  position: relative;
+  padding-top: 35px;
+}
+
+.form-type__label {
+  position: relative;
+
+  display: flex;
+
+  padding-left: 62px;
+  padding-bottom: 24px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  &--checkbox {
+    padding-bottom: 43px;
+  }
+
+  &--last {
+    padding-bottom: 24px;
+  }
+}
+
+.form-type__checkbox {
+  appearance: none;
+  font-size: 0;
+}
+
+.form-type__checkbox-icon {
+  position: absolute;
+  left: 0;
+  top: -10px;
+
+  width: 37px;
+  height: 36px;
+
+  border: 2px solid #444444;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form-type__checkbox:focus + .form-type__checkbox-icon {
+  border-color: #62d1ba;
+}
+
+// ======================================= планшет =======================================
+
+@media (min-width: $tablet-width) {
+  .form__color {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-top: 49px;
+    padding-bottom: 12px;
+    background-color: #f1f1f1;
+  }
+
+  .form-type {
+    &--color {
+      // width: 668px;
+      // margin: 0 auto;
+      padding-bottom: 12px;
+    }
+  }
+
+  .form-type__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    width: 668px;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
+  .form-type__label-wrapper {
+    // margin-left: 129px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &--color {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      margin-left: 122px;
+    }
+  }
+
+
+  .form-type__wrapper-color {
+    margin-left: 129px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &--color {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      margin-left: 122px;
+    }
+  }
+
+  .form-type__label {
+    position: relative;
+
+    flex-basis: 500px;
+    padding-left: 80px;
+    padding-bottom: 58px;
+
+    font-size: 19px;
+    line-height: 18px;
+
+    &--checkbox {
+      flex-basis: 140px;
+
+      &:nth-child(2n) {
+        margin-left: 42px;
+      }
+    }
+  }
+
+  .form-type__checkbox-icon {
+    left: 0;
+    top: -14px;
+
+    width: 50px;
+    height: 49px;
+
+    border: 2px solid #444444;
+  }
+
+  .form-type__checkbox:checked + .form-type__checkbox-icon {
+    background-image: url("../img/tick-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 29px;
+  }
+
+  .form-type__group-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 17px;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+// ======================================= десктоп =======================================
+
+@media (min-width: $desktop-width) {
+  .form__color {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-top: 49px;
+    background-color: #f1f1f1;
+  }
+
+  .form-type {
+    &--color {
+      width: 930px;
+    }
+  }
+
+  .form-type__label-wrapper {
+    // margin-left: 74px;
+
+    &--color {
+      width: 860px;
+      margin-left: 70px;
+    }
+  }
+
+
+  .form-type__wrapper {
+    &--color {
+      width: 930px;
+    }
+  }
+
+  .form-type__label {
+    &--checkbox {
+      flex-basis: 182px;
+
+      &:nth-child(2n) {
+        margin-left: 0;
+      }
+    }
+  }
+}
