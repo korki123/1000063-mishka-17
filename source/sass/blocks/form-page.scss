@@ -213,6 +213,16 @@
     }
   }
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .form__head::before {
+      left: 0;
+      height: 34px;
+
+      background-image: url("../img/wave-desktop-1150.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
   .form__text {
     width: 700px;
     margin: 0 auto;

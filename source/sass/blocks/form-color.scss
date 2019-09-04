@@ -74,6 +74,12 @@
   font-size: 0;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-type__checkbox {
+    display: none;
+  }
+}
+
 .form-type__checkbox-icon {
   position: absolute;
   left: 0;

@@ -178,6 +178,12 @@
     margin-left: 74px;
   }
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .form-type__label-wrapper {
+      width: 815px;
+    }
+  }
+
 
   .form-type__wrapper {
     &--name {

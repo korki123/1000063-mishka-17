@@ -36,7 +36,11 @@
 
 .product-week__wrapper-description {
   display: flex;
+  display: -ms-flexbox;
+
   flex-direction: column;
+    -ms-flex-direction: column;
+
 }
 
 .product-week__description {
@@ -134,9 +138,16 @@
     position: relative;
 
     display: flex;
+      display: -ms-flexbox;
+
     flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+
     justify-content: space-between;
+      -ms-flex-pack: justify;
+
     align-items: center;
+      ms-flex-align: center;
 
     width: 668px;
     margin: 0 auto;
@@ -173,9 +184,13 @@
   .product-week__wrapper-description {
     position: relative;
 
+    align-items: flex-start;
+
     width: 668px;
     padding-top: 49px;
   }
+
+
 
   .product-week__description {
     width: 290px;
