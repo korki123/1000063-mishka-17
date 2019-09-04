@@ -13,11 +13,18 @@
 
 .about__list {
   display: flex;
+      display: -ms-flexbox;
+
   flex-direction: column;
   flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+
   align-items: baseline;
   margin: 0;
   padding: 0 30px;
+
+  -ms-flex-pack: justify;
+
 }
 
 .about__item {
