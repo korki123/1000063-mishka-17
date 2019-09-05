@@ -66,13 +66,15 @@
       <!-- ========================================= выпадающее меню финиш ========================================= -->
     </header>
 
-      <main class="catalog-page">
+    <main class="catalog-page">
+      <div class="catalog-page__head-wrapper">
         <h2 class="catalog-page__head">Каталог товаров</h2>
-        <section class="catalog">
-          <article class="catalog__card">
-            <a class="catalog__card-link" href="#">
+      </div>
+      <section class="catalog">
+        <article class="catalog__card">
+          <a class="catalog__card-link" href="#">
 
-                <picture class="catalog__photo catalog__photo--hare">
+            <picture class="catalog__photo catalog__photo--hare">
                   <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@2x.webp 2x,
                                   img/photo-hare-desktop@1x.webp 1x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@2x.webp 2x,
@@ -272,7 +274,7 @@
 
       <!-- <script type="text/javascript" src="js/app.js"></script> -->
       <script type="text/javascript" src="js/catalog.js"></script>
-      <script src="js/mobile-nav.js"></script>
-
+      <script type="text/javascript" src="js/mobile-nav.js"></script>
+      <script type="text/javascript" src="js/picturefill.js"></script>
   </body>
 </html>
