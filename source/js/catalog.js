@@ -16,7 +16,7 @@ overlay.addEventListener('click', function (evt) {
 
 // ====================== показать модалку. каталог (работает)
 
-charts.forEach((chart) >= {
+charts.forEach((chart) => {
   chart.addEventListener('click', function (etv) {
 
     etv.preventDefault();

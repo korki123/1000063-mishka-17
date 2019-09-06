@@ -156,8 +156,8 @@
   }
 
   .about__item {
-
-    flex-basis: 327px;
+    width: 327px;
+    // flex-basis: 327px;
 
     padding-top: 53px;
     padding-bottom: 58px;
@@ -254,7 +254,8 @@
 
 
   .about__item {
-    flex-basis: 344px;
+    width: 344px;
+    // flex-basis: 344px;
     //-ms-flex: 1 0 250px;
 
     padding-right: 50px;
