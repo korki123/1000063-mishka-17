@@ -379,13 +379,13 @@
   }
 }
 
-.form-type__footnote-button-wrapper {
+.footnote-button-wrapper {
   width: 260px;
   margin: 0 auto;
   margin-bottom: 55px;
 }
 
-.form-type__footnote {
+.footnote {
   padding-bottom: 16px;
 
   font-size: 14px;
@@ -667,7 +667,7 @@
     padding-bottom: 13px;
   }
 
-  .form-type__footnote-button-wrapper {
+  .footnote-button-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -677,7 +677,7 @@
     margin-bottom: 117px;
   }
 
-  .form-type__footnote {
+  .footnote {
     font-size: 17px;
     margin: 0;
   }
@@ -816,7 +816,7 @@
     right: 4px;
   }
 
-  .form-type__footnote-button-wrapper {
+  .footnote-button-wrapper {
     width: 700px;
     margin-bottom: 117px;
   }

@@ -13,9 +13,16 @@
 
 .about__list {
   display: flex;
+  //display: -ms-flexbox;
+
   flex-direction: column;
+  //-ms-flex-direction: column;
+
   flex-wrap: wrap;
+  // -ms-flex-wrap: wrap;
+
   align-items: baseline;
+
   margin: 0;
   padding: 0 30px;
 }
@@ -140,7 +147,9 @@
 
   .about__list {
     flex-direction: row;
+
     justify-content: flex-start;
+
     align-items: baseline;
 
     padding: 0;
@@ -149,6 +158,7 @@
   .about__item {
 
     flex-basis: 327px;
+
     padding-top: 53px;
     padding-bottom: 58px;
     padding-right: 100px;
@@ -242,14 +252,20 @@
     padding-left: 3px;
   }
 
+
   .about__item {
     flex-basis: 344px;
+    //-ms-flex: 1 0 250px;
 
     padding-right: 50px;
     padding-bottom: 58px;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--style {
+      padding-right: 10px;
+    }
 
     &--support {
       padding-right: 10px;

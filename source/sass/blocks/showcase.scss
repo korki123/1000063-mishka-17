@@ -141,14 +141,14 @@
       content: "";
 
       position: absolute;
-      left: -255px;
+      left: 0;
       bottom: -3px;
 
-      width: 1540px;
+      width: 100%;
       height: 19px;
-      transform: scale(0.668, 0.668);
+      // transform: scale(0.668, 0.668);
 
-      background-image: url("../img/bg-zigzag-fill.svg");
+      background-image: url("../img/bg-zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
 
       z-index: 5;
@@ -258,13 +258,13 @@
     &::before {
       content: "";
       position: absolute;
-      left: -45px;
+      left: 0;
       bottom: -14px;
-      transform: scaleX(1.087);
+      // transform: scaleX(1.087);
 
       height: 34px;
 
-      background-image: url("../img/wave-desktop-1150.svg");
+      background-image: url("../img/wave-desktop-1150-new.svg");
     }
   }
 

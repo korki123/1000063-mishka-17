@@ -1,8 +1,8 @@
 @import "fonts.scss";
 @import "variable.scss";
 @import "mixin.scss";
-@import "blocks/normalize.scss";
-@import "blocks/global-style.scss";
+@import "normalize.scss";
+@import "global-style.scss";
 @import "blocks/page-header.scss";
 @import "blocks/site-menu.scss";
 @import "blocks/nav.scss";
@@ -19,7 +19,13 @@
 @import "blocks/catalog.scss";
 
 // страница формы
-@import "blocks/form.scss";
+// @import "blocks/form.scss";
+@import "source/sass/blocks/form-page.scss";
+@import "blocks/form-type.scss";
+@import "blocks/form-color.scss";
+@import "blocks/form-name.scss";
+@import "blocks/form-phone-mail.scss";
+@import "blocks/form-comment-footnote.scss";
 
 //модалка
 @import "blocks/modal.scss";

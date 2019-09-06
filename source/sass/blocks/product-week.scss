@@ -36,6 +36,7 @@
 
 .product-week__wrapper-description {
   display: flex;
+
   flex-direction: column;
 }
 
@@ -134,13 +135,17 @@
     position: relative;
 
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: space-between;
+
     align-items: center;
+    // ms-flex-align: center;
 
     width: 668px;
     margin: 0 auto;
-    pading: 0;
+    padding: 0;
     padding-top: 43px;
   }
 
@@ -172,6 +177,8 @@
 
   .product-week__wrapper-description {
     position: relative;
+
+    align-items: flex-start;
 
     width: 668px;
     padding-top: 49px;
