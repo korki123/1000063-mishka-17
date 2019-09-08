@@ -18,24 +18,27 @@
 
   flex-wrap: wrap;
 
-  align-items: baseline;
+  align-items: flex-start;
 
   margin: 0;
-  padding: 0 30px;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .about__item {
   position: relative;
 
+  width: 260px;
   padding-top: 53px;
-  padding-right: 50px;
+  // padding-right: 50px;
   padding-bottom: 30px;
 
   line-height: 20px;
   list-style: none;
 
   &--ecology {
-    padding-right: 75px;
+    // padding-right: 75px;
 
     &::before {
       content: "";
@@ -65,7 +68,7 @@
   }
 
   &--like {
-    padding-right: 70px;
+    // padding-right: 70px;
 
     &::before {
       content: "";
